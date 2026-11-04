@@ -1,0 +1,210 @@
+{
+  "predictions_sha256": "e37c0c32b0f3266758d8010fdbe58cdbb477c3be12e5122de7d2ce5c754f8a0e",
+  "T": 60000,
+  "quick": false,
+  "draws": 1000,
+  "change": {
+    "lag0_cmi": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.6204694911310387,
+        "ci": [
+          0.5789721111838074,
+          0.6581073716638822
+        ],
+        "n_pos_used": 1328,
+        "n_neg_used": 285854,
+        "strata": 232,
+        "unstratified_auc": 0.5540560721483865
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.6421975269995305,
+        "ci": [
+          0.5616958399053863,
+          0.7145276960625253
+        ],
+        "n_pos_used": 848,
+        "n_neg_used": 302,
+        "strata": 47,
+        "unstratified_auc": 0.6981247875514598
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.14350369809054425,
+      "class_means_millibits": {
+        "direct": 53.263096133878484,
+        "wired idle": 15.783107269422048,
+        "co-driven only": 22.24867028553386
+      },
+      "unrelated_mean_millibits": 12.94061222776478
+    },
+    "lag0_cmi_parity": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.6386466555692781,
+        "ci": [
+          0.5940521011470249,
+          0.6803556993835176
+        ],
+        "n_pos_used": 1328,
+        "n_neg_used": 285854,
+        "strata": 232,
+        "unstratified_auc": 0.6101403477857384
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.6461105024260447,
+        "ci": [
+          0.5646386337870303,
+          0.7200923186755923
+        ],
+        "n_pos_used": 848,
+        "n_neg_used": 302,
+        "strata": 47,
+        "unstratified_auc": 0.6833041413302111
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.1667936476848833,
+      "class_means_millibits": {
+        "direct": 43.60366737355148,
+        "wired idle": 12.662781673588123,
+        "co-driven only": 16.171382458340364
+      },
+      "unrelated_mean_millibits": 9.380771356447255
+    },
+    "lag1_te": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.30962805849397695,
+        "ci": [
+          0.27796263086591283,
+          0.34439482446854097
+        ],
+        "n_pos_used": 1328,
+        "n_neg_used": 285854,
+        "strata": 232,
+        "unstratified_auc": 0.37667090492208605
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.5803725152606042,
+        "ci": [
+          0.4868821425811155,
+          0.667656493657107
+        ],
+        "n_pos_used": 848,
+        "n_neg_used": 302,
+        "strata": 47,
+        "unstratified_auc": 0.6361287626997016
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.0778416115971548,
+      "class_means_millibits": {
+        "direct": 19.154178372168463,
+        "wired idle": 6.841210418719284,
+        "co-driven only": 19.41733475853092
+      },
+      "unrelated_mean_millibits": 12.84783352967388
+    },
+    "pair_counts": {
+      "co-driven only": 902950,
+      "": 301017,
+      "direct": 1328,
+      "wired idle": 319
+    },
+    "groups": 495
+  },
+  "state": {
+    "lag0_cmi": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.8260201679528155,
+        "ci": [
+          0.7992491256835601,
+          0.8481863837336372
+        ],
+        "n_pos_used": 1859,
+        "n_neg_used": 288102,
+        "strata": 236,
+        "unstratified_auc": 0.7794439183833641
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.7439603691639523,
+        "ci": [
+          0.6769050353854906,
+          0.8007810565656783
+        ],
+        "n_pos_used": 1207,
+        "n_neg_used": 305,
+        "strata": 48,
+        "unstratified_auc": 0.7877598989639123
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.12374825879487143,
+      "class_means_millibits": {
+        "direct": 132.05536238083897,
+        "wired idle": 27.269101003700417,
+        "co-driven only": 24.264582470397613
+      },
+      "unrelated_mean_millibits": 18.286213985076337
+    },
+    "lag0_cmi_parity": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.7717347578171205,
+        "ci": [
+          0.7415924146347171,
+          0.8000919379409958
+        ],
+        "n_pos_used": 1859,
+        "n_neg_used": 288102,
+        "strata": 236,
+        "unstratified_auc": 0.6605893574272882
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.7385314875135722,
+        "ci": [
+          0.6792446273669752,
+          0.7914010952692565
+        ],
+        "n_pos_used": 1207,
+        "n_neg_used": 305,
+        "strata": 48,
+        "unstratified_auc": 0.7683720961312934
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.135188022574223,
+      "class_means_millibits": {
+        "direct": 110.73047195975221,
+        "wired idle": 14.570276758974757,
+        "co-driven only": 22.424994440710485
+      },
+      "unrelated_mean_millibits": 17.104672508773863
+    },
+    "lag1_te": {
+      "P1 direct vs co-driven (stratified)": {
+        "auc": 0.32223881957419453,
+        "ci": [
+          0.2968351165288402,
+          0.35020531133831756
+        ],
+        "n_pos_used": 1859,
+        "n_neg_used": 288102,
+        "strata": 236,
+        "unstratified_auc": 0.4031507037601848
+      },
+      "P3 direct vs wired idle (stratified, no co-drive stratum)": {
+        "auc": 0.5418023887079262,
+        "ci": [
+          0.4311121367110727,
+          0.6448689538022009
+        ],
+        "n_pos_used": 1207,
+        "n_neg_used": 305,
+        "strata": 48,
+        "unstratified_auc": 0.44960891950858506
+      },
+      "P2 spearman(score, co-drive strength | co-driven only)": 0.07569154921687932,
+      "class_means_millibits": {
+        "direct": 22.870129704085617,
+        "wired idle": 19.04125075219462,
+        "co-driven only": 22.714445427802012
+      },
+      "unrelated_mean_millibits": 15.232104194624709
+    },
+    "pair_counts": {
+      "co-driven only": 903442,
+      "": 301911,
+      "direct": 1859,
+      "wired idle": 322
+    },
+    "groups": 744
+  }
+}

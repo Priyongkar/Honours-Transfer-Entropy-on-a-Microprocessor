@@ -1,0 +1,9 @@
+[20:23:48] PREDICTIONS.md sha256 e37c0c32b0f3266758d8010fdbe58cdbb477c3be12e5122de7d2ce5c754f8a0e
+[20:23:49] states 60000 x 1702; intervened nodes 1100
+[20:23:50] pairs: direct 1910, wired idle 358, co-driven only 904062
+[20:23:51] phase classes (even, odd, mixed): [257, 594, 249]
+[20:24:39] change: 495 groups, k [0, 26, 3, 2, 22, 25, 417], scores in 47s
+[20:24:48] change: done; P1 lag-0 CMI AUC 0.620 [0.5789721111838074, 0.6581073716638822]
+[20:28:54] state: 744 groups, k [0, 44, 21, 12, 9, 44, 614], scores in 246s
+[20:29:04] state: done; P1 lag-0 CMI AUC 0.826 [0.7992491256835601, 0.8481863837336372]
+[20:29:04] wrote /Users/priyongkarkundu/Documents/Honours 2/analyses/settling_vs_codrive/output
