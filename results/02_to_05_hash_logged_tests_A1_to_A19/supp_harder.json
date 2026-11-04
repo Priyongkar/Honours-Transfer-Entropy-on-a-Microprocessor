@@ -1,0 +1,78 @@
+{
+  "status": "supplementary; not hash-logged",
+  "program1": {
+    "latch_scored": 142,
+    "latch_in_immediate": 142,
+    "vs_immediate": {
+      "auc": 0.9392979279822973,
+      "lo": 0.9248194556691567,
+      "hi": 0.9510475256867122,
+      "n_pos": 142,
+      "n_neg": 53766,
+      "strata": 31
+    },
+    "vs_wired": {
+      "auc": 0.9582798459563543,
+      "lo": 0.9181996113170243,
+      "hi": 0.9854141033843529,
+      "n_pos": 94,
+      "n_neg": 3294,
+      "strata": 23
+    },
+    "vs_all_other": {
+      "auc": 0.973627644987864,
+      "lo": 0.9642584424656623,
+      "hi": 0.9824020429507484,
+      "n_pos": 142,
+      "n_neg": 1205472,
+      "strata": 31
+    }
+  },
+  "program2": {
+    "latch_scored": 170,
+    "latch_in_immediate": 170,
+    "vs_immediate": {
+      "auc": 0.9343770322278014,
+      "lo": 0.9178574520210159,
+      "hi": 0.948524796837292,
+      "n_pos": 170,
+      "n_neg": 64977,
+      "strata": 29
+    },
+    "vs_wired": {
+      "auc": 0.9643577673167452,
+      "lo": 0.9252974584082063,
+      "hi": 0.9880930307464264,
+      "n_pos": 85,
+      "n_neg": 4310,
+      "strata": 21
+    },
+    "vs_all_other": {
+      "auc": 0.9787735300446031,
+      "lo": 0.9679350900201011,
+      "hi": 0.9873111427847174,
+      "n_pos": 170,
+      "n_neg": 1580550,
+      "strata": 29
+    }
+  },
+  "nmos_T6000": {
+    "counts": {
+      "latches": 160,
+      "latches_with_nodes": 160,
+      "inp_scorable": 21
+    },
+    "inp_lag1_minus_lag0": {
+      "diff": 0.057205720572057195,
+      "lo": -0.1094527363184079,
+      "hi": 0.12405354007951831,
+      "verdict": "not supported"
+    },
+    "rdr_lag1_minus_lag0": {
+      "diff": -0.4427982478742592,
+      "lo": -0.6039992356966888,
+      "hi": -0.21291670710231445,
+      "verdict": "contradicted"
+    }
+  }
+}

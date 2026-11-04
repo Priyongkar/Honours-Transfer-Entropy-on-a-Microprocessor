@@ -1,0 +1,80 @@
+{
+  "predictions_sha256": "688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9",
+  "quick": false,
+  "T6000": {
+    "inp_lag1": {
+      "auc": 0.8575357535753575,
+      "lo": 0.7312617702448211,
+      "hi": 0.8918401540676323,
+      "n_pos": 21,
+      "n_neg": 2809,
+      "strata": 15,
+      "verdict": "supported, material"
+    },
+    "inp_lag0": {
+      "auc": 0.8003300330033003,
+      "lo": 0.7677372302690304,
+      "hi": 0.9800995024875622,
+      "n_pos": 21,
+      "n_neg": 2809,
+      "strata": 15,
+      "verdict": "supported, material"
+    },
+    "rdr_lag1": {
+      "auc": 0.3473975779438289,
+      "lo": 0.18884423650933763,
+      "hi": 0.544652235199549,
+      "n_pos": 98,
+      "n_neg": 15945,
+      "strata": 60,
+      "verdict": "not supported"
+    },
+    "rdr_lag0": {
+      "auc": 0.7901958258180881,
+      "lo": 0.7384628915895024,
+      "hi": 0.8261164487215609,
+      "n_pos": 98,
+      "n_neg": 15945,
+      "strata": 60,
+      "verdict": "supported, material"
+    }
+  },
+  "T20000": {
+    "inp_lag1": {
+      "auc": 0.8375199817309888,
+      "lo": 0.6610994464592479,
+      "hi": 0.900497512437811,
+      "n_pos": 21,
+      "n_neg": 2327,
+      "strata": 14,
+      "verdict": "supported, material"
+    },
+    "inp_lag0": {
+      "auc": 0.8176524320621147,
+      "lo": 0.7386411889596602,
+      "hi": 0.9800995024875622,
+      "n_pos": 21,
+      "n_neg": 2327,
+      "strata": 14,
+      "verdict": "supported, material"
+    },
+    "rdr_lag1": {
+      "auc": 0.34007118493252264,
+      "lo": 0.2073997790549164,
+      "hi": 0.5074976487325271,
+      "n_pos": 99,
+      "n_neg": 19906,
+      "strata": 63,
+      "verdict": "not supported"
+    },
+    "rdr_lag0": {
+      "auc": 0.7868901082604182,
+      "lo": 0.7119928229222791,
+      "hi": 0.8297724680262102,
+      "n_pos": 99,
+      "n_neg": 19906,
+      "strata": 63,
+      "verdict": "supported, material"
+    }
+  }
+}

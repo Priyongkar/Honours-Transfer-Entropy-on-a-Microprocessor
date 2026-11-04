@@ -1,0 +1,9 @@
+start Tue Nov  3 14:39:22 AEDT 2026
+651351957c9ba4b7196184a23f5ad36b2aea2648f8f496a758f76626a82b9220  PREDICTIONS_A9.md
+1af166fecac30f39a4652b399d38132f858d9071d7cf14a08139f6998d7f7abe  a9_decompose.py
+e6f2d3bef1eb460caba310b6b688b481aa2f14f23eeef370768d3a04d7d868d6  a10_nmos.py
+df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a  common.py
+0c3b47fb4199a535d5c53d6c67beacb001db95e0d3aab59dd4f8315097a8154d  nmos.py
+finished Tue Nov  3 14:54:08 AEDT 2026
+== A9: 0 error lines; last: [14:42:25] done
+== A10: 0 error lines; last: [14:54:08] done

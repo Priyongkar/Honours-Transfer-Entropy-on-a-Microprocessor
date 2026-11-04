@@ -1,0 +1,13 @@
+[14:39:24] A9: PREDICTIONS_A9.md sha256 651351957c9ba4b7196184a23f5ad36b2aea2648f8f496a758f76626a82b9220
+[14:39:24] A9: a9_decompose.py sha256 1af166fecac30f39a4652b399d38132f858d9071d7cf14a08139f6998d7f7abe
+[14:39:24] A9: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[14:39:57] recording: formula terms for 445 locked targets in 31 s
+[14:39:57] recording checks: {'C1_max_abs_te_minus_formula': 2.2641317735049536e-16, 'C1_max_abs_B_minus_formula': 4.440892098500626e-16, 'C2_max_abs_a_minus_decomposition': 2.220446049250313e-16, 'C3_monotonicity_violations': 0, 'all_checks_pass': True}
+[14:40:02] recording done
+[14:40:47] chip simulated_chip: 495 groups, 385 targets with strict same-phase sources, 40 s
+[14:40:47] chip checks: {'C1_max_abs_te_minus_formula': 2.1907829554374675e-16, 'C1_max_abs_B_minus_formula': 5.551115123125783e-16, 'C2_max_abs_a_minus_decomposition': 9.43689570931383e-15, 'C3_monotonicity_violations': 0, 'all_checks_pass': True}
+[14:41:11] chip program 1 done
+[14:42:00] chip A7_chip: 610 groups, 432 targets with strict same-phase sources, 45 s
+[14:42:00] chip checks: {'C1_max_abs_te_minus_formula': 2.363865667879411e-16, 'C1_max_abs_B_minus_formula': 4.440892098500626e-16, 'C2_max_abs_a_minus_decomposition': 7.66053886991358e-15, 'C3_monotonicity_violations': 0, 'all_checks_pass': True}
+[14:42:25] chip program 2 done
+[14:42:25] done

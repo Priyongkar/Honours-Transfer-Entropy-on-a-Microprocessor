@@ -1,0 +1,9 @@
+start Mon Nov  2 22:32:56 AEDT 2026
+fast analyses finished Mon Nov  2 22:40:21 AEDT 2026
+finished Tue Nov  3 02:01:15 AEDT 2026
+== chip: 0 error lines; last: [22:40:20] done
+== recording: 0 error lines; last: [22:38:24] done
+== nmos: 0 error lines; last: [22:35:32] done
+== idtxl: 2 error lines; last: IndexError: index 519 is out of bounds for axis 0 with size 519
+A7 start Tue Nov  3 02:02:05 AEDT 2026
+A7 exit 0 Tue Nov  3 02:17:20 AEDT 2026

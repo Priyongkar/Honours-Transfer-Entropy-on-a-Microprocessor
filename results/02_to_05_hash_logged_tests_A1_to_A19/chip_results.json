@@ -1,0 +1,423 @@
+{
+  "predictions_sha256": "688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9",
+  "T": 60000,
+  "quick": false,
+  "class_sizes": {
+    "delayed_only": 84908,
+    "immediate": 55110,
+    "none": 938220,
+    "latch_oriented": 182,
+    "pulldown": 1189,
+    "clock_nodes": 27
+  },
+  "change": {
+    "groups": 495,
+    "scorable": {
+      "D": 84764,
+      "I": 53908,
+      "N": 937132,
+      "latch": 142
+    },
+    "A1_P1_lag1_D_vs_N": {
+      "auc": 0.5710857130229804,
+      "lo": 0.556779216751885,
+      "hi": 0.5849177836203108,
+      "n_pos": 84764,
+      "n_neg": 907847,
+      "strata": 989,
+      "verdict": "supported"
+    },
+    "A1_lag0_D_vs_N": {
+      "auc": 0.587503042558063,
+      "lo": 0.5727256207331524,
+      "hi": 0.6020701000816978,
+      "n_pos": 84764,
+      "n_neg": 907847,
+      "strata": 989,
+      "verdict": "supported"
+    },
+    "A1_P2_lag1_minus_lag0_D": {
+      "diff": -0.01641732953508257,
+      "lo": -0.023806819280649826,
+      "hi": -0.009018431128893376,
+      "verdict": "contradicted"
+    },
+    "A1_lag0_I_vs_N": {
+      "auc": 0.5683467395344638,
+      "lo": 0.5535698767055406,
+      "hi": 0.5823170670399,
+      "n_pos": 53908,
+      "n_neg": 803868,
+      "strata": 888,
+      "verdict": "supported"
+    },
+    "A1_lag1_I_vs_N": {
+      "auc": 0.5254050744919662,
+      "lo": 0.5054843698125785,
+      "hi": 0.5462863818388054,
+      "n_pos": 53908,
+      "n_neg": 803868,
+      "strata": 888,
+      "verdict": "supported"
+    },
+    "A1_P3_lag0_minus_lag1_I": {
+      "diff": 0.042941665042497634,
+      "lo": 0.025112941902741576,
+      "hi": 0.060398620222099304,
+      "verdict": "supported"
+    },
+    "A1_P4_lag1parity_D_vs_N": {
+      "auc": 0.5325522001048388,
+      "lo": 0.5253674996012152,
+      "hi": 0.5411308977189146,
+      "n_pos": 84764,
+      "n_neg": 907847,
+      "strata": 989,
+      "verdict": "supported"
+    },
+    "A1b_lag1_latch_vs_N": {
+      "auc": 0.978193747587804,
+      "lo": 0.9694810241511592,
+      "hi": 0.986576449448053,
+      "n_pos": 142,
+      "n_neg": 111924,
+      "strata": 31,
+      "verdict": "supported, material"
+    },
+    "A1b_lag0_latch_vs_N": {
+      "auc": 0.586185788131679,
+      "lo": 0.5214347428804246,
+      "hi": 0.640361365527321,
+      "n_pos": 142,
+      "n_neg": 111924,
+      "strata": 31,
+      "verdict": "supported"
+    },
+    "A1b_lag1_reverse_latch_vs_N": {
+      "auc": 0.21988234810282756,
+      "lo": 0.15409278236420268,
+      "hi": 0.2928376415653104,
+      "n_pos": 142,
+      "n_neg": 111924,
+      "strata": 31,
+      "verdict": "contradicted"
+    },
+    "A1b_share_latch_in_D": 0.0
+  },
+  "state": {
+    "groups": 744,
+    "scorable": {
+      "D": 84859,
+      "I": 54698,
+      "N": 937612,
+      "latch": 142
+    },
+    "A1_P1_lag1_D_vs_N": {
+      "auc": 0.6161186515610021,
+      "lo": 0.6040479278104446,
+      "hi": 0.6286104078343703,
+      "n_pos": 84859,
+      "n_neg": 907270,
+      "strata": 988,
+      "verdict": "supported, material"
+    },
+    "A1_lag0_D_vs_N": {
+      "auc": 0.584499235532513,
+      "lo": 0.5719718139273068,
+      "hi": 0.5959122494086452,
+      "n_pos": 84859,
+      "n_neg": 907270,
+      "strata": 988,
+      "verdict": "supported"
+    },
+    "A1_P2_lag1_minus_lag0_D": {
+      "diff": 0.031619416028489056,
+      "lo": 0.026318562104065857,
+      "hi": 0.03681577395517163,
+      "verdict": "supported"
+    },
+    "A1_lag0_I_vs_N": {
+      "auc": 0.6800734484463337,
+      "lo": 0.6697097561458485,
+      "hi": 0.6902554410879582,
+      "n_pos": 54698,
+      "n_neg": 818086,
+      "strata": 890,
+      "verdict": "supported, material"
+    },
+    "A1_lag1_I_vs_N": {
+      "auc": 0.5992525804262384,
+      "lo": 0.5875998937262014,
+      "hi": 0.6114656391752171,
+      "n_pos": 54698,
+      "n_neg": 818086,
+      "strata": 890,
+      "verdict": "supported"
+    },
+    "A1_P3_lag0_minus_lag1_I": {
+      "diff": 0.08082086802009525,
+      "lo": 0.0691411038750675,
+      "hi": 0.09202470684472763,
+      "verdict": "supported"
+    },
+    "A1b_lag1_latch_vs_N": {
+      "auc": 0.9853271906018105,
+      "lo": 0.9752199885408936,
+      "hi": 0.9930045589279357,
+      "n_pos": 142,
+      "n_neg": 111972,
+      "strata": 31,
+      "verdict": "supported, material"
+    },
+    "A1b_lag0_latch_vs_N": {
+      "auc": 0.9862215558634302,
+      "lo": 0.9763266954938172,
+      "hi": 0.9930190804013689,
+      "n_pos": 142,
+      "n_neg": 111972,
+      "strata": 31,
+      "verdict": "supported, material"
+    },
+    "A1b_lag1_reverse_latch_vs_N": {
+      "auc": 0.11651974087921403,
+      "lo": 0.08076173178421503,
+      "hi": 0.1541672594184029,
+      "n_pos": 142,
+      "n_neg": 111972,
+      "strata": 31,
+      "verdict": "contradicted"
+    },
+    "A1b_share_latch_in_D": 0.0
+  },
+  "A5_chip_delay_profile": [
+    {
+      "delay": 1,
+      "latch": {
+        "auc": 0.978193747587804,
+        "lo": 0.9699329912693395,
+        "hi": 0.9853340740790013,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.37597334827194867,
+        "lo": 0.32085165212582023,
+        "hi": 0.4251749545421626,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 2,
+      "latch": {
+        "auc": 0.21521771453518168,
+        "lo": 0.147435054572179,
+        "hi": 0.2867482571778987,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.4897674930987944,
+        "lo": 0.4407219009266003,
+        "hi": 0.530120886662025,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 3,
+      "latch": {
+        "auc": 0.22789400256879108,
+        "lo": 0.1456907422580236,
+        "hi": 0.30830477442964893,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.3652998624040237,
+        "lo": 0.30881897826610966,
+        "hi": 0.41571315321550895,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 4,
+      "latch": {
+        "auc": 0.22501834850776015,
+        "lo": 0.16143089695249788,
+        "hi": 0.3016201686706506,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.4584129499615667,
+        "lo": 0.4141139215884502,
+        "hi": 0.5013761546618585,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 5,
+      "latch": {
+        "auc": 0.2133844455270767,
+        "lo": 0.14018679063675146,
+        "hi": 0.29506325916616527,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.36837609413171934,
+        "lo": 0.3139746255560409,
+        "hi": 0.4143545571076138,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 6,
+      "latch": {
+        "auc": 0.23626946365413695,
+        "lo": 0.16647739006621018,
+        "hi": 0.3106406978799061,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.4708091025435825,
+        "lo": 0.42323637277318443,
+        "hi": 0.519849592259662,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 7,
+      "latch": {
+        "auc": 0.3284952325515182,
+        "lo": 0.22182173786696008,
+        "hi": 0.40423335010374517,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.45773921379938126,
+        "lo": 0.41637649950533606,
+        "hi": 0.49985321165594815,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    },
+    {
+      "delay": 8,
+      "latch": {
+        "auc": 0.5152340067446584,
+        "lo": 0.45475490420120473,
+        "hi": 0.5569705129299126,
+        "n_pos": 142,
+        "n_neg": 111924,
+        "strata": 31
+      },
+      "pulldown": {
+        "auc": 0.5226528655728807,
+        "lo": 0.4885515324927244,
+        "hi": 0.557141903905655,
+        "n_pos": 659,
+        "n_neg": 417631,
+        "strata": 81
+      }
+    }
+  ],
+  "A6_chip": {
+    "pairs": 142,
+    "te_accuracy": 0.9859154929577465,
+    "te_ci": [
+      0.9647887323943662,
+      1.0
+    ],
+    "rate_rule": 0.5211267605633803,
+    "entropy_rule": 0.3767605633802817,
+    "te_minus_rate": 0.46478873239436624,
+    "te_minus_rate_ci": [
+      0.4013204225352113,
+      0.5246478873239437
+    ],
+    "te_minus_entropy": 0.6091549295774648,
+    "te_minus_entropy_ci": [
+      0.5422535211267606,
+      0.676056338028169
+    ]
+  },
+  "A1c": {
+    "grouping_matches_idtxl_data": true,
+    "idtxl_state_multivariate": {
+      "targets": 30,
+      "all": {
+        "edges": 90,
+        "precision_D": 0.12716763005780346,
+        "precision_I": 0.36416184971098264,
+        "precision_wired": 0.0
+      },
+      "lag0": {
+        "edges": 0,
+        "precision_D": 0.0,
+        "precision_I": 0.0,
+        "precision_wired": 0.0
+      },
+      "lag1": {
+        "edges": 90,
+        "precision_D": 0.12716763005780346,
+        "precision_I": 0.36416184971098264,
+        "precision_wired": 0.0
+      },
+      "pairwise_lag1_same_allocation": {
+        "edges": 90,
+        "precision_D": 0.15760869565217392,
+        "precision_I": 0.3532608695652174,
+        "precision_wired": 0.0
+      }
+    },
+    "idtxl_state_multivariate_lag0": {
+      "targets": 30,
+      "all": {
+        "edges": 40,
+        "precision_D": 0.10843373493975904,
+        "precision_I": 0.43373493975903615,
+        "precision_wired": 0.1927710843373494
+      },
+      "lag0": {
+        "edges": 35,
+        "precision_D": 0.1095890410958904,
+        "precision_I": 0.410958904109589,
+        "precision_wired": 0.2191780821917808
+      },
+      "lag1": {
+        "edges": 5,
+        "precision_D": 0.1,
+        "precision_I": 0.6,
+        "precision_wired": 0.0
+      },
+      "pairwise_lag1_same_allocation": {
+        "edges": 40,
+        "precision_D": 0.175,
+        "precision_I": 0.35,
+        "precision_wired": 0.0
+      }
+    }
+  }
+}

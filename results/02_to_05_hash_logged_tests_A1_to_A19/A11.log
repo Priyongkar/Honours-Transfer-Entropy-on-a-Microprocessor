@@ -1,0 +1,20 @@
+[15:22:27] A11: PREDICTIONS_A11.md sha256 df696f7bde370023f4bd2e59896f46317cbae65e602a1467e0cfb8e4b4ca8650
+[15:22:27] A11: a11_synthetic.py sha256 6229148ad662a9152b62a71c4d872fb25d50caaf6681c24c6423ac7b6150c607
+[15:22:27] A11: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[15:22:27] A11: a9_decompose.py sha256 1af166fecac30f39a4652b399d38132f858d9071d7cf14a08139f6998d7f7abe
+[15:23:13] condition 1/15 (lambda 0.5, rho 0.3) done
+[15:24:03] condition 2/15 (lambda 0.5, rho 0.6) done
+[15:25:01] condition 3/15 (lambda 0.5, rho 0.9) done
+[15:25:51] condition 4/15 (lambda 0.7, rho 0.3) done
+[15:26:44] condition 5/15 (lambda 0.7, rho 0.6) done
+[15:27:45] condition 6/15 (lambda 0.7, rho 0.9) done
+[15:28:35] condition 7/15 (lambda 0.85, rho 0.3) done
+[15:29:36] condition 8/15 (lambda 0.85, rho 0.6) done
+[15:30:35] condition 9/15 (lambda 0.85, rho 0.9) done
+[15:31:22] condition 10/15 (lambda 0.95, rho 0.3) done
+[15:32:14] condition 11/15 (lambda 0.95, rho 0.6) done
+[15:33:11] condition 12/15 (lambda 0.95, rho 0.9) done
+[15:34:23] condition 13/15 (lambda 1.0, rho 0.3) done
+[15:35:42] condition 14/15 (lambda 1.0, rho 0.6) done
+[15:37:09] condition 15/15 (lambda 1.0, rho 0.9) done
+[15:37:09] done

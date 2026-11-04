@@ -1,0 +1,221 @@
+{
+  "hashes": {
+    "PREDICTIONS_A12.md": "dc288a0f7432ce63174283cc7e2db4c73ef7e5fd1ff8fcd9ed901d66e7fa9680",
+    "a13_a16_chip.py": "3571fb37b2f561b0300d4748ccdb1b32627ba5786b97290366423a8cfd4216fc",
+    "common.py": "df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a",
+    "a9_decompose.py": "1af166fecac30f39a4652b399d38132f858d9071d7cf14a08139f6998d7f7abe"
+  },
+  "draws": 1000,
+  "program1": {
+    "A13": {
+      "covered_latch_pairs": 797,
+      "uncovered_latch_pairs": 55,
+      "A13.1_covered": {
+        "auc": 0.22834048776827617,
+        "lo": 0.15353497460195906,
+        "hi": 0.3096702067027003,
+        "n_pos": 797,
+        "n_neg": 600640,
+        "strata": 180,
+        "verdict": "contradicted"
+      },
+      "uncovered": {
+        "auc": 0.42842597143933253,
+        "lo": 0.3014631535211113,
+        "hi": 0.5638731639054588,
+        "n_pos": 55,
+        "n_neg": 28389,
+        "strata": 17,
+        "verdict": "not supported"
+      },
+      "A13.2_uncovered_minus_covered": {
+        "diff": 0.20008548367105636,
+        "lo": 0.04476051318549415,
+        "hi": 0.36105107055686436,
+        "verdict": "supported"
+      },
+      "descriptive_only": false,
+      "predictions_met": {
+        "A13.1": true,
+        "A13.2": true,
+        "A13.3": true
+      }
+    },
+    "A14": {
+      "TE_within_B_deciles": {
+        "auc": 0.42533420330397254,
+        "lo": 0.3999031321002171,
+        "hi": 0.4535513211485913,
+        "n_pos": 685,
+        "n_neg": 409640,
+        "strata": 9,
+        "verdict": "contradicted"
+      },
+      "TE_within_B_q0_pi": {
+        "auc": 0.4183361689936507,
+        "lo": 0.3945989593085235,
+        "hi": 0.4470022714498425,
+        "n_pos": 685,
+        "n_neg": 409514,
+        "strata": 44,
+        "verdict": "contradicted"
+      },
+      "difference": {
+        "diff": -0.00699803431032181,
+        "lo": -0.03552147555953589,
+        "hi": 0.02181759739572678,
+        "verdict": "not supported"
+      },
+      "reading": "not accounted for"
+    },
+    "A16_state_mismatches_vs_saved": 0,
+    "A16_seconds": 290.26237166603096,
+    "A16": {
+      "latch_pairs": 182,
+      "share_delayed_only_closed": 1.0,
+      "share_lo": 1.0,
+      "share_hi": 1.0,
+      "class_sizes": {
+        "delayed_only": 91558,
+        "immediate": 61293,
+        "none": 913672,
+        "latch_in_delayed_only": 0
+      },
+      "A16.2_lag1_delayed_vs_none": {
+        "auc": 0.58879648227376,
+        "lo": 0.5707143179226734,
+        "hi": 0.6056174259153237,
+        "n_pos": 91398,
+        "n_neg": 889053,
+        "strata": 985,
+        "verdict": "supported"
+      },
+      "lag0_delayed_vs_none": {
+        "auc": 0.6093692880384354,
+        "lo": 0.5918350254211939,
+        "hi": 0.626185857683058,
+        "n_pos": 91398,
+        "n_neg": 889053,
+        "strata": 985,
+        "verdict": "supported, material"
+      },
+      "A16.3_lag1_minus_lag0": {
+        "diff": -0.02057280576467535,
+        "lo": -0.027305478184493102,
+        "hi": -0.014379329177018898,
+        "verdict": "contradicted"
+      },
+      "predictions_met": {
+        "A16.1": true,
+        "A16.2": true,
+        "A16.3": false
+      }
+    }
+  },
+  "program2": {
+    "A13": {
+      "covered_latch_pairs": 905,
+      "uncovered_latch_pairs": 115,
+      "A13.1_covered": {
+        "auc": 0.10289145028883923,
+        "lo": 0.06686776517548006,
+        "hi": 0.14512174790236612,
+        "n_pos": 905,
+        "n_neg": 701982,
+        "strata": 166,
+        "verdict": "contradicted"
+      },
+      "uncovered": {
+        "auc": 0.474165053496677,
+        "lo": 0.3806642226464087,
+        "hi": 0.5710919510192782,
+        "n_pos": 115,
+        "n_neg": 73309,
+        "strata": 17,
+        "verdict": "not supported"
+      },
+      "A13.2_uncovered_minus_covered": {
+        "diff": 0.37127360320783775,
+        "lo": 0.26739405936107596,
+        "hi": 0.4724438734603764,
+        "verdict": "supported"
+      },
+      "descriptive_only": false,
+      "predictions_met": {
+        "A13.1": true,
+        "A13.2": true,
+        "A13.3": true
+      }
+    },
+    "A14": {
+      "TE_within_B_deciles": {
+        "auc": 0.38019459320673815,
+        "lo": 0.35331039316188056,
+        "hi": 0.4088366448717451,
+        "n_pos": 910,
+        "n_neg": 472278,
+        "strata": 10,
+        "verdict": "contradicted"
+      },
+      "TE_within_B_q0_pi": {
+        "auc": 0.4278789217520033,
+        "lo": 0.4011549107002644,
+        "hi": 0.4555235089094142,
+        "n_pos": 910,
+        "n_neg": 440781,
+        "strata": 89,
+        "verdict": "contradicted"
+      },
+      "difference": {
+        "diff": 0.047684328545265164,
+        "lo": 0.014614727749400754,
+        "hi": 0.08020781617358778,
+        "verdict": "supported"
+      },
+      "reading": "partly accounted for"
+    },
+    "A16_state_mismatches_vs_saved": 0,
+    "A16_seconds": 320.01601645804476,
+    "A16": {
+      "latch_pairs": 213,
+      "share_delayed_only_closed": 1.0,
+      "share_lo": 1.0,
+      "share_hi": 1.0,
+      "class_sizes": {
+        "delayed_only": 127485,
+        "immediate": 72074,
+        "none": 1197540,
+        "latch_in_delayed_only": 0
+      },
+      "A16.2_lag1_delayed_vs_none": {
+        "auc": 0.5369692791126063,
+        "lo": 0.5255131414191698,
+        "hi": 0.5473939450337387,
+        "n_pos": 127333,
+        "n_neg": 1167748,
+        "strata": 787,
+        "verdict": "supported"
+      },
+      "lag0_delayed_vs_none": {
+        "auc": 0.5768896572904183,
+        "lo": 0.5677745800877162,
+        "hi": 0.585263283235357,
+        "n_pos": 127333,
+        "n_neg": 1167748,
+        "strata": 787,
+        "verdict": "supported"
+      },
+      "A16.3_lag1_minus_lag0": {
+        "diff": -0.03992037817781202,
+        "lo": -0.048032955757520056,
+        "hi": -0.03199698538247326,
+        "verdict": "contradicted"
+      },
+      "predictions_met": {
+        "A16.1": true,
+        "A16.2": true,
+        "A16.3": false
+      }
+    }
+  }
+}

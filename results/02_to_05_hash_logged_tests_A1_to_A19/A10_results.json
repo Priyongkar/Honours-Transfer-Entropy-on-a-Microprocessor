@@ -1,0 +1,305 @@
+{
+  "hashes": {
+    "PREDICTIONS_A9.md": "651351957c9ba4b7196184a23f5ad36b2aea2648f8f496a758f76626a82b9220",
+    "a10_nmos.py": "e6f2d3bef1eb460caba310b6b688b481aa2f14f23eeef370768d3a04d7d868d6",
+    "common.py": "df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a",
+    "nmos.py": "0c3b47fb4199a535d5c53d6c67beacb001db95e0d3aab59dd4f8315097a8154d"
+  },
+  "seeds_new": [
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649
+  ],
+  "seeds_A8": [
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509
+  ],
+  "draws": 1000,
+  "T6000": {
+    "new_50": {
+      "inp_lag1": {
+        "auc": 0.7786652924503994,
+        "lo": 0.615137211003894,
+        "hi": 0.872815539663851,
+        "n_pos": 95,
+        "n_neg": 13076,
+        "strata": 82,
+        "verdict": "supported, material"
+      },
+      "inp_lag0": {
+        "auc": 0.8499742334449885,
+        "lo": 0.7074902869057399,
+        "hi": 0.9390528011590734,
+        "n_pos": 95,
+        "n_neg": 13076,
+        "strata": 82,
+        "verdict": "supported, material"
+      },
+      "rdr_lag1": {
+        "auc": 0.3161618356935325,
+        "lo": 0.2432722568868372,
+        "hi": 0.405233390104649,
+        "n_pos": 481,
+        "n_neg": 98656,
+        "strata": 304,
+        "verdict": "contradicted"
+      },
+      "rdr_lag0": {
+        "auc": 0.7650276818192218,
+        "lo": 0.7165684654927377,
+        "hi": 0.8112591827743627,
+        "n_pos": 481,
+        "n_neg": 98656,
+        "strata": 304,
+        "verdict": "supported, material"
+      },
+      "inp_lag1_minus_lag0": {
+        "diff": -0.07130894099458907,
+        "lo": -0.20088416926559416,
+        "hi": 0.047041592298017645,
+        "verdict": "not supported"
+      },
+      "rdr_lag0_minus_lag1": {
+        "diff": 0.44886584612568925,
+        "lo": 0.34322597196248994,
+        "hi": 0.5513680599911033,
+        "verdict": "supported"
+      },
+      "n_circuits": 50,
+      "n_input_storage_pairs": 95,
+      "n_storage_reader_pairs": 481,
+      "circuits_with_input_storage_pairs": 27,
+      "predictions_met": {
+        "A10.1_inp_lag1_above_0.5": true,
+        "A10.2_inp_lag1_minus_lag0_above_0": false,
+        "A10.3_rdr_lag0_minus_lag1_above_0": true,
+        "A10.4_rdr_lag1_not_above_0.5": true
+      }
+    },
+    "pooled_60_descriptive": {
+      "inp_lag1": {
+        "auc": 0.7965269819124022,
+        "lo": 0.6572673482010662,
+        "hi": 0.8760917920265896,
+        "n_pos": 116,
+        "n_neg": 15885,
+        "strata": 97,
+        "verdict": "supported, material"
+      },
+      "inp_lag0": {
+        "auc": 0.8387313767502118,
+        "lo": 0.7238787987339033,
+        "hi": 0.9241662798512107,
+        "n_pos": 116,
+        "n_neg": 15885,
+        "strata": 97,
+        "verdict": "supported, material"
+      },
+      "rdr_lag1": {
+        "auc": 0.3208721077069532,
+        "lo": 0.2584199389923331,
+        "hi": 0.40120046175356755,
+        "n_pos": 579,
+        "n_neg": 114601,
+        "strata": 364,
+        "verdict": "contradicted"
+      },
+      "rdr_lag0": {
+        "auc": 0.7688229751520215,
+        "lo": 0.7206608542951451,
+        "hi": 0.8089336630078698,
+        "n_pos": 579,
+        "n_neg": 114601,
+        "strata": 364,
+        "verdict": "supported, material"
+      },
+      "inp_lag1_minus_lag0": {
+        "diff": -0.04220439483780958,
+        "lo": -0.17156376203506282,
+        "hi": 0.06879122046832666,
+        "verdict": "not supported"
+      },
+      "rdr_lag0_minus_lag1": {
+        "diff": 0.4479508674450683,
+        "lo": 0.35310514386911906,
+        "hi": 0.5329133819040774,
+        "verdict": "supported"
+      },
+      "n_circuits": 60,
+      "n_input_storage_pairs": 116,
+      "n_storage_reader_pairs": 579,
+      "circuits_with_input_storage_pairs": 31
+    }
+  },
+  "T20000": {
+    "new_50": {
+      "inp_lag1": {
+        "auc": 0.7924686920222634,
+        "lo": 0.6174030291083766,
+        "hi": 0.9036811793201385,
+        "n_pos": 96,
+        "n_neg": 13491,
+        "strata": 80,
+        "verdict": "supported, material"
+      },
+      "inp_lag0": {
+        "auc": 0.8593460111317254,
+        "lo": 0.728175197489326,
+        "hi": 0.9489386575025158,
+        "n_pos": 96,
+        "n_neg": 13491,
+        "strata": 80,
+        "verdict": "supported, material"
+      },
+      "rdr_lag1": {
+        "auc": 0.3284378031572449,
+        "lo": 0.2612372055119451,
+        "hi": 0.42148996287578466,
+        "n_pos": 482,
+        "n_neg": 95745,
+        "strata": 292,
+        "verdict": "contradicted"
+      },
+      "rdr_lag0": {
+        "auc": 0.7698871152658965,
+        "lo": 0.7223930362232798,
+        "hi": 0.814509518871304,
+        "n_pos": 482,
+        "n_neg": 95745,
+        "strata": 292,
+        "verdict": "supported, material"
+      },
+      "inp_lag1_minus_lag0": {
+        "diff": -0.06687731910946193,
+        "lo": -0.17987823739115957,
+        "hi": 0.03454218951689737,
+        "verdict": "not supported"
+      },
+      "rdr_lag0_minus_lag1": {
+        "diff": 0.44144931210865157,
+        "lo": 0.3308383994874789,
+        "hi": 0.5378928828568248,
+        "verdict": "supported"
+      },
+      "n_circuits": 50,
+      "n_input_storage_pairs": 96,
+      "n_storage_reader_pairs": 482,
+      "circuits_with_input_storage_pairs": 27,
+      "predictions_met": {
+        "A10.1_inp_lag1_above_0.5": true,
+        "A10.2_inp_lag1_minus_lag0_above_0": false,
+        "A10.3_rdr_lag0_minus_lag1_above_0": true,
+        "A10.4_rdr_lag1_not_above_0.5": true
+      }
+    },
+    "pooled_60_descriptive": {
+      "inp_lag1": {
+        "auc": 0.8015906043371711,
+        "lo": 0.6408838356355747,
+        "hi": 0.8990550099737774,
+        "n_pos": 117,
+        "n_neg": 15818,
+        "strata": 94,
+        "verdict": "supported, material"
+      },
+      "inp_lag0": {
+        "auc": 0.8509039626392935,
+        "lo": 0.7420871927416146,
+        "hi": 0.9379797156470405,
+        "n_pos": 117,
+        "n_neg": 15818,
+        "strata": 94,
+        "verdict": "supported, material"
+      },
+      "rdr_lag1": {
+        "auc": 0.33026090109185224,
+        "lo": 0.26571706035034864,
+        "hi": 0.40931366932519786,
+        "n_pos": 581,
+        "n_neg": 115651,
+        "strata": 355,
+        "verdict": "contradicted"
+      },
+      "rdr_lag0": {
+        "auc": 0.7725516991340482,
+        "lo": 0.7234519388722856,
+        "hi": 0.8096347830877424,
+        "n_pos": 581,
+        "n_neg": 115651,
+        "strata": 355,
+        "verdict": "supported, material"
+      },
+      "inp_lag1_minus_lag0": {
+        "diff": -0.049313358302122356,
+        "lo": -0.16249561320766326,
+        "hi": 0.04521521348213245,
+        "verdict": "not supported"
+      },
+      "rdr_lag0_minus_lag1": {
+        "diff": 0.44229079804219595,
+        "lo": 0.34449566137661675,
+        "hi": 0.5271590935589652,
+        "verdict": "supported"
+      },
+      "n_circuits": 60,
+      "n_input_storage_pairs": 117,
+      "n_storage_reader_pairs": 581,
+      "circuits_with_input_storage_pairs": 31
+    }
+  }
+}

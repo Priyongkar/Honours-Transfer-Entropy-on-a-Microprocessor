@@ -1,0 +1,94 @@
+{
+  "predictions_sha256": "688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9",
+  "quick": true,
+  "targets": [
+    3,
+    244
+  ],
+  "allocation": {
+    "1-1": 8,
+    "2-4": 17,
+    "5-8": 21,
+    "9-11": 23,
+    "12-12": 31
+  },
+  "thesis_H6": {
+    "edges": 236,
+    "wired": 41,
+    "precision_percent": 17.37
+  },
+  "R1": {
+    "targets": 2,
+    "targets_kept": 2,
+    "edges": 3,
+    "wired": 1,
+    "precision_netlist": 0.3333333333333333,
+    "precision_latch": 0.0,
+    "by_lag": {
+      "lag0": {
+        "edges": 1,
+        "wired": 0,
+        "precision_netlist": 0.0
+      },
+      "lag1": {
+        "edges": 2,
+        "wired": 1,
+        "precision_netlist": 0.5
+      }
+    },
+    "mean_parent_set": 1.5,
+    "share_opposite_phase_sources": 0.0,
+    "main_run_same_targets": {
+      "edges": 3,
+      "precision_netlist": 0.3333333333333333,
+      "precision_latch": 0.0
+    },
+    "diff_vs_main_netlist": {
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+    },
+    "diff_vs_main_latch": {
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+    }
+  },
+  "A4": {
+    "targets": 2,
+    "targets_kept": 2,
+    "edges": 2,
+    "wired": 1,
+    "precision_netlist": 0.5,
+    "precision_latch": 0.0,
+    "by_lag": {
+      "lag0": {
+        "edges": 0,
+        "wired": 0,
+        "precision_netlist": null
+      },
+      "lag1": {
+        "edges": 2,
+        "wired": 1,
+        "precision_netlist": 0.5
+      }
+    },
+    "mean_parent_set": 1.0,
+    "share_opposite_phase_sources": 0.0,
+    "main_run_same_targets": {
+      "edges": 3,
+      "precision_netlist": 0.3333333333333333,
+      "precision_latch": 0.0
+    },
+    "diff_vs_main_netlist": {
+      "diff": 0.16666666666666669,
+      "lo": 0.0,
+      "hi": 0.16666666666666669
+    },
+    "diff_vs_main_latch": {
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0
+    }
+  }
+}

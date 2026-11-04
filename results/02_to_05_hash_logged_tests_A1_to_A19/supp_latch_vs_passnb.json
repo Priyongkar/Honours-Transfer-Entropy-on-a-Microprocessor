@@ -1,0 +1,22 @@
+{
+  "pass_neighbour_pairs": 228,
+  "clock_gated": 82,
+  "latch": 41,
+  "latch_within_pass_neighbours": 41,
+  "vs_non_clock_gated_pass_neighbours": {
+    "auc": 0.7449047778149014,
+    "lo": 0.6315375765795804,
+    "hi": 0.8504560887491021,
+    "n_pos": 41,
+    "n_neg": 146,
+    "strata": 1
+  },
+  "vs_all_other_pass_neighbours": {
+    "auc": 0.7964001565149341,
+    "lo": 0.7087333825220807,
+    "hi": 0.8806162807263159,
+    "n_pos": 41,
+    "n_neg": 187,
+    "strata": 1
+  }
+}

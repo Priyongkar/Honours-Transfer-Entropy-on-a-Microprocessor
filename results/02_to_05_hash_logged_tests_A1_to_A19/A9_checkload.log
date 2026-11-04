@@ -1,0 +1,4 @@
+[14:36:51] recording: X (519, 133926), TE (519, 519), K (519,), B (519, 519), wired (519, 519)
+[14:36:52] chip simulated_chip: states (60000, 1702), intervened nodes (1100,), wiring (1100, 1100)
+[14:36:52] chip A7_chip: states (60000, 1702), intervened nodes (1259,), wiring (1259, 1259)
+[14:36:52] LOAD CHECK PASSED

@@ -1,0 +1,60 @@
+[22:40:24] idtxl_runs: PREDICTIONS.md sha256 688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9
+[22:40:24] targets 100; allocation {'1-1': 8, '2-4': 17, '5-8': 21, '9-11': 23, '12-12': 31}
+[22:40:24] 0 cached, 100 to run on 3 workers
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[22:56:12]   10/100 done
+[23:08:45]   20/100 done
+[23:18:24]   30/100 done
+[23:31:14]   40/100 done
+[23:42:02]   50/100 done
+[23:54:32]   60/100 done
+[00:08:09]   70/100 done
+[00:23:19]   80/100 done
+[00:34:59]   90/100 done
+[00:47:51]   100/100 done
+[00:47:51] 0 cached, 100 to run on 3 workers
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[00:56:38]   10/100 done
+[01:03:29]   20/100 done
+[01:10:15]   30/100 done
+[01:16:51]   40/100 done
+[01:24:18]   50/100 done
+[01:31:18]   60/100 done
+[01:37:38]   70/100 done
+[01:46:17]   80/100 done
+[01:53:46]   90/100 done
+[02:01:15]   100/100 done
+Traceback (most recent call last):
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/idtxl_runs.py", line 132, in <module>
+    main()
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/idtxl_runs.py", line 126, in main
+    A4=network_stats(summaries(a4_dir), wired, latch, phase, net_main, list(targets), mult))
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/idtxl_runs.py", line 72, in network_stats
+    by_lag = {f'lag{l}': dict(edges=sum(1 for e in E if e[2] == l), wired=sum(1 for e in E if e[2] == l and wired[e[0], e[1]]),
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/idtxl_runs.py", line 72, in <dictcomp>
+    by_lag = {f'lag{l}': dict(edges=sum(1 for e in E if e[2] == l), wired=sum(1 for e in E if e[2] == l and wired[e[0], e[1]]),
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/idtxl_runs.py", line 72, in <genexpr>
+    by_lag = {f'lag{l}': dict(edges=sum(1 for e in E if e[2] == l), wired=sum(1 for e in E if e[2] == l and wired[e[0], e[1]]),
+IndexError: index 519 is out of bounds for axis 0 with size 519

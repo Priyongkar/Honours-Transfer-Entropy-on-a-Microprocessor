@@ -1,0 +1,24 @@
+[22:32:58] nmos: PREDICTIONS.md sha256 688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9
+[22:33:12] T=6000 circuit 500: groups 74, input->storage 9, storage->reader 24
+[22:33:18] T=6000 circuit 501: groups 33, input->storage 3, storage->reader 9
+[22:33:18] T=6000 circuit 502: groups 30, input->storage 0, storage->reader 10
+[22:33:19] T=6000 circuit 503: groups 9, input->storage 0, storage->reader 2
+[22:33:19] T=6000 circuit 504: groups 34, input->storage 0, storage->reader 13
+[22:33:21] T=6000 circuit 505: groups 62, input->storage 6, storage->reader 20
+[22:33:21] T=6000 circuit 506: groups 18, input->storage 0, storage->reader 6
+[22:33:22] T=6000 circuit 507: groups 23, input->storage 0, storage->reader 1
+[22:33:22] T=6000 circuit 508: groups 8, input->storage 0, storage->reader 0
+[22:33:32] T=6000 circuit 509: groups 39, input->storage 3, storage->reader 13
+[22:33:33] T=6000: input->storage lag1 0.858, storage->reader lag1 0.347
+[22:34:14] T=20000 circuit 500: groups 76, input->storage 9, storage->reader 25
+[22:34:33] T=20000 circuit 501: groups 33, input->storage 3, storage->reader 9
+[22:34:35] T=20000 circuit 502: groups 30, input->storage 0, storage->reader 10
+[22:34:37] T=20000 circuit 503: groups 9, input->storage 0, storage->reader 2
+[22:34:40] T=20000 circuit 504: groups 34, input->storage 0, storage->reader 13
+[22:34:44] T=20000 circuit 505: groups 62, input->storage 6, storage->reader 20
+[22:34:46] T=20000 circuit 506: groups 18, input->storage 0, storage->reader 6
+[22:34:48] T=20000 circuit 507: groups 23, input->storage 0, storage->reader 1
+[22:34:50] T=20000 circuit 508: groups 8, input->storage 0, storage->reader 0
+[22:35:31] T=20000 circuit 509: groups 39, input->storage 3, storage->reader 13
+[22:35:32] T=20000: input->storage lag1 0.838, storage->reader lag1 0.340
+[22:35:32] done

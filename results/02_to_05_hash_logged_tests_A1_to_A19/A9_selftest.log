@@ -1,0 +1,8 @@
+[14:37:08] self-test 1: identities on synthetic phase-locked data
+[14:37:10]   checks pass: True (max |TE - formula| 2.0e-16 bits)
+[14:37:10]   test machinery ran: 16 outputs (synthetic labels; values not meaningful)
+[14:37:10] self-test 2: timing at the recording's size (519 groups x 133,926 samples, synthetic)
+[14:37:38]   recording-size decomposition 22 s; tests with 1000 draws on 63,774 pairs 4 s
+[14:37:38] self-test 3: timing of one chip program's TE, bound and AIS (610 groups x 60,000, synthetic)
+[14:38:20]   chip-size AIS + TE + bound + decomposition 41 s (tests as above)
+[14:38:20] SELF-TEST PASSED

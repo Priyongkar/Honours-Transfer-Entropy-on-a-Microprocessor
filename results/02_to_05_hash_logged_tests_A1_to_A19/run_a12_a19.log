@@ -1,0 +1,17 @@
+start Tue Nov  3 23:59:40 AEDT 2026
+dc288a0f7432ce63174283cc7e2db4c73ef7e5fd1ff8fcd9ed901d66e7fa9680  PREDICTIONS_A12.md
+41379af2f6c1414236c028a4411c4f472b9c2c349321a892820a3a346583c0a9  a12_recording.py
+3571fb37b2f561b0300d4748ccdb1b32627ba5786b97290366423a8cfd4216fc  a13_a16_chip.py
+24fcac461a31a779419ef7084f8b2719c211bcf480fb4e33fdead4a6b22e4210  a15_synthetic.py
+f04fb56a271c133f8521d0a9c163f3e55f852f34ba761db9d36f8b41c58524ad  a17_idtxl_aligned.py
+1af166fecac30f39a4652b399d38132f858d9071d7cf14a08139f6998d7f7abe  a9_decompose.py
+df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a  common.py
+d195ba3a8af7faf729d634ef32295a3fadb70bd25e6672a0df6aba07ea8e9fb3  idtxl_runs.py
+A12 recording finished Wed Nov  4 00:04:56 AEDT 2026
+A15 finished Wed Nov  4 00:10:57 AEDT 2026
+A13-A16 chip finished Wed Nov  4 00:32:26 AEDT 2026
+all finished Wed Nov  4 01:56:42 AEDT 2026
+== A12: 0 error lines; last: [00:04:55] done
+== A15: 0 error lines; last: [00:10:57] done: {'A15.1': True, 'A15.2': True, 'A15.3': True, 'A15.4': True}
+== A13_A16: 0 error lines; last: [00:32:25] done
+== A17: 0 error lines; last: [01:56:41] done: {'A17.1': True, 'A17.2': True}

@@ -1,0 +1,11 @@
+[12:57:07] supp_harder: PREDICTIONS.md sha256 688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9
+[12:57:24] simulated_chip: latch vs_immediate: 0.939 [0.925, 0.951] (neg 53766)
+[12:57:24] simulated_chip: latch vs_wired: 0.958 [0.918, 0.985] (neg 3294)
+[12:57:25] simulated_chip: latch vs_all_other: 0.974 [0.964, 0.982] (neg 1205472)
+[12:57:48] A7_chip: latch vs_immediate: 0.934 [0.918, 0.949] (neg 64977)
+[12:57:48] A7_chip: latch vs_wired: 0.964 [0.925, 0.988] (neg 4310)
+[12:57:49] A7_chip: latch vs_all_other: 0.979 [0.968, 0.987] (neg 1580550)
+[12:58:23] NMOS inp: lag1-lag0 {'diff': 0.057205720572057195, 'lo': -0.1094527363184079, 'hi': 0.12405354007951831, 'verdict': 'not supported'}
+[12:58:23] NMOS rdr: lag1-lag0 {'diff': -0.4427982478742592, 'lo': -0.6039992356966888, 'hi': -0.21291670710231445, 'verdict': 'contradicted'}
+[12:58:23] NMOS counts {'latches': 160, 'latches_with_nodes': 160, 'inp_scorable': 21}
+[12:58:23] done

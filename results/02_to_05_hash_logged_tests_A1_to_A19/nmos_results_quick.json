@@ -1,0 +1,42 @@
+{
+  "predictions_sha256": "688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9",
+  "quick": true,
+  "T2000": {
+    "inp_lag1": {
+      "auc": 0.8577892695539754,
+      "lo": 0.8412765957446808,
+      "hi": 0.9099462365591398,
+      "n_pos": 12,
+      "n_neg": 1545,
+      "strata": 7,
+      "verdict": "supported, material"
+    },
+    "inp_lag0": {
+      "auc": 0.7695539754363284,
+      "lo": 0.7,
+      "hi": 0.989247311827957,
+      "n_pos": 12,
+      "n_neg": 1545,
+      "strata": 7,
+      "verdict": "supported, material"
+    },
+    "rdr_lag1": {
+      "auc": 0.3163848535365563,
+      "lo": 0.21445824706694272,
+      "hi": 0.42046953366016887,
+      "n_pos": 43,
+      "n_neg": 7113,
+      "strata": 27,
+      "verdict": "contradicted"
+    },
+    "rdr_lag0": {
+      "auc": 0.7684369294276415,
+      "lo": 0.7064051226551227,
+      "hi": 0.8228606554548604,
+      "n_pos": 43,
+      "n_neg": 7113,
+      "strata": 27,
+      "verdict": "supported, material"
+    }
+  }
+}

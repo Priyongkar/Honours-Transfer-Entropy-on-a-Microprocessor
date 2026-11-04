@@ -1,0 +1,144 @@
+{
+  "hashes": {
+    "PREDICTIONS_A12.md": "dc288a0f7432ce63174283cc7e2db4c73ef7e5fd1ff8fcd9ed901d66e7fa9680",
+    "a15_synthetic.py": "24fcac461a31a779419ef7084f8b2719c211bcf480fb4e33fdead4a6b22e4210",
+    "common.py": "df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a"
+  },
+  "conditions": {
+    "lambda=0.5": {
+      "ev1": {
+        "auc": 0.5011271940026122,
+        "lo": 0.48032999855057035,
+        "hi": 0.5216170403224981,
+        "n_pos": 2400,
+        "n_neg": 55891,
+        "strata": 1200,
+        "verdict": "not supported"
+      },
+      "ev0p": {
+        "auc": 0.9973609346764237,
+        "lo": 0.9965034121918299,
+        "hi": 0.9980381911277034,
+        "n_pos": 2400,
+        "n_neg": 55891,
+        "strata": 1200,
+        "verdict": "supported, material"
+      },
+      "st1": {
+        "auc": 0.49565225170420996,
+        "lo": 0.476840288377728,
+        "hi": 0.5158002939621221,
+        "n_pos": 2400,
+        "n_neg": 55891,
+        "strata": 1200,
+        "verdict": "not supported"
+      }
+    },
+    "lambda=0.7": {
+      "ev1": {
+        "auc": 0.2545596105314027,
+        "lo": 0.24170411420022492,
+        "hi": 0.2681418898620992,
+        "n_pos": 2400,
+        "n_neg": 55871,
+        "strata": 1200,
+        "verdict": "contradicted"
+      },
+      "ev0p": {
+        "auc": 0.9971273111274185,
+        "lo": 0.9963216137537283,
+        "hi": 0.9977373643333292,
+        "n_pos": 2400,
+        "n_neg": 55871,
+        "strata": 1200,
+        "verdict": "supported, material"
+      },
+      "st1": {
+        "auc": 0.5008770202788566,
+        "lo": 0.4810559642237304,
+        "hi": 0.5216015159143343,
+        "n_pos": 2400,
+        "n_neg": 55871,
+        "strata": 1200,
+        "verdict": "not supported"
+      }
+    },
+    "lambda=0.85": {
+      "ev1": {
+        "auc": 0.11921975662133143,
+        "lo": 0.11121886324036116,
+        "hi": 0.12804919000102022,
+        "n_pos": 2400,
+        "n_neg": 55880,
+        "strata": 1200,
+        "verdict": "contradicted"
+      },
+      "ev0p": {
+        "auc": 0.9978256979241231,
+        "lo": 0.9971606649175265,
+        "hi": 0.9983446369157978,
+        "n_pos": 2400,
+        "n_neg": 55880,
+        "strata": 1200,
+        "verdict": "supported, material"
+      },
+      "st1": {
+        "auc": 0.500286327845383,
+        "lo": 0.48023396262835916,
+        "hi": 0.5198227408318022,
+        "n_pos": 2400,
+        "n_neg": 55880,
+        "strata": 1200,
+        "verdict": "not supported"
+      }
+    },
+    "lambda=1.0": {
+      "ev1": {
+        "auc": 0.11818881569525992,
+        "lo": 0.10874314022488608,
+        "hi": 0.12934091619278706,
+        "n_pos": 2400,
+        "n_neg": 55864,
+        "strata": 1200,
+        "verdict": "contradicted"
+      },
+      "ev0p": {
+        "auc": 0.9991855219819562,
+        "lo": 0.9987853361380704,
+        "hi": 0.999476314112839,
+        "n_pos": 2400,
+        "n_neg": 55864,
+        "strata": 1200,
+        "verdict": "supported, material"
+      },
+      "st1": {
+        "auc": 0.5078941715595017,
+        "lo": 0.4877311935459988,
+        "hi": 0.5277373805848184,
+        "n_pos": 2400,
+        "n_neg": 55864,
+        "strata": 1200,
+        "verdict": "not supported"
+      }
+    }
+  },
+  "draws": 1000,
+  "A15.2_lambda1_minus_lambda0.5_events": {
+    "diff": -0.3829383783073523,
+    "lo": -0.40528301317165366,
+    "hi": -0.3595687001528088,
+    "verdict": "contradicted"
+  },
+  "A15.3_states_minus_events_lambda1": {
+    "diff": 0.38970535586424176,
+    "lo": 0.3680169370307518,
+    "hi": 0.41111349033084676,
+    "verdict": "supported"
+  },
+  "predictions_met": {
+    "A15.1": true,
+    "A15.2": true,
+    "A15.3": true,
+    "A15.4": true
+  }
+}

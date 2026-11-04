@@ -1,0 +1,11 @@
+[02:08:24] A7: PREDICTIONS.md sha256 688c09d825e59ce6615c6f84aec668f51fa9b62560c86316ec768e72fffb72b9
+[02:08:24] PREDICTIONS_A7.md sha256 d412d902c60bd8dbaf38bd04ed60434aa8347f64c2ae2d79891a823378a532a9
+[02:08:26] clock nodes 24; oriented latch pairs 213; unoriented 8; pull-down edges 1568
+[02:08:27] classes D 111749, I 66325, N 1238626
+[02:09:22] change: 610 groups; scores done
+[02:10:29] change: P1 0.535 [0.523, 0.546]
+[02:14:06] state: 888 groups; scores done
+[02:15:04] state: P1 0.530 [0.519, 0.542]
+[02:17:19] A5 chip done
+[02:17:20] A6 chip: {'pairs': 170, 'te_accuracy': 0.9882352941176471, 'te_ci': [0.9705882352941176, 1.0], 'rate_rule': 0.55, 'entropy_rule': 0.47058823529411764, 'te_minus_rate': 0.43823529411764706, 'te_minus_rate_ci': [0.38227941176470587, 0.48830882352941174], 'te_minus_entropy': 0.5176470588235295, 'te_minus_entropy_ci': [0.46169117647058816, 0.5794117647058823]}
+[02:17:20] done
