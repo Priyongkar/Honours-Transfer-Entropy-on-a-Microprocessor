@@ -1,0 +1,175 @@
+{
+ "R1_all": {
+  "edges": 238,
+  "wired_group": 41,
+  "group_precision": 17.22689075630252,
+  "group_ci": [
+   11.665948275862068,
+   23.14567095977742
+  ],
+  "group_recall": 12.462006079027356,
+  "physical_precision": 0.7000313446870755,
+  "physical_ci": [
+   0.3249899458377215,
+   2.042429700753247
+  ],
+  "physical_recall": 9.852941176470589,
+  "transistor_path_classes": {
+   "wired": 41,
+   "reverse_only": 16,
+   "two_step": 2,
+   "shared_parent": 12,
+   "shared_child": 14,
+   "unrelated": 153
+  }
+ },
+ "R1_lag0": {
+  "edges": 178,
+  "wired_group": 39,
+  "group_precision": 21.910112359550563,
+  "group_ci": [
+   15.151105651105652,
+   29.12142857142857
+  ],
+  "group_recall": 11.854103343465045,
+  "physical_precision": 0.719506624029237,
+  "physical_ci": [
+   0.3211092409071426,
+   2.508811751083148
+  ],
+  "physical_recall": 9.264705882352942,
+  "transistor_path_classes": {
+   "wired": 39,
+   "reverse_only": 16,
+   "two_step": 2,
+   "shared_parent": 2,
+   "shared_child": 14,
+   "unrelated": 105
+  }
+ },
+ "R1_lag1": {
+  "edges": 60,
+  "wired_group": 2,
+  "group_precision": 3.3333333333333335,
+  "group_ci": [
+   0.0,
+   8.572660098522165
+  ],
+  "group_recall": 0.60790273556231,
+  "physical_precision": 0.49079754601226994,
+  "physical_ci": [
+   0.0,
+   1.3107886661935324
+  ],
+  "physical_recall": 0.5882352941176471,
+  "transistor_path_classes": {
+   "wired": 2,
+   "reverse_only": 0,
+   "two_step": 0,
+   "shared_parent": 10,
+   "shared_child": 0,
+   "unrelated": 48
+  }
+ },
+ "lag0_cmi": {
+  "edges": 238,
+  "wired_group": 41,
+  "group_precision": 17.22689075630252,
+  "group_ci": [
+   12.669683257918551,
+   21.610731580767897
+  ],
+  "group_recall": 12.462006079027356,
+  "physical_precision": 0.525459777305142,
+  "physical_ci": [
+   0.22791500838828388,
+   1.835065122057577
+  ],
+  "physical_recall": 12.352941176470589,
+  "transistor_path_classes": {
+   "wired": 41,
+   "reverse_only": 15,
+   "two_step": 7,
+   "shared_parent": 1,
+   "shared_child": 15,
+   "unrelated": 159
+  }
+ },
+ "lag1_te": {
+  "edges": 238,
+  "wired_group": 4,
+  "group_precision": 1.680672268907563,
+  "group_ci": [
+   0.3859535798699297,
+   3.3620566870816115
+  ],
+  "group_recall": 1.21580547112462,
+  "physical_precision": 0.09410288582183186,
+  "physical_ci": [
+   0.013142619496540591,
+   0.26849032900619074
+  ],
+  "physical_recall": 0.8823529411764706,
+  "transistor_path_classes": {
+   "wired": 4,
+   "reverse_only": 0,
+   "two_step": 0,
+   "shared_parent": 11,
+   "shared_child": 0,
+   "unrelated": 223
+  }
+ },
+ "source_group_size": {
+  "edges": 238,
+  "wired_group": 60,
+  "group_precision": 25.210084033613445,
+  "group_ci": [
+   19.771264018915552,
+   30.870358275797724
+  ],
+  "group_recall": 18.237082066869302,
+  "physical_precision": 0.060234366443982036,
+  "physical_ci": [
+   0.03901237326904832,
+   0.09267203614972451
+  ],
+  "physical_recall": 24.264705882352942,
+  "transistor_path_classes": {
+   "wired": 60,
+   "reverse_only": 0,
+   "two_step": 30,
+   "shared_parent": 0,
+   "shared_child": 5,
+   "unrelated": 143
+  }
+ },
+ "layout_distance": {
+  "edges": 238,
+  "wired_group": 45,
+  "group_precision": 18.907563025210084,
+  "group_ci": [
+   14.111320314582779,
+   23.88681881695389
+  ],
+  "group_recall": 13.677811550151976,
+  "physical_precision": 0.17307867488537335,
+  "physical_ci": [
+   0.08591477377143665,
+   0.3244368421701165
+  ],
+  "physical_recall": 16.764705882352942,
+  "transistor_path_classes": {
+   "wired": 45,
+   "reverse_only": 3,
+   "two_step": 4,
+   "shared_parent": 1,
+   "shared_child": 43,
+   "unrelated": 142
+  }
+ },
+ "overlap_R1_lag0cmi": {
+  "shared_edges": 83,
+  "wired_only_in_R1": 17,
+  "wired_only_in_lag0cmi": 17
+ }
+}

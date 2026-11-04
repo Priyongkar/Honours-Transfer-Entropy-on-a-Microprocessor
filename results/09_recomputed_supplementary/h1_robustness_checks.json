@@ -1,0 +1,8 @@
+{
+ "targets_with_wired_source": 518,
+ "top1_wired_lag1_te": 4.826254826254826,
+ "top1_wired_lag0_cmi": 21.042471042471043,
+ "group_auc_lag1": 0.46892883491671683,
+ "group_auc_lag1_bias_subtracted": 0.4771003644827486,
+ "group_auc_lag1_by_exact_p": 0.4653472088789997
+}

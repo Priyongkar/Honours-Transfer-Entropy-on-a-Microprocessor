@@ -1,0 +1,1001 @@
+{
+ "meta": {
+  "draws": 1000,
+  "seed_target": 2026,
+  "seed_second_axis": 2027,
+  "groups": 519,
+  "samples": 133926,
+  "clock_group": 6,
+  "schemes": {
+   "target_main": "tk.bootstrap_targets generator (main run), target side only",
+   "target": "multinomial seed 2026, target side only",
+   "two_way": "targets multinomial seed 2026, sources independent multinomial seed 2027",
+   "vertex": "one multinomial seed 2026 vector applied to sources and targets"
+  }
+ },
+ "H1_H2": {
+  "group": {
+   "lag1_auc": {
+    "estimate": 0.46892883491671683,
+    "target_main": [
+     0.44519798229770025,
+     0.4930671462883286
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "lag0_auc": {
+    "estimate": 0.6315183858699577,
+    "target_main": [
+     0.611147286568978,
+     0.6511252055134127
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "contrast": {
+    "estimate": 0.16258955095324085,
+    "target_main": [
+     0.14172079227395068,
+     0.1842956717001737
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null,
+    "median_target_main": 0.16203561573895892,
+    "fraction_positive": {
+     "target_main": 1.0
+    }
+   },
+   "raw_p_lag1_auc_vs_0.5": {
+    "p": 0.013986013986013986,
+    "c": 6
+   },
+   "raw_p_contrast_vs_0": {
+    "p": 0.001998001998001998,
+    "c": 0
+   }
+  },
+  "physical": {
+   "lag1_auc": {
+    "estimate": 0.4995784115313523,
+    "target_main": [
+     0.41137456324827876,
+     0.5959851698141376
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "lag0_auc": {
+    "estimate": 0.5930994898520324,
+    "target_main": [
+     0.5041144369139818,
+     0.6827919097996047
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "contrast": {
+    "estimate": 0.09352107832068013,
+    "target_main": [
+     0.06464994515733234,
+     0.12806564631667805
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null,
+    "median_target_main": 0.0938906464064711,
+    "fraction_positive": {
+     "target_main": 1.0
+    }
+   },
+   "raw_p_lag1_auc_vs_0.5": {
+    "p": 0.8811188811188811,
+    "c": 440
+   },
+   "raw_p_contrast_vs_0": {
+    "p": 0.001998001998001998,
+    "c": 0
+   }
+  }
+ },
+ "H3": {
+  "all": {
+   "unidirectional_group_pairs": 1437,
+   "group|k=1": {
+    "acc": {
+     "estimate": 0.623249299719888,
+     "target_main": [
+      0.5891343427206936,
+      0.6563640128995665
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7007762879322512,
+     "target_main": [
+      0.6626865609259202,
+      0.7396557333535568
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.07752698821236326,
+     "target_main": [
+      -0.12042585603965597,
+      -0.031116964313844465
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.003996003996003996,
+     "c": 1
+    },
+    "raw_p_one_sided_diff_le_0": 0.999000999000999
+   },
+   "group|k=2": {
+    "acc": {
+     "estimate": 0.5599721059972106,
+     "target_main": [
+      0.5240749983554607,
+      0.599860912981455
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7007762879322512,
+     "target_main": [
+      0.6626865609259202,
+      0.7396557333535568
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.14080418193504063,
+     "target_main": [
+      -0.19809859592504553,
+      -0.07641897887839424
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.001998001998001998,
+     "c": 0
+    },
+    "raw_p_one_sided_diff_le_0": 1.0
+   },
+   "group|k=4": {
+    "acc": {
+     "estimate": 0.6176470588235294,
+     "target_main": [
+      0.5823385366886656,
+      0.6548411187958977
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7007762879322512,
+     "target_main": [
+      0.6626865609259202,
+      0.7396557333535568
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.08312922910872178,
+     "target_main": [
+      -0.1380513956353177,
+      -0.025989209881093003
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.007992007992007992,
+     "c": 3
+    },
+    "raw_p_one_sided_diff_le_0": 0.997002997002997
+   },
+   "group|k=8": {
+    "acc": {
+     "estimate": 0.6977559607293128,
+     "target_main": [
+      0.6654651056402461,
+      0.7348379285014439
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7007762879322512,
+     "target_main": [
+      0.6626865609259202,
+      0.7396557333535568
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.003020327202938433,
+     "target_main": [
+      -0.0504812630117445,
+      0.04681118702208176
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.9070929070929071,
+     "c": 453
+    },
+    "raw_p_one_sided_diff_le_0": 0.5474525474525475
+   },
+   "group|AIS-selected k": {
+    "acc": {
+     "estimate": 0.7266338721011947,
+     "target_main": [
+      0.6950307765816914,
+      0.7587052460449993
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7007762879322512,
+     "target_main": [
+      0.6626865609259202,
+      0.7396557333535568
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.02585758416894346,
+     "target_main": [
+      -0.01548707809859846,
+      0.06950041909064686
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.23776223776223776,
+     "c": 118
+    },
+    "raw_p_one_sided_diff_le_0": 0.11888111888111888
+   },
+   "physical|k=1": {
+    "acc": {
+     "estimate": 0.6950354609929078,
+     "target_main": [
+      0.6417086076803102,
+      0.7435360358368555
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7317351598173516,
+     "target_main": [
+      0.6786227239335273,
+      0.7873065963816929
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.036699698824443794,
+     "target_main": [
+      -0.0803877019611817,
+      0.007001485318971792
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.10989010989010989,
+     "c": 54
+    },
+    "raw_p_one_sided_diff_le_0": 0.9460539460539461
+   },
+   "physical|k=2": {
+    "acc": {
+     "estimate": 0.6648770839220118,
+     "target_main": [
+      0.6117360115868424,
+      0.7137652146060217
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7317351598173516,
+     "target_main": [
+      0.6786227239335273,
+      0.7873065963816929
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.06685807589533976,
+     "target_main": [
+      -0.12497400950666475,
+      -0.004642928700788126
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.03796203796203796,
+     "c": 18
+    },
+    "raw_p_one_sided_diff_le_0": 0.9820179820179821
+   },
+   "physical|k=4": {
+    "acc": {
+     "estimate": 0.7067690557451649,
+     "target_main": [
+      0.657973023742659,
+      0.7512316868639262
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7317351598173516,
+     "target_main": [
+      0.6786227239335273,
+      0.7873065963816929
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.02496610407218669,
+     "target_main": [
+      -0.07900836583918118,
+      0.03158834423862793
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.41358641358641357,
+     "c": 206
+    },
+    "raw_p_one_sided_diff_le_0": 0.7952047952047953
+   },
+   "physical|k=8": {
+    "acc": {
+     "estimate": 0.7443052391799544,
+     "target_main": [
+      0.6960979479374664,
+      0.7864315646693852
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7317351598173516,
+     "target_main": [
+      0.6786227239335273,
+      0.7873065963816929
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.012570079362602793,
+     "target_main": [
+      -0.034880922589502546,
+      0.06186922974997415
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.6253746253746254,
+     "c": 312
+    },
+    "raw_p_one_sided_diff_le_0": 0.3126873126873127
+   },
+   "physical|AIS-selected k": {
+    "acc": {
+     "estimate": 0.754820143884892,
+     "target_main": [
+      0.7097691825185636,
+      0.7970367013311332
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.7317351598173516,
+     "target_main": [
+      0.6786227239335273,
+      0.7873065963816929
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.02308498406754045,
+     "target_main": [
+      -0.018908689255070936,
+      0.06864440521053086
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.3076923076923077,
+     "c": 153
+    },
+    "raw_p_one_sided_diff_le_0": 0.15384615384615385
+   }
+  },
+  "clock_excluded": {
+   "unidirectional_group_pairs": 1172,
+   "group|k=1": {
+    "acc": {
+     "estimate": 0.5382631126397248,
+     "target_main": [
+      0.49772881664947544,
+      0.5773270311511407
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.6319444444444444,
+     "target_main": [
+      0.5831805619347789,
+      0.6796548672566372
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.0936813318047196,
+     "target_main": [
+      -0.1466158657790763,
+      -0.036908561548898884
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.003996003996003996,
+     "c": 1
+    },
+    "raw_p_one_sided_diff_le_0": 0.999000999000999
+   },
+   "group|k=2": {
+    "acc": {
+     "estimate": 0.46068376068376066,
+     "target_main": [
+      0.4213729951764927,
+      0.5034993436166721
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.6319444444444444,
+     "target_main": [
+      0.5831805619347789,
+      0.6796548672566372
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.17126068376068376,
+     "target_main": [
+      -0.23820407156210177,
+      -0.09419576507862476
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.001998001998001998,
+     "c": 0
+    },
+    "raw_p_one_sided_diff_le_0": 1.0
+   },
+   "group|k=4": {
+    "acc": {
+     "estimate": 0.5313304721030043,
+     "target_main": [
+      0.4918021527652675,
+      0.5720415056254515
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.6319444444444444,
+     "target_main": [
+      0.5831805619347789,
+      0.6796548672566372
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.1006139723414401,
+     "target_main": [
+      -0.16802911279696112,
+      -0.030780068108122484
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.00999000999000999,
+     "c": 4
+    },
+    "raw_p_one_sided_diff_le_0": 0.996003996003996
+   },
+   "group|k=8": {
+    "acc": {
+     "estimate": 0.6294067067927773,
+     "target_main": [
+      0.5896433042220534,
+      0.6716665272358991
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.6319444444444444,
+     "target_main": [
+      0.5831805619347789,
+      0.6796548672566372
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.0025377376516670935,
+     "target_main": [
+      -0.05966762020674589,
+      0.05887181786788201
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.9430569430569431,
+     "c": 471
+    },
+    "raw_p_one_sided_diff_le_0": 0.5294705294705294
+   },
+   "group|AIS-selected k": {
+    "acc": {
+     "estimate": 0.6652323580034424,
+     "target_main": [
+      0.626781921101774,
+      0.7047674118639012
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.6319444444444444,
+     "target_main": [
+      0.5831805619347789,
+      0.6796548672566372
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.03328791355899796,
+     "target_main": [
+      -0.017335271848890582,
+      0.08676768448941229
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.2177822177822178,
+     "c": 108
+    },
+    "raw_p_one_sided_diff_le_0": 0.1088911088911089
+   },
+   "physical|k=1": {
+    "acc": {
+     "estimate": 0.5352661185633925,
+     "target_main": [
+      0.4867893960903853,
+      0.5824090048444763
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.5895196506550219,
+     "target_main": [
+      0.5235055555851333,
+      0.6549227354411113
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.05425353209162942,
+     "target_main": [
+      -0.11762160464834094,
+      0.01205523505516954
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.12987012987012986,
+     "c": 64
+    },
+    "raw_p_one_sided_diff_le_0": 0.936063936063936
+   },
+   "physical|k=2": {
+    "acc": {
+     "estimate": 0.4901117798796217,
+     "target_main": [
+      0.4402167172518728,
+      0.540789361595364
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.5895196506550219,
+     "target_main": [
+      0.5235055555851333,
+      0.6549227354411113
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.0994078707754002,
+     "target_main": [
+      -0.18582828713674837,
+      -0.004863145890137326
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.03996003996003996,
+     "c": 19
+    },
+    "raw_p_one_sided_diff_le_0": 0.981018981018981
+   },
+   "physical|k=4": {
+    "acc": {
+     "estimate": 0.5557949159844895,
+     "target_main": [
+      0.5038296509835626,
+      0.6033061663261261
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.5895196506550219,
+     "target_main": [
+      0.5235055555851333,
+      0.6549227354411113
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": -0.033724734670532386,
+     "target_main": [
+      -0.11749590553860884,
+      0.05220018820477229
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.4695304695304695,
+     "c": 234
+    },
+    "raw_p_one_sided_diff_le_0": 0.7662337662337663
+   },
+   "physical|k=8": {
+    "acc": {
+     "estimate": 0.6124298662063012,
+     "target_main": [
+      0.5621775770881708,
+      0.6591203134609384
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.5895196506550219,
+     "target_main": [
+      0.5235055555851333,
+      0.6549227354411113
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.022910215551279367,
+     "target_main": [
+      -0.04930301664042169,
+      0.098878945830683
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.5514485514485514,
+     "c": 275
+    },
+    "raw_p_one_sided_diff_le_0": 0.2757242757242757
+   },
+   "physical|AIS-selected k": {
+    "acc": {
+     "estimate": 0.6321243523316062,
+     "target_main": [
+      0.586608504761512,
+      0.6783108487038884
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "rule": {
+     "estimate": 0.5895196506550219,
+     "target_main": [
+      0.5235055555851333,
+      0.6549227354411113
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "diff": {
+     "estimate": 0.04260470167658437,
+     "target_main": [
+      -0.0191656710418773,
+      0.10758477372527155
+     ],
+     "two_way": null,
+     "vertex": null,
+     "target": null
+    },
+    "raw_p_diff_vs_0": {
+     "p": 0.2017982017982018,
+     "c": 100
+    },
+    "raw_p_one_sided_diff_le_0": 0.1008991008991009
+   }
+  }
+ },
+ "self_check": {
+  "H1_H2": {
+   "csv_group_lag1_auc": "0.469 [0.445, 0.493]",
+   "csv_physical_lag1_auc": "0.500 [0.411, 0.596]",
+   "csv_group_lag0_auc": "0.632 [0.611, 0.651]",
+   "csv_physical_lag0_auc": "0.593 [0.504, 0.683]",
+   "csv_group_contrast_ci": [
+    0.14172079227395068,
+    0.1842956717001737
+   ],
+   "csv_group_contrast_median": 0.16203561573895892,
+   "csv_physical_contrast_ci": [
+    0.06464994515733234,
+    0.12806564631667805
+   ],
+   "csv_physical_contrast_median": 0.0938906464064711
+  },
+  "H3": {
+   "csv_physical_accuracy": {
+    "AIS-selected k": "0.755 [0.710, 0.797]",
+    "k=1": "0.695 [0.642, 0.744]",
+    "k=2": "0.665 [0.612, 0.714]",
+    "k=4": "0.707 [0.658, 0.751]",
+    "k=8": "0.744 [0.696, 0.786]"
+   },
+   "csv_physical_rate_prespecified": "0.268 [0.213, 0.321]"
+  }
+ },
+ "H4": {
+  "counts": {
+   "pull-down only": {
+    "all": 790,
+    "same parity": 678,
+    "opposite parity": 6,
+    "involves a mixed group": 106
+   },
+   "pass only": {
+    "all": 635,
+    "same parity": 87,
+    "opposite parity": 24,
+    "involves a mixed group": 524
+   },
+   "unwired": {
+    "all": 266830,
+    "same parity": 112609,
+    "opposite parity": 83682,
+    "involves a mixed group": 70539
+   }
+  },
+  "percent_negative": {
+   "pull-down only": {
+    "all_group": 81.13924050632912,
+    "all_physical": 66.19021440351841,
+    "same parity": 86.28318584070796,
+    "opposite parity": 33.333333333333336,
+    "involves a mixed group": 50.943396226415096
+   },
+   "pass only": {
+    "all_group": 39.68503937007874,
+    "all_physical": 28.08219178082192,
+    "same parity": 82.75862068965517,
+    "opposite parity": 58.333333333333336,
+    "involves a mixed group": 31.6793893129771
+   },
+   "unwired": {
+    "all_group": 68.19585503878874,
+    "all_physical": 62.9195554942499,
+    "same parity": 91.77685620154695,
+    "opposite parity": 45.812719581271956,
+    "involves a mixed group": 57.10458044486029
+   }
+  },
+  "differences": {
+   "group": {
+    "estimate": 12.94338546754038,
+    "target_main": [
+     8.307767637194537,
+     17.23393075197748
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null,
+    "raw_p_vs_0": {
+     "p": 0.001998001998001998,
+     "c": 0
+    }
+   },
+   "physical": {
+    "estimate": 3.270658909268512,
+    "target_main": [
+     -9.069769736378298,
+     15.079461826450094
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null,
+    "raw_p_vs_0": {
+     "p": 0.7332667332667333,
+     "c": 366
+    }
+   },
+   "stratum:same parity": {
+    "estimate": -5.4936703608389905,
+    "target_main": [
+     -9.74008635268951,
+     -1.4464186309621834
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "stratum:opposite parity": {
+    "estimate": -12.47938624793862,
+    "target_main": [
+     -46.443473340832874,
+     34.22434768135835
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "stratum:involves a mixed group": {
+    "estimate": -6.161184218445193,
+    "target_main": [
+     -18.79231924652002,
+     6.840920842180385
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null
+   },
+   "composition_adjusted": {
+    "estimate": -5.636291581381845,
+    "target_main": [
+     -9.8415894283502,
+     -1.7271808743701218
+    ],
+    "two_way": null,
+    "vertex": null,
+    "target": null,
+    "raw_p_vs_0": {
+     "p": 0.005994005994005994,
+     "c": 2
+    }
+   }
+  }
+ }
+}

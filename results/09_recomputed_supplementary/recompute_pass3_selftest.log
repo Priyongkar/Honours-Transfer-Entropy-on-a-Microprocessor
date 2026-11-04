@@ -1,0 +1,36 @@
+[21:19:54] loaded 519 groups x 133926 samples
+[21:19:54] reference matches structural_counts.npz: 3543 edges, 1437 wired group pairs; clock group 6
+[21:20:27] common-history lag-1 TE k=1 computed in 31s
+[21:20:55] common-history lag-1 TE k=2 computed in 28s
+[21:21:22] common-history lag-1 TE k=4 computed in 27s
+[21:21:49] common-history lag-1 TE k=8 computed in 27s
+[21:22:18] common-history lag-0 CMI k=1 computed in 28s
+[21:22:18] H1/H2: AUCs and contrasts
+[21:22:28]   group: lag1 0.4689 [0.44519798229770025, 0.4930671462883286]  contrast +0.1626 tm [0.14172079227395068, 0.1842956717001737] 2w None vx None
+[21:22:38]   physical: lag1 0.4996 [0.41137456324827876, 0.5959851698141376]  contrast +0.0935 tm [0.06464994515733234, 0.12806564631667805] 2w None vx None
+[21:22:38] H3: orientation accuracy
+[21:22:38]   all group k=1: acc 0.623 rule 0.701 diff -0.078 tm [-0.12042585603965597, -0.031116964313844465] 2w None vx None
+[21:22:38]   all group k=2: acc 0.560 rule 0.701 diff -0.141 tm [-0.19809859592504553, -0.07641897887839424] 2w None vx None
+[21:22:38]   all group k=4: acc 0.618 rule 0.701 diff -0.083 tm [-0.1380513956353177, -0.025989209881093003] 2w None vx None
+[21:22:39]   all group k=8: acc 0.698 rule 0.701 diff -0.003 tm [-0.0504812630117445, 0.04681118702208176] 2w None vx None
+[21:22:39]   all group AIS-selected k: acc 0.727 rule 0.701 diff +0.026 tm [-0.01548707809859846, 0.06950041909064686] 2w None vx None
+[21:22:39]   all physical k=1: acc 0.695 rule 0.732 diff -0.037 tm [-0.0803877019611817, 0.007001485318971792] 2w None vx None
+[21:22:39]   all physical k=2: acc 0.665 rule 0.732 diff -0.067 tm [-0.12497400950666475, -0.004642928700788126] 2w None vx None
+[21:22:39]   all physical k=4: acc 0.707 rule 0.732 diff -0.025 tm [-0.07900836583918118, 0.03158834423862793] 2w None vx None
+[21:22:39]   all physical k=8: acc 0.744 rule 0.732 diff +0.013 tm [-0.034880922589502546, 0.06186922974997415] 2w None vx None
+[21:22:39]   all physical AIS-selected k: acc 0.755 rule 0.732 diff +0.023 tm [-0.018908689255070936, 0.06864440521053086] 2w None vx None
+[21:22:39]   clock_excluded group k=1: acc 0.538 rule 0.632 diff -0.094 tm [-0.1466158657790763, -0.036908561548898884] 2w None vx None
+[21:22:39]   clock_excluded group k=2: acc 0.461 rule 0.632 diff -0.171 tm [-0.23820407156210177, -0.09419576507862476] 2w None vx None
+[21:22:40]   clock_excluded group k=4: acc 0.531 rule 0.632 diff -0.101 tm [-0.16802911279696112, -0.030780068108122484] 2w None vx None
+[21:22:40]   clock_excluded group k=8: acc 0.629 rule 0.632 diff -0.003 tm [-0.05966762020674589, 0.05887181786788201] 2w None vx None
+[21:22:40]   clock_excluded group AIS-selected k: acc 0.665 rule 0.632 diff +0.033 tm [-0.017335271848890582, 0.08676768448941229] 2w None vx None
+[21:22:40]   clock_excluded physical k=1: acc 0.535 rule 0.590 diff -0.054 tm [-0.11762160464834094, 0.01205523505516954] 2w None vx None
+[21:22:40]   clock_excluded physical k=2: acc 0.490 rule 0.590 diff -0.099 tm [-0.18582828713674837, -0.004863145890137326] 2w None vx None
+[21:22:40]   clock_excluded physical k=4: acc 0.556 rule 0.590 diff -0.034 tm [-0.11749590553860884, 0.05220018820477229] 2w None vx None
+[21:22:40]   clock_excluded physical k=8: acc 0.612 rule 0.590 diff +0.023 tm [-0.04930301664042169, 0.098878945830683] 2w None vx None
+[21:22:40]   clock_excluded physical AIS-selected k: acc 0.632 rule 0.590 diff +0.043 tm [-0.0191656710418773, 0.10758477372527155] 2w None vx None
+[21:22:40] H4: percentage negative delta
+[21:22:47]   H4 group +12.94 {'estimate': 12.94338546754038, 'target_main': [8.307767637194537, 17.23393075197748], 'two_way': None, 'vertex': None, 'target': None, 'raw_p_vs_0': {'p': 0.001998001998001998, 'c': 0}}
+[21:22:47]   H4 physical +3.27 {'estimate': 3.270658909268512, 'target_main': [-9.069769736378298, 15.079461826450094], 'two_way': None, 'vertex': None, 'target': None, 'raw_p_vs_0': {'p': 0.7332667332667333, 'c': 366}}
+[21:22:47]   H4 composition-adjusted -5.64 {'estimate': -5.636291581381845, 'target_main': [-9.8415894283502, -1.7271808743701218], 'two_way': None, 'vertex': None, 'target': None, 'raw_p_vs_0': {'p': 0.005994005994005994, 'c': 2}}
+[21:22:47] SELF-TEST DONE
