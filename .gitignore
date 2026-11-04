@@ -1,0 +1,13 @@
+# large or regenerable data
+*.npy
+*.npz
+*.zip
+data/
+# build and cache
+__pycache__/
+*.pyc
+*.so
+*.cpp
+build/
+.DS_Store
+.ipynb_checkpoints/

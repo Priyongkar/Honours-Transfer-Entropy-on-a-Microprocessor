@@ -1,0 +1,38 @@
+# File renames
+
+Original path (working project) | New path (this repository)
+---|---
+`analyses/new_tests/chip.py` | `analyses/02_latch_transfer_tests_A1_to_A8/chip_latch_and_intervention_tests_A1_A1b_A5_A6.py`
+`analyses/new_tests/recording.py` | `analyses/02_latch_transfer_tests_A1_to_A8/recording_latch_and_bound_tests_A2_A3_A5_A6.py`
+`analyses/new_tests/a7_program.py` | `analyses/02_latch_transfer_tests_A1_to_A8/second_program_build_simulate_and_test_A7.py`
+`analyses/new_tests/nmos.py` | `analyses/02_latch_transfer_tests_A1_to_A8/nmos_circuit_latch_tests_A8.py`
+`analyses/new_tests/supp_harder.py` | `analyses/02_latch_transfer_tests_A1_to_A8/supplementary_latch_pairs_against_harder_negatives.py`
+`analyses/new_tests/supp_latch_vs_passnb.py` | `analyses/02_latch_transfer_tests_A1_to_A8/supplementary_latch_pairs_against_pass_neighbours.py`
+`analyses/new_tests/fig_lag_profile.py` | `analyses/02_latch_transfer_tests_A1_to_A8/figure_latch_lag_profile.py`
+`analyses/new_tests/idtxl_runs.py` | `analyses/03_multivariate_idtxl_runs_A4_R1_A17/idtxl_phase_supplied_A4_and_h6_redraw_R1.py`
+`analyses/new_tests/a17_idtxl_aligned.py` | `analyses/03_multivariate_idtxl_runs_A4_R1_A17/idtxl_h6_design_on_clock_aligned_samples_A17.py`
+`analyses/new_tests/a9_decompose.py` | `analyses/04_followership_mechanism_A9_to_A11/followership_decomposition_A9.py`
+`analyses/new_tests/a10_nmos.py` | `analyses/04_followership_mechanism_A9_to_A11/nmos_new_circuits_latch_replication_A10.py`
+`analyses/new_tests/a11_synthetic.py` | `analyses/04_followership_mechanism_A9_to_A11/synthetic_phase_locked_networks_A11.py`
+`analyses/new_tests/fig_followership.py` | `analyses/04_followership_mechanism_A9_to_A11/figure_followership_penalty.py`
+`analyses/new_tests/a12_recording.py` | `analyses/05_consequences_of_the_account_A12_to_A19/recording_dose_response_coverage_remainder_block_phase_A12_A13_A14_A18_A19.py`
+`analyses/new_tests/a13_a16_chip.py` | `analyses/05_consequences_of_the_account_A12_to_A19/chip_coverage_remainder_and_timed_clamps_A13_A14_A16.py`
+`analyses/new_tests/a15_synthetic.py` | `analyses/05_consequences_of_the_account_A12_to_A19/synthetic_non_idealised_networks_A15.py`
+`analyses/new_tests/supp_a16_open_closed.py` | `analyses/05_consequences_of_the_account_A12_to_A19/supplementary_latch_open_versus_closed_A16.py`
+`analyses/settling_vs_codrive/settling_codrive.py` | `analyses/01_settling_versus_codrive_on_the_simulated_chip/settling_versus_codrive_chip_analysis.py`
+`analyses/pitfall/record_game.py` | `analyses/06_regenerating_recordings_from_the_original_simulator/regenerate_game_recording_with_sim2600.py`
+`analyses/pitfall/convert_pitfall.py` | `analyses/06_regenerating_recordings_from_the_original_simulator/convert_wang_pitfall_to_donkeykong_format.py`
+`analyses/replication/run_replication.py` | `analyses/07_replication_on_pitfall_and_space_invaders_R2/replication_pairwise_pipeline_R2.py`
+`analyses/replication/a20_timed_clamps_dk.py` | `analyses/08_timed_clamps_on_the_recorded_program_A20/timed_clamps_on_recorded_donkey_kong_A20.py`
+`analyses/new_tests/PREDICTIONS.md` | `analyses/02_latch_transfer_tests_A1_to_A8/design/predictions_A1_to_A8_A4_R1.md`
+`analyses/new_tests/PREDICTIONS_A7.md` | `analyses/02_latch_transfer_tests_A1_to_A8/design/predictions_A7_second_program.md`
+`analyses/new_tests/PREDICTIONS_A9.md` | `analyses/04_followership_mechanism_A9_to_A11/design/predictions_A9_A10.md`
+`analyses/new_tests/PREDICTIONS_A11.md` | `analyses/04_followership_mechanism_A9_to_A11/design/predictions_A11.md`
+`analyses/new_tests/PREDICTIONS_A12.md` | `analyses/05_consequences_of_the_account_A12_to_A19/design/predictions_A12_to_A19.md`
+`analyses/settling_vs_codrive/PREDICTIONS.md` | `analyses/01_settling_versus_codrive_on_the_simulated_chip/design/predictions_settling_versus_codrive.md`
+`analyses/replication/PREDICTIONS_R2.md` | `analyses/07_replication_on_pitfall_and_space_invaders_R2/design/predictions_R2.md`
+`analyses/replication/PREDICTIONS_A20.md` | `analyses/08_timed_clamps_on_the_recorded_program_A20/design/predictions_A20.md`
+`analyses/replication/PREDICTIONS_A20_ADDENDUM.md` | `analyses/08_timed_clamps_on_the_recorded_program_A20/design/predictions_A20_addendum_nonconvergent_clamps.md`
+`analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
+`notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
+`notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`

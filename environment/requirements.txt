@@ -1,0 +1,11 @@
+# Python 3.10 (conda env honours6502); versions as used
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.7.2
+pandas
+matplotlib==3.10.9
+Cython==3.2.9        # to build the patched Sim2600 engine
+py65==1.2.0         # independent 6502 emulator used to validate the second program (A7)
+mpmath              # exact log-tail p-values
+jpype1              # JIDT / IDTxl
+# IDTxl 1.6.1 (commit c7eacfd) and JIDT 1.6.1 jar, installed separately
