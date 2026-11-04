@@ -18,8 +18,11 @@ a9 = json.load(open(NT / 'A9_results.json')); a11 = json.load(open(NT / 'A11_res
 a12 = json.load(open(NT / 'A12_results.json'))['A12']
 r2 = {g: json.load(open(RP / f'R2_{f}_results.json'))['clock_aligned'] for g, f in (('Pitfall', 'Pitfall'), ('Space Invaders', 'SpaceInvaders'))}
 
-fig, axes = plt.subplots(1, 3, figsize=(13.2, 4.1), gridspec_kw=dict(width_ratios=[1.35, 0.9, 1.15]))
-ax1, ax2, ax3 = axes
+plt.rcParams.update({'font.size': 11})
+fig = plt.figure(figsize=(10.0, 8.0))
+gs = fig.add_gridspec(2, 2, height_ratios=[1, 1])
+ax1 = fig.add_subplot(gs[0, :]); ax2 = fig.add_subplot(gs[1, 0]); ax3 = fig.add_subplot(gs[1, 1])
+axes = [ax1, ax2, ax3]
 # (a) activity vs lag-1 TE within targets, five data sets
 sets = [('Donkey Kong\n(recording)', a9['recording']['tests']), ('Pitfall', r2['Pitfall']['R2.4']),
         ('Space\nInvaders', r2['Space Invaders']['R2.4']), ('Chip,\nprogram 1', a9['chip_program1']['tests']),
@@ -33,12 +36,12 @@ for x, (lab, t) in enumerate(sets):
                  arrowprops=dict(arrowstyle='->', color=MUTED, lw=1))
 ax1.axvline(2.5, color='0.8', lw=0.8)
 ax1.axhline(0.5, color='0.55', ls='--', lw=1); ax1.text(2.42, 0.503, 'chance', fontsize=8.5, color=MUTED, va='bottom', ha='right')
-ax1.set_xticks(range(5)); ax1.set_xticklabels([s[0] for s in sets], fontsize=8.5)
+ax1.set_xticks(range(5)); ax1.set_xticklabels([s[0] for s in sets], fontsize=10.5)
 ax1.set_xlim(-0.5, 4.5); ax1.set_ylim(0.3, 0.68)
-ax1.set_ylabel('Within-target AUC,\nwired against unwired sources')
+ax1.set_ylabel('Within-target AUC,\nwired vs unwired')
 ax1.set_title('(a) Followed sources lose rank', loc='left', fontsize=11)
 ax1.plot([], [], 'o', color=INDIGO, label='activity alone'); ax1.plot([], [], 's', color=ORANGE, label='lag-1 TE')
-ax1.legend(loc='upper right', frameon=False, fontsize=8.5)
+ax1.legend(loc='upper right', frameon=False, fontsize=10)
 # (b) A12 / R2.5: within-target AUC by the target's locking bin, three recorded programs
 bins = ['mixed', 'locked', 'strict']; xs = [0, 1, 2]
 dk = [a12[f'lag1_{b}'] for b in bins]
@@ -48,12 +51,12 @@ for g, rs, dx in series:
     ax2.errorbar([x + dx for x in xs], y, yerr=[[r['auc'] - r['lo'] for r in rs], [r['hi'] - r['auc'] for r in rs]],
                  fmt='-o', color=PROG[g], markersize=6.5, capsize=3, lw=1.6, elinewidth=1.2, markeredgecolor='white', label=g)
 ax2.axhline(0.5, color='0.55', ls='--', lw=1)
-ax2.set_xticks(xs); ax2.set_xticklabels(['mixed\n($L<0.95$)', 'locked\n($0.95\\leq L<1$)', 'strict\n($L=1$)'], fontsize=8.5)
+ax2.set_xticks(xs); ax2.set_xticklabels(['mixed\n($L<0.95$)', 'locked\n($0.95\\leq L<1$)', 'strict\n($L=1$)'], fontsize=10)
 ax2.set_xlim(-0.4, 2.4); ax2.set_ylim(0.3, 0.75)
 ax2.set_ylabel('Within-target AUC of lag-1 TE')
 ax2.set_xlabel("Target's locking index $L$")
 ax2.set_title('(b) Graded by locking', loc='left', fontsize=11)
-ax2.legend(loc='upper right', frameon=False, fontsize=8)
+ax2.legend(loc='upper right', frameon=False, fontsize=9.5)
 # (c) A11 and A15: synthetic networks
 lams = [0.5, 0.7, 0.85, 0.95, 1.0]
 for rho in (0.3, 0.6, 0.9):
@@ -63,11 +66,11 @@ for rho in (0.3, 0.6, 0.9):
              markeredgecolor='white', label=f'coupling {rho}')
 ax3.axhline(0.5, color='0.55', ls='--', lw=1)
 ax3.set_xlim(0.48, 1.03); ax3.set_ylim(0, 0.6)
-ax3.set_xticks(lams); ax3.set_xticklabels(['0.5\n(none)', '0.7', '0.85', '0.95', '1.0\n(strict)'], fontsize=8.5)
-ax3.set_xlabel('Locking: share of events in the preferred phase')
-ax3.set_ylabel('AUC of lag-1 TE, within-sample\ndrivers against non-drivers')
+ax3.set_xticks(lams); ax3.set_xticklabels(['0.5\n(none)', '0.7', '0.85', '0.95', '1.0\n(strict)'], fontsize=10)
+ax3.set_xlabel('Share of events in preferred phase')
+ax3.set_ylabel('AUC of lag-1 TE,\ndrivers vs non-drivers')
 ax3.set_title('(c) Synthetic networks', loc='left', fontsize=11)
-ax3.legend(loc='center right', bbox_to_anchor=(1.0, 0.68), frameon=False, fontsize=8)
+ax3.legend(loc='center right', bbox_to_anchor=(1.0, 0.68), frameon=False, fontsize=9.5)
 for ax in axes:
     ax.grid(axis='y', alpha=0.3)
     for s in ('top', 'right'):
