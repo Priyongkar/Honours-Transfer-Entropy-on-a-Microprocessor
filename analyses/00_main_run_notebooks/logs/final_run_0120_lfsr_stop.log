@@ -1,0 +1,147 @@
+[NbConvertApp] Converting notebook Honours_Every_Third_MI_AIS_TE_v5.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00000001010193c9, pid=92814, tid=47631
+#
+# JRE version: OpenJDK Runtime Environment Zulu17.64+17-CA (17.0.18+8) (build 17.0.18+8-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Zulu17.64+17-CA (17.0.18+8-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, bsd-amd64)
+# Problematic frame:
+# C  [python3.10+0xc83c9]  PyObject_RichCompareBool+0x39
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /Users/priyongkarkundu/Documents/Honours 2/notebooks/hs_err_pid92814.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://www.azul.com/support/
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+Traceback (most recent call last):
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/jupyter_core/application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/traitlets/config/application.py", line 1080, in launch_instance
+    app.start()
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import importlib, urllib.request
+NET_DIR = ROOT / 'data/visual6502'
+for fname in ['segdefs.js', 'transdefs.js', 'nodenames.js']:
+    if not (NET_DIR / fname).exists():
+        url = f'https://raw.githubusercontent.com/trebonian/visual6502/master/{fname}'
+        try:
+            print('Downloading', url); urllib.request.urlretrieve(url, NET_DIR / fname)
+        except Exception as error:
+            raise FileNotFoundError(f'{fname} is required for Part V and could not be downloaded ({error}). '
+                                    f'Download it manually from {url} into {NET_DIR}.') from None
+import sim6502; importlib.reload(sim6502)
+SIM_STATES = SIM_DIR / 'states.npz'
+CHIP = sim6502.Chip(NET_DIR)
+if SIM_STATES.exists():
+    with np.load(SIM_STATES) as z:
+        S_STATE = z['states']; S_ANN = {k: z[k] for k in ['clk0', 'sync', 'rw', 'address', 'data', 'nodes']}
+        S_MEM = bytes(z['memory'])
+else:
+    CHIP.reset(); t0 = time.perf_counter()
+    CHIP.run(SIM['warmup'])
+    S_STATE, S_ANN = CHIP.run(SIM['half_steps'], progress=max(1, SIM['half_steps'] // 5))
+    S_MEM = bytes(CHIP.memory)
+    print(f"Simulated {SIM['half_steps']} half-steps in {time.perf_counter() - t0:.0f}s")
+    np.savez_compressed(SIM_STATES, states=S_STATE, memory=np.frombuffer(S_MEM, np.uint8), **S_ANN)
+fib_ref, lfsr_ref = sim6502.reference_fib_lfsr(256)
+fib_ok = list(S_MEM[0x200:0x220]) == fib_ref
+n_lfsr = next((i for i in range(256) if S_MEM[0x300 + i] == 0), 256)
+lfsr_ok = list(S_MEM[0x300:0x300 + n_lfsr]) == lfsr_ref[:n_lfsr]
+validation = dict(fibonacci_values_correct=fib_ok, lfsr_values_checked=n_lfsr, lfsr_correct=lfsr_ok,
+                  half_steps=int(len(S_STATE)), recorded_nodes=int(S_STATE.shape[1]),
+                  instructions=int(np.sum(np.diff(S_ANN['sync'].astype(int)) == 1)))
+rq_record('sim_validation', validation); print(validation)
+assert fib_ok and lfsr_ok, 'Simulated CPU did not execute the program correctly; do not use Part V.'
+
+S_NODES = np.asarray(S_ANN['nodes'])
+g_, c1_, c2_ = CHIP.transistor_matrix()
+S_A = tk.node_reference_from_transistors(g_, c1_, c2_, S_NODES, supply={CHIP.gnd, CHIP.pwr})
+S_REPR = {'state': S_STATE.T.astype(np.uint8)}
+_r = np.zeros_like(S_REPR['state']); _r[:, 1:] = (S_REPR['state'][:, 1:] == 1) & (S_REPR['state'][:, :-1] == 0)
+S_REPR['rising'] = _r
+S_GROUPS = {}
+for rep_, X_ in S_REPR.items():
+    reps_, ug_ = tk.group_identical(X_); pos_, neg_ = tk.group_reference(S_A, ug_, len(reps_))
+    S_GROUPS[rep_] = dict(reps=reps_, ug=ug_, X=X_[reps_], pos=pos_, neg=neg_, G=len(reps_))
+    print(f"{rep_}: {len(reps_)} distinct non-constant node series; wired node pairs evaluable: {int(pos_.sum())} of {int(S_A.sum())}")
+------------------
+
+----- stdout -----
+    simulated 12000/60000 half-steps
+----- stdout -----
+    simulated 24000/60000 half-steps
+----- stdout -----
+    simulated 36000/60000 half-steps
+----- stdout -----
+    simulated 48000/60000 half-steps
+----- stdout -----
+    simulated 60000/60000 half-steps
+----- stdout -----
+Simulated 60000 half-steps in 123s
+----- stdout -----
+{'fibonacci_values_correct': True, 'lfsr_values_checked': 256, 'lfsr_correct': False, 'half_steps': 60000, 'recorded_nodes': 1702, 'instructions': 10460}
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAssertionError[0m                            Traceback (most recent call last)
+Cell [0;32mIn[46], line 33[0m
+[1;32m     29[0m validation [38;5;241m=[39m [38;5;28mdict[39m(fibonacci_values_correct[38;5;241m=[39mfib_ok, lfsr_values_checked[38;5;241m=[39mn_lfsr, lfsr_correct[38;5;241m=[39mlfsr_ok,
+[1;32m     30[0m                   half_steps[38;5;241m=[39m[38;5;28mint[39m([38;5;28mlen[39m(S_STATE)), recorded_nodes[38;5;241m=[39m[38;5;28mint[39m(S_STATE[38;5;241m.[39mshape[[38;5;241m1[39m]),
+[1;32m     31[0m                   instructions[38;5;241m=[39m[38;5;28mint[39m(np[38;5;241m.[39msum(np[38;5;241m.[39mdiff(S_ANN[[38;5;124m'[39m[38;5;124msync[39m[38;5;124m'[39m][38;5;241m.[39mastype([38;5;28mint[39m)) [38;5;241m==[39m [38;5;241m1[39m)))
+[1;32m     32[0m rq_record([38;5;124m'[39m[38;5;124msim_validation[39m[38;5;124m'[39m, validation); [38;5;28mprint[39m(validation)
+[0;32m---> 33[0m [38;5;28;01massert[39;00m fib_ok [38;5;129;01mand[39;00m lfsr_ok, [38;5;124m'[39m[38;5;124mSimulated CPU did not execute the program correctly; do not use Part V.[39m[38;5;124m'[39m
+[1;32m     35[0m S_NODES [38;5;241m=[39m np[38;5;241m.[39masarray(S_ANN[[38;5;124m'[39m[38;5;124mnodes[39m[38;5;124m'[39m])
+[1;32m     36[0m g_, c1_, c2_ [38;5;241m=[39m CHIP[38;5;241m.[39mtransistor_matrix()
+
+[0;31mAssertionError[0m: Simulated CPU did not execute the program correctly; do not use Part V.
+
