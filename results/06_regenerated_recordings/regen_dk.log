@@ -1,0 +1,16 @@
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+DonkeyKong: 50000/639999 rows, 46 s
+DonkeyKong: 100000/639999 rows, 86 s
+DonkeyKong: 150000/639999 rows, 120 s
+DonkeyKong: 200000/639999 rows, 153 s
+DonkeyKong: 250000/639999 rows, 187 s
+DonkeyKong: 300000/639999 rows, 221 s
+DonkeyKong: 350000/639999 rows, 256 s
+DonkeyKong: 400000/639999 rows, 290 s
+DonkeyKong: 450000/639999 rows, 325 s
+DonkeyKong: 500000/639999 rows, 359 s
+DonkeyKong: 550000/639999 rows, 393 s
+DonkeyKong: 600000/639999 rows, 427 s
+done {'game': 'DonkeyKong', 'rom': 'DonkeyKong.bin', 'rom_sha256': '538e271407e649e18634d30d136b452ccbf6741fa800e7af8d46d4bdd57aead1', 'rows': 639999, 'transistors': 3510, 'seconds': 454.1}

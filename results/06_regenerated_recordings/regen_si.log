@@ -1,0 +1,16 @@
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+SpaceInvaders: 50000/639999 rows, 47 s
+SpaceInvaders: 100000/639999 rows, 86 s
+SpaceInvaders: 150000/639999 rows, 119 s
+SpaceInvaders: 200000/639999 rows, 152 s
+SpaceInvaders: 250000/639999 rows, 185 s
+SpaceInvaders: 300000/639999 rows, 219 s
+SpaceInvaders: 350000/639999 rows, 254 s
+SpaceInvaders: 400000/639999 rows, 287 s
+SpaceInvaders: 450000/639999 rows, 322 s
+SpaceInvaders: 500000/639999 rows, 355 s
+SpaceInvaders: 550000/639999 rows, 389 s
+SpaceInvaders: 600000/639999 rows, 423 s
+done {'game': 'SpaceInvaders', 'rom': 'SpaceInvaders.bin', 'rom_sha256': '7224b17462b992d67f4e06a3c85f269c9822b06df6015bf038b55f384ced0301', 'rows': 639999, 'transistors': 3510, 'seconds': 449.3}

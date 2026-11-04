@@ -1,0 +1,8 @@
+{
+ "game": "SpaceInvaders",
+ "rom": "SpaceInvaders.bin",
+ "rom_sha256": "7224b17462b992d67f4e06a3c85f269c9822b06df6015bf038b55f384ced0301",
+ "rows": 639999,
+ "transistors": 3510,
+ "seconds": 449.3
+}

@@ -1,0 +1,16 @@
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Pitfall: 50000/639999 rows, 46 s
+Pitfall: 100000/639999 rows, 86 s
+Pitfall: 150000/639999 rows, 119 s
+Pitfall: 200000/639999 rows, 153 s
+Pitfall: 250000/639999 rows, 186 s
+Pitfall: 300000/639999 rows, 219 s
+Pitfall: 350000/639999 rows, 255 s
+Pitfall: 400000/639999 rows, 288 s
+Pitfall: 450000/639999 rows, 323 s
+Pitfall: 500000/639999 rows, 356 s
+Pitfall: 550000/639999 rows, 390 s
+Pitfall: 600000/639999 rows, 424 s
+done {'game': 'Pitfall', 'rom': 'Pitfall.bin', 'rom_sha256': 'c56c99d9e00136a015a485851e0e925c6327ea2b20aa7d3daecfbd7f9afcfdf0', 'rows': 639999, 'transistors': 3510, 'seconds': 451.1}

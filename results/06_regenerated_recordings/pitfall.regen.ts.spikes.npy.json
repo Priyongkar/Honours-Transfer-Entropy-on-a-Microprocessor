@@ -1,0 +1,8 @@
+{
+ "game": "Pitfall",
+ "rom": "Pitfall.bin",
+ "rom_sha256": "c56c99d9e00136a015a485851e0e925c6327ea2b20aa7d3daecfbd7f9afcfdf0",
+ "rows": 639999,
+ "transistors": 3510,
+ "seconds": 451.1
+}

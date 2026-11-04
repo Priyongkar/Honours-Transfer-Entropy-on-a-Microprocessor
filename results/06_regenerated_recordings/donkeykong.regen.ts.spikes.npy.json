@@ -1,0 +1,8 @@
+{
+ "game": "DonkeyKong",
+ "rom": "DonkeyKong.bin",
+ "rom_sha256": "538e271407e649e18634d30d136b452ccbf6741fa800e7af8d46d4bdd57aead1",
+ "rows": 639999,
+ "transistors": 3510,
+ "seconds": 454.1
+}
