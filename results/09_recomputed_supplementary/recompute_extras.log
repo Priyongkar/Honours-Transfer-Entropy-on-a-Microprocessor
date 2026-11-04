@@ -1,0 +1,89 @@
+{
+ "phase_class_only": {
+  "group_auc": 0.6466603693841049,
+  "group_ap_lift": 1.4155868113922492,
+  "physical_auc": 0.5855389933161769,
+  "within_target": 0.6439556743927631,
+  "group_auc_ci": [
+   0.6385701007667692,
+   0.6550406463627514
+  ]
+ },
+ "phase_class_then_lag0": {
+  "group_auc": 0.6995421093817266,
+  "group_ap_lift": 4.886937484459407,
+  "physical_auc": 0.642497537589992,
+  "within_target": 0.7136582328721472
+ },
+ "covariate_model_physical_fitted": {
+  "physical_auc": {
+   "covariates": 0.8901430525518665,
+   "covariates_ci": [
+    0.8718871407826039,
+    0.9082310215231373
+   ],
+   "increment": 0.004528568907867236,
+   "increment_ci": [
+    -0.0023210890590994043,
+    0.01161474744295663
+   ]
+  },
+  "physical_ap_lift": {
+   "covariates": 15.366600566061427,
+   "covariates_ci": [
+    11.649844375096682,
+    21.11737168443318
+   ],
+   "increment": 1.1877559447503305,
+   "increment_ci": [
+    0.3059696252097901,
+    2.2852206260216117
+   ]
+  }
+ },
+ "rates_model": {
+  "group_auc": 0.6248150160235497,
+  "group_ap_lift": 8.750715685903089,
+  "within_target": 0.7210609810925206,
+  "precision_at_allocation": 19.473319473319474,
+  "precision_ci": [
+   17.561813268396982,
+   21.35770043909579
+  ],
+  "physical_precision": 0.09518856016354915
+ },
+ "within_deciles_source_self_information": {
+  "lag1_group": 0.3772593474533265,
+  "lag1_physical": 0.45991088110285283,
+  "lag0_group": 0.5861042928608503,
+  "lag0_physical": 0.5569434208254461
+ },
+ "within_deciles_source_entropy": {
+  "lag1_group": 0.4337183997642354,
+  "lag1_physical": 0.4781500641445027,
+  "lag0_group": 0.642875858676334,
+  "lag0_physical": 0.5832568353960607
+ },
+ "holm_joint": {
+  "transistor_paths:shared_parent": 0.00115966796875,
+  "group_graph:two_step": 0.08272552490234375,
+  "transistor_paths:two_step": 0.1875,
+  "group_graph:shared_parent": 1.0,
+  "group_graph:reverse_only": 1.0,
+  "group_graph:shared_child": 1.0,
+  "transistor_paths:reverse_only": 1.0,
+  "transistor_paths:shared_child": 1.0
+ },
+ "mi_from_5000": {
+  "group_auc": 0.5159463001428574,
+  "physical_auc": 0.5015802507677327,
+  "within_target": 0.4921570379793021,
+  "group_ap_lift": 3.2030272669842463
+ },
+ "mi_parity_from_5000": {
+  "group_auc": 0.6397007505198583,
+  "physical_auc": 0.5769173701597479,
+  "within_target": 0.5977539952092201,
+  "group_ap_lift": 4.254020688342823
+ }
+}

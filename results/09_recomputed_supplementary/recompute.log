@@ -1,0 +1,43 @@
+[20:03:48] loaded: 519 groups, 133926 samples
+[20:03:48] references: 1437 wired group pairs, 3543 wired transistor pairs
+[20:06:17] check: {"lag1_TE": 0.469, "lag0_CMI": 0.632, "MI": 0.597} (main run: lag1 0.469, lag0 0.632, MI 0.597)
+[20:06:18] B: baselines, all groups
+[20:06:42]   source_group_size: group AUC 0.864, precision at allocation 25.09
+[20:07:20]   size_product: group AUC 0.816, precision at allocation 25.09
+[20:08:41]   layout_distance: group AUC 0.928, precision at allocation 20.03
+[20:09:59]   lag0_CMI: group AUC 0.632, precision at allocation 13.93
+[20:11:17]   zero_lag_MI: group AUC 0.597, precision at allocation 13.72
+[20:12:32]   lag1_TE: group AUC 0.469, precision at allocation 2.01
+[20:12:32] B: baselines, clock group excluded
+[20:12:54]   source_group_size: group AUC 0.834, precision at allocation 10.26
+[20:13:25]   size_product: group AUC 0.777, precision at allocation 10.26
+[20:14:41]   layout_distance: group AUC 0.915, precision at allocation 12.54
+[20:15:55]   lag0_CMI: group AUC 0.682, precision at allocation 13.93
+[20:17:08]   zero_lag_MI: group AUC 0.630, precision at allocation 13.65
+[20:18:21]   lag1_TE: group AUC 0.478, precision at allocation 2.01
+[20:18:56] B panel B source_group_size: lag0 0.637, lag1 0.431
+[20:19:43] B panel B size_product: lag0 0.587, lag1 0.425
+[20:20:44] B panel B layout_distance: lag0 0.606, lag1 0.481
+[20:21:32] B panel C group: AUC 0.9693, increment +0.0041
+[20:22:19] B panel C physical: AUC 0.6933, increment -0.0245
+[20:22:19] P: parity-conditioned scores, whole recording
+[20:23:36] P: clock-aligned recording
+[20:28:07] P done
+[20:28:07] D: lag-1 TE at IDTxl target lags
+[20:28:36] D idtxl_multivariate: 56/1443 wired, 3.88 %
+[20:28:38] D lag1_global_cut: 20/1443 wired, 1.39 %
+[20:28:39] D lag1_allocation_matched: 29/1443 wired, 2.01 %
+[20:28:41] D lag1_at_idtxl_target_lags: 29/1443 wired, 2.01 %
+[20:28:43] D lag0_allocation_matched: 201/1443 wired, 13.93 %
+[20:28:45] D lag0_parity_allocation_matched: 201/1443 wired, 13.93 %
+[20:28:47] D mi_allocation_matched: 198/1443 wired, 13.72 %
+/Users/priyongkarkundu/Documents/Honours 2/analyses/supplementary_recompute/recompute_supplementary.py:403: RuntimeWarning: invalid value encountered in scalar divide
+  return 100 * (A & Wd).astype(float).__mul__(W).sum() / (A.astype(float) * W).sum()
+[20:28:49] D source_event_rate_allocation_matched: 281/1443 wired, 19.47 %
+[20:28:51] D source_group_size_allocation_matched: 362/1443 wired, 25.09 %
+[20:28:52] D layout_distance_allocation_matched: 289/1443 wired, 20.03 %
+[20:28:52] D done
+[20:28:52] E: relation classes
+[20:29:01] E transistor_paths: shared parent 63/47
+[20:29:17] E group_graph: shared parent 386/364
+[20:29:17] ALL DONE
