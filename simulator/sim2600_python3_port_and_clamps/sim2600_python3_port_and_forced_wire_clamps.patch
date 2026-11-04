@@ -1,0 +1,757 @@
+diff --git a/sim2600/asm6502.py b/sim2600/asm6502.py
+index 48b5d19..7c04320 100644
+--- a/sim2600/asm6502.py
++++ b/sim2600/asm6502.py
+@@ -41,7 +41,7 @@ def loadProgram (sim, progByteList, baseAddr, setResetVector):
+         return
+     pch = baseAddr >> 8
+     pcl = baseAddr & 0xFF
+-    print('BASE $%2.2X%2.2X'%(pch,pcl))
++    print(('BASE $%2.2X%2.2X'%(pch,pcl)))
+ 
+     sim.initMemory (baseAddr, progByteList)
+     sm = sim.memory
+@@ -49,9 +49,9 @@ def loadProgram (sim, progByteList, baseAddr, setResetVector):
+         sm[0xFFFC] = pcl
+         sm[0xFFFD] = pch
+     else:
+-        print str(sm[0xFFFC])
+-        print str(sm[0xFFFD])
+-        print "Program's reset vector: %X %X"%(sm[0xFFFD], sm[0xFFFC])
++        print(str(sm[0xFFFC]))
++        print(str(sm[0xFFFD]))
++        print("Program's reset vector: %X %X"%(sm[0xFFFD], sm[0xFFFC]))
+         
+ # Addressing modes syntax
+ #   http://en.wikibooks.org/wiki/6502_Assembly
+@@ -681,7 +681,7 @@ def assemble (strProg):
+             t = t[:pos]
+         t = t.strip()
+         toks[i] = t
+-    print toks
++    print(toks)
+     prog = []
+     compileSteps = []
+     for i, t in enumerate(toks):
+@@ -692,8 +692,8 @@ def assemble (strProg):
+         op = spl[0]
+         lineAsm = []
+         #print "Assembling line %4.4d, op '%s': %s"%(i, op, t)
+-        if not asm.has_key(op):
+-            print 'ERROR: unknown opcode [%s] (line %d): %s'%(op, i, t)
++        if op not in asm:
++            print('ERROR: unknown opcode [%s] (line %d): %s'%(op, i, t))
+             continue
+         else: 
+             posD = t.find ('$')
+@@ -717,7 +717,7 @@ def assemble (strProg):
+                     # least significant byte before most significant
+                     dataBytes = [int(hexVal[2:], 16), int(hexVal[:2], 16)]
+                 else:
+-                    print 'ERROR: Hex value [%s] length must be 2 or 4 (line %d): %s'%(hexVal, i, t)
++                    print('ERROR: Hex value [%s] length must be 2 or 4 (line %d): %s'%(hexVal, i, t))
+ 
+             if type(asm[op]) != type(dict()):
+                 assert type(asm[op]) == type(1)
+@@ -767,7 +767,7 @@ def assemble (strProg):
+                 if posY > -1:
+                     valMode += 'y'
+ 
+-                modes = asm[op].keys()
++                modes = list(asm[op].keys())
+                 if valMode in modes:
+                     lineAsm = [asm[op][valMode]]
+                 else:
+@@ -782,7 +782,7 @@ def assemble (strProg):
+             #print 'LINE ASM as tuple: [%s]'%str(lat)
+             strAsm = strBytes % lat
+             txt = 'Compiled (%4.4d):  %-15.15s    --> [%s]'%(i, t, strAsm)
+-            print txt
++            print(txt)
+             compileSteps.append (txt)
+             prog.extend (lineAsm)
+ 
+@@ -793,15 +793,15 @@ def assemble (strProg):
+         strBytes = strBytes[:-2]
+         lat = tuple(prog)
+         strAsm = strBytes % lat
+-        print 'PROGRAM: [%s]'%strAsm
++        print('PROGRAM: [%s]'%strAsm)
+         ##logInfo ('programByteList', strAsm)
+ 
+     return prog
+      
+ # BROKEN:  6502 sim no longer holds its own .memory
+ def setProgram (sim, progName):
+-    if progs.has_key (progName):
+-        print 'Setting 6502 memory to test config and program %s'%progName
++    if progName in progs:
++        print('Setting 6502 memory to test config and program %s'%progName)
+         program = assemble (progs[progName])
+         # Load program into memory starting from $8000
+         sim.initMemory(0x8000, program)
+@@ -831,7 +831,7 @@ def setProgram (sim, progName):
+         sm[0x0007] = 0x03
+         sm[0x0008] = 0x00
+     else:
+-        print 'Setting 6502 memory to ROM image %s'%progName
++        print('Setting 6502 memory to ROM image %s'%progName)
+         if os.path.exists (progName):
+             # load ROM from file
+             of = open (progName, 'rb')
+@@ -853,10 +853,10 @@ def setProgram (sim, progName):
+             baseAddr = 0xF000
+             if len(byteStr) == 8192:
+                 baseAddr = 0xE000
+-                print 'Loading 8kb ROM starting from 0x%X'%baseAddr
++                print('Loading 8kb ROM starting from 0x%X'%baseAddr)
+             elif len(byteStr) == 2048:
+                 baseAddr = 0xF800
+-                print 'Loading 2kb ROM starting from 0x%X'%baseAddr
++                print('Loading 2kb ROM starting from 0x%X'%baseAddr)
+             loadProgram (program, baseAddr, False)
+             # We're running Atari 2600 program, so set memory locations for console
+             # switches and joystick movement
+@@ -866,7 +866,7 @@ def setProgram (sim, progName):
+             sm[0x0280] = 0xFF   # no joystick motion
+             # joystick trigger buttons read on bit 7 of INPT4 and INPT5 of TIA            
+         else:
+-            print "ERROR: Unknown program '%s'"%progName
++            print("ERROR: Unknown program '%s'"%progName)
+         
+ 
+ def getProcStatusStr():
+diff --git a/sim2600/circuitSimulatorBase.py b/sim2600/circuitSimulatorBase.py
+index 36a27f8..d6fffc2 100644
+--- a/sim2600/circuitSimulatorBase.py
++++ b/sim2600/circuitSimulatorBase.py
+@@ -20,8 +20,8 @@
+ 
+ import os, pickle, traceback
+ from array import array
+-from nmosFet import NmosFet
+-from wire import Wire
++from .nmosFet import NmosFet
++from .wire import Wire
+ 
+ class CircuitSimulatorBase:
+     def __init__(self):
+@@ -210,7 +210,7 @@ class CircuitSimulatorBase:
+         if wire != None:
+             wire.setHigh()
+         else:
+-            print 'ERROR - trying to set wire None high'
++            print('ERROR - trying to set wire None high')
+ 
+     def setLowWN(self, n):
+         if n in self.wireNames:
+@@ -223,7 +223,7 @@ class CircuitSimulatorBase:
+         if wire != None:
+             wire.setLow()
+         else:
+-            print 'ERROR - trying to set wire None low'
++            print('ERROR - trying to set wire None low')
+ 
+     def setHigh(self, wireIndex):
+         self.wireList[wireIndex].setPulledHighOrLow(True)
+@@ -271,7 +271,7 @@ class CircuitSimulatorBase:
+     # Use for debug and to examine busses.  This is slow. 
+     def getGen(self, strSigName, size):
+         data = 0
+-        for i in xrange(size, -1, -1):
++        for i in range(size, -1, -1):
+             data = data * 2
+             bit = '%s%d'%(strSigName,i)
+             if self.isHighWN(bit):
+@@ -280,7 +280,7 @@ class CircuitSimulatorBase:
+ 
+     def setGen(self, data, string, size):
+         d = data
+-        for i in xrange(size):
++        for i in range(size):
+             bit = '%s%d'%(string,i)
+             if (d & 1) == 1:
+                 self.setHigh(bit)
+@@ -312,10 +312,10 @@ class CircuitSimulatorBase:
+         if not os.path.exists(filePath):
+             raise Exception('Could not find circuit file: %s  from cwd %s'%
+                             (filePath, os.getcwd()))
+-        print 'Loading %s' % filePath
++        print('Loading %s' % filePath)
+         
+         of = open (filePath, 'rb')
+-        rootObj = pickle.load (of)
++        rootObj = pickle.load (of, encoding="latin1")
+         of.close()
+ 
+         numWires = rootObj['NUM_WIRES']
+diff --git a/sim2600/circuitSimulatorUsingLists.py b/sim2600/circuitSimulatorUsingLists.py
+index 77d8f1a..4444949 100644
+--- a/sim2600/circuitSimulatorUsingLists.py
++++ b/sim2600/circuitSimulatorUsingLists.py
+@@ -18,9 +18,9 @@
+ # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ # THE SOFTWARE.
+ 
+-from circuitSimulatorBase import CircuitSimulatorBase
+-from nmosFet import NmosFet
+-from wire import Wire
++from .circuitSimulatorBase import CircuitSimulatorBase
++from .nmosFet import NmosFet
++from .wire import Wire
+ 
+ class CircuitSimulator(CircuitSimulatorBase):
+     def __init__(self):
+diff --git a/sim2600/circuitSimulatorUsingSets.py b/sim2600/circuitSimulatorUsingSets.py
+index 1efab08..95422dc 100644
+--- a/sim2600/circuitSimulatorUsingSets.py
++++ b/sim2600/circuitSimulatorUsingSets.py
+@@ -18,9 +18,9 @@
+ # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ # THE SOFTWARE.
+ 
+-from circuitSimulatorBase import CircuitSimulatorBase
+-from nmosFet import NmosFet
+-from wire import Wire
++from .circuitSimulatorBase import CircuitSimulatorBase
++from .nmosFet import NmosFet
++from .wire import Wire
+ 
+ class CircuitSimulator(CircuitSimulatorBase):
+     def __init__(self):
+diff --git a/sim2600/compareSim.py b/sim2600/compareSim.py
+index e6beb34..c9d0e73 100644
+--- a/sim2600/compareSim.py
++++ b/sim2600/compareSim.py
+@@ -20,9 +20,9 @@
+ # THE SOFTWARE.
+ 
+ import time
+-import params
++from . import params
+ 
+-from sim2600Console import Sim2600Console
++from .sim2600Console import Sim2600Console
+ 
+ class MainSim:
+     def __init__(self):
+diff --git a/sim2600/imageBase.py b/sim2600/imageBase.py
+index f4d6ba8..c45a5d4 100644
+--- a/sim2600/imageBase.py
++++ b/sim2600/imageBase.py
+@@ -19,7 +19,7 @@
+ # THE SOFTWARE.
+ #------------------------------------------------------------------------------
+ 
+-import params
++from . import params
+ 
+ class ImageBase():
+     def __init__(self):
+diff --git a/sim2600/imageOpenGL.py b/sim2600/imageOpenGL.py
+index b0e7950..203b2e4 100644
+--- a/sim2600/imageOpenGL.py
++++ b/sim2600/imageOpenGL.py
+@@ -31,8 +31,8 @@
+ 
+ import sys, time, cProfile
+ from array import array
+-import params
+-from imageBase import ImageBase
++from . import params
++from .imageBase import ImageBase
+ 
+ # If profiling, hit 'ESC' in the gl window to exit and display
+ # profile information.  Exiting by clicking the window's close
+@@ -226,11 +226,11 @@ def getInterface():
+             if key not in globalDict:
+                 globalDict[key] = glut.__dict__[key]
+ 
+-        print('Done importing OpenGL.  A window should appear to show ' +
+-              'pixels and image frames')
++        print(('Done importing OpenGL.  A window should appear to show ' +
++              'pixels and image frames'))
+ 
+     except RuntimeError as err:
+-        print('RuntimeError {0}: {1}'.format(err.errno. err.strerror))
++        print(('RuntimeError {0}: {1}'.format(err.errno. err.strerror)))
+         print('Could not import PyOpenGL.  Will not display pixels and frames')
+         return None
+ 
+diff --git a/sim2600/imagePIL.py b/sim2600/imagePIL.py
+index 8cbb324..5ee6b4c 100644
+--- a/sim2600/imagePIL.py
++++ b/sim2600/imagePIL.py
+@@ -19,8 +19,8 @@
+ # THE SOFTWARE.
+ 
+ import os, time
+-from imageBase import ImageBase
+-import params
++from .imageBase import ImageBase
++from . import params
+ 
+ #Image = None
+ 
+@@ -55,7 +55,7 @@ class ImagePIL(ImageBase):
+         if self.lastPixelY >= params.frameHeightPixels * 0.8:
+             fileName = 'frame_%s_%4.4d.png'%(self.dateTimeStr, self.frameCount)
+             filePath = self.outputDir + '/' + fileName
+-            print('Saving frame %d image to %s'%(self.frameCount, filePath))
++            print(('Saving frame %d image to %s'%(self.frameCount, filePath)))
+             self.image.save(filePath)
+             self.frameCount += 1
+         self.lastPixelX = 0
+diff --git a/sim2600/mainSim.py b/sim2600/mainSim.py
+index 8265793..29150bc 100755
+--- a/sim2600/mainSim.py
++++ b/sim2600/mainSim.py
+@@ -21,12 +21,12 @@
+ # THE SOFTWARE.
+ 
+ import time
+-import params
+-import imageOpenGL
+-import imagePIL
+-from sim2600Console import Sim2600Console
+-import sim6502
+-import simTIA
++from . import params
++from . import imageOpenGL
++from . import imagePIL
++from .sim2600Console import Sim2600Console
++from . import sim6502
++from . import simTIA
+ 
+ class MainSim:
+     def __init__(self):
+@@ -70,7 +70,7 @@ class MainSim:
+ 
+                 restartImage = False
+                 if self.sim.simTIA.isHigh(self.sim.simTIA.vsync):
+-                    print('VSYNC high at TIA halfclock %d'%(tia.halfClkCount))
++                    print(('VSYNC high at TIA halfclock %d'%(tia.halfClkCount)))
+                     restartImage = True
+ 
+                 # grayscale
+@@ -91,7 +91,7 @@ class MainSim:
+                     self.imagePIL.setNextPixel(rgba)
+ 
+                 if self.sim.simTIA.isHigh(self.sim.simTIA.vblank):
+-                    print('VBLANK at TIA halfclock %d'%(tia.halfClkCount))
++                    print(('VBLANK at TIA halfclock %d'%(tia.halfClkCount)))
+ 
+                 #cpuStr = self.sim6502.getStateStr1()
+                 #tiaStr = self.simTIA.getTIAStateStr1()
+@@ -105,9 +105,9 @@ class MainSim:
+             totalWires = self.sim.sim6507.numWiresRecalculated + \
+                          self.sim.simTIA.numWiresRecalculated
+             wiresPerClock = 2.0 * totalWires / params.numTIAHalfClocksPerRender
+-            print('                                          ' + 
++            print(('                                          ' + 
+                   '%d wires/clk,  %g msec/clk'%
+-                  (wiresPerClock, secPerSimClock * 1000))
++                  (wiresPerClock, secPerSimClock * 1000)))
+             self.sim.sim6507.numWiresRecalculated = 0
+             self.sim.simTIA.numWiresRecalculated = 0
+         self.lastUpdateTimeSec = time.time()
+diff --git a/sim2600/mainsimapi.py b/sim2600/mainsimapi.py
+index 5739c3f..53f68f1 100644
+--- a/sim2600/mainsimapi.py
++++ b/sim2600/mainsimapi.py
+@@ -21,12 +21,12 @@
+ # THE SOFTWARE.
+ 
+ import time
+-import params
++from . import params
+ 
+-import imagePIL
+-from sim2600Console import Sim2600Console
+-import sim6502
+-import simTIA
++from . import imagePIL
++from .sim2600Console import Sim2600Console
++from . import sim6502
++from . import simTIA
+ 
+ class MainSim:
+     """
+@@ -70,7 +70,7 @@ class MainSim:
+ 
+                 restartImage = False
+                 if self.sim.simTIA.isHigh(self.sim.simTIA.vsync):
+-                    print('VSYNC high at TIA halfclock %d'%(tia.halfClkCount))
++                    print(('VSYNC high at TIA halfclock %d'%(tia.halfClkCount)))
+                     eventLogger('VSYNC high', tia.halfClkCount, 
+                                 self.sim.sim6507.halfClkCount)
+                     restartImage = True
+@@ -93,7 +93,7 @@ class MainSim:
+                                 self.sim.sim6507.halfClkCount, rgba)
+ 
+                 if self.sim.simTIA.isHigh(self.sim.simTIA.vblank):
+-                    print('VBLANK at TIA halfclock %d'%(tia.halfClkCount))
++                    print(('VBLANK at TIA halfclock %d'%(tia.halfClkCount)))
+                     eventLogger('VBLANK', tia.halfClkCount, 
+                                 self.sim.sim6507.halfClkCount)
+ 
+@@ -110,9 +110,9 @@ class MainSim:
+             totalWires = self.sim.sim6507.numWiresRecalculated + \
+                          self.sim.simTIA.numWiresRecalculated
+             wiresPerClock = 2.0 * totalWires / params.numTIAHalfClocksPerRender
+-            print('                                          ' + 
++            print(('                                          ' + 
+                   '%d wires/clk,  %g msec/clk'%
+-                  (wiresPerClock, secPerSimClock * 1000))
++                  (wiresPerClock, secPerSimClock * 1000)))
+             self.sim.sim6507.numWiresRecalculated = 0
+             self.sim.simTIA.numWiresRecalculated = 0
+         self.lastUpdateTimeSec = time.time()
+diff --git a/sim2600/mycircuitsimulator.pyx b/sim2600/mycircuitsimulator.pyx
+index 91ab5c8..bf588c8 100644
+--- a/sim2600/mycircuitsimulator.pyx
++++ b/sim2600/mycircuitsimulator.pyx
+@@ -17,7 +17,7 @@
+ # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ # THE SOFTWARE.
+-#cython: language_level=2, boundscheck=False, wraparound=False, nonecheck=False, initializedcheck=False, overflowcheck=False
++#cython: language_level=3, boundscheck=False, wraparound=False, nonecheck=False, initializedcheck=False, overflowcheck=False
+ 
+ import os, pickle, traceback
+ from array import array
+@@ -277,7 +277,7 @@ class CircuitSimulator(object):
+     def getGen(self, strSigName, size):
+         raise NotImplementedError()
+         data = 0
+-        for i in xrange(size, -1, -1):
++        for i in range(size, -1, -1):
+             data = data * 2
+             bit = '%s%d'%(strSigName,i)
+             if self.isHighWN(bit):
+@@ -287,7 +287,7 @@ class CircuitSimulator(object):
+     def setGen(self, data, string, size):
+         raise NotImplementedError()
+         d = data
+-        for i in xrange(size):
++        for i in range(size):
+             bit = '%s%d'%(string,i)
+             if (d & 1) == 1:
+                 self.setHigh(bit)
+@@ -319,10 +319,10 @@ class CircuitSimulator(object):
+         if not os.path.exists(filePath):
+             raise Exception('Could not find circuit file: %s  from cwd %s'%
+                             (filePath, os.getcwd()))
+-        print 'Loading %s' % filePath
++        print('Loading %s' % filePath)
+         
+         of = open (filePath, 'rb')
+-        rootObj = pickle.load (of)
++        rootObj = pickle.load (of, encoding="latin1")
+         of.close()
+ 
+         numWires = rootObj['NUM_WIRES']
+@@ -416,13 +416,14 @@ class CircuitSimulator(object):
+ 
+         # create the calculator
+         self.createStateArrays()
++        self._forced = np.zeros(len(self._wireList), dtype=np.uint8)
+         self.calculator  = WireCalculator(self._wireList, 
+                                           self._transistorList, 
+                                           self._wireState, 
+                                           self._wirePulled, 
+                                           self._transistorState, 
+                                           self.gndWireIndex,
+-                                          self.vccWireIndex)
++                                          self.vccWireIndex, self._forced)
+ 
+         return rootObj
+ 
+@@ -541,6 +542,7 @@ cdef class WireCalculator:
+ 
+     cdef np.uint8_t[:] _wirePulled
+     cdef np.uint8_t[:] _transistorState
++    cdef np.uint8_t[:] _forced
+     cdef np.uint8_t[:] recalcArray
+     cdef int gndWireIndex
+     cdef int vccWireIndex
+@@ -562,7 +564,7 @@ cdef class WireCalculator:
+     def __init__(self, wireList, transistorList, 
+                  wireState, wirePulled, transistorState, # all references
+                  gndWireIndex,
+-                 vccWireIndex):
++                 vccWireIndex, forced=None):
+ 
+         self._numWires = np.zeros(len(wireList), dtype=np.int32)
+ 
+@@ -573,6 +575,8 @@ cdef class WireCalculator:
+ 
+         self._wirePulled = wirePulled
+         self._transistorState = transistorState
++        # intervention support (added for the thesis): 0 none, 1 forced low, 2 forced high
++        self._forced = forced if forced is not None else np.zeros(len(wireList), dtype=np.uint8)
+ 
+         self.recalcArray = None
+ 
+@@ -712,7 +716,7 @@ cdef class WireCalculator:
+                         print(msg)
+                         break
+             if needNewArray:
+-                print "OMG WE NEEDED A NEW ARRAY"
++                print("OMG WE NEEDED A NEW ARRAY")
+                 self.recalcArray = np.zeros_like(self.recalcArray) # [False] * len(self.recalcArray)
+                 
+ 
+@@ -748,6 +752,13 @@ cdef class WireCalculator:
+         self._addWireToGroup(wireIndex, group)
+         
+         newValue = self._getWireValue(group)
++        for groupWireIndex in group.gvec:
++            if self._forced[groupWireIndex] == 2:
++                newValue = HIGH
++                break
++            if self._forced[groupWireIndex] == 1:
++                newValue = GROUNDED
++                break
+         newHigh = newValue == HIGH or newValue == PULLED_HIGH or \
+                   newValue == FLOATING_HIGH
+ 
+diff --git a/sim2600/sim2600Console.py b/sim2600/sim2600Console.py
+index bf60eed..0dd0579 100644
+--- a/sim2600/sim2600Console.py
++++ b/sim2600/sim2600Console.py
+@@ -20,10 +20,10 @@
+ 
+ import os, struct
+ from array import array
+-import params
+-from sim6502 import Sim6502
+-from simTIA import SimTIA
+-from emuPIA import EmuPIA
++from . import params
++from .sim6502 import Sim6502
++from .simTIA import SimTIA
++from .emuPIA import EmuPIA
+ 
+ class Sim2600Console:
+     def __init__(self, romFilePath, sim6502factory=Sim6502, 
+@@ -125,7 +125,7 @@ class Sim2600Console:
+               data = data | (1<<7)
+           
+       if addr & 0x200 and addr < 0x2FF:
+-          print('6507 READ [0x%X]: 0x%X'%(addr, data))
++          print(('6507 READ [0x%X]: 0x%X'%(addr, data)))
+ 
+       cpu.setDataBusValue(data)
+       cpu.recalcWireList(cpu.dataBusPads)
+@@ -138,7 +138,7 @@ class Sim2600Console:
+       pia = self.emuPIA
+ 
+       if cpu.isLow(cpu.padReset) and not setup:
+-          print('Skipping 6507 write during reset.  addr: 0x%X'%(addr))
++          print(('Skipping 6507 write during reset.  addr: 0x%X'%(addr)))
+           return
+                 
+       if addr >= 0xF000 and not setup:
+@@ -200,7 +200,7 @@ class Sim2600Console:
+     def loadProgramBytes(self, progByteList, baseAddr, setResetVector):
+         pch = baseAddr >> 8
+         pcl = baseAddr & 0xFF
+-        print('loadProgramBytes base addr $%2.2X%2.2X'%(pch,pcl))
++        print(('loadProgramBytes base addr $%2.2X%2.2X'%(pch,pcl)))
+ 
+         romDuplicate = 1
+         programLen = len(progByteList)
+@@ -224,13 +224,13 @@ class Sim2600Console:
+         else:
+             pcl = self.readMemory(0xFFFA)
+             pch = self.readMemory(0xFFFB)
+-            print("NMI vector:     %X %X"%(pch, pcl))          
++            print(("NMI vector:     %X %X"%(pch, pcl)))          
+             pcl = self.readMemory(0xFFFC)
+             pch = self.readMemory(0xFFFD)
+-            print("Reset vector:   %X %X"%(pch, pcl))
++            print(("Reset vector:   %X %X"%(pch, pcl)))
+             pcl = self.readMemory(0xFFFE)
+             pch = self.readMemory(0xFFFF)
+-            print("IRQ/BRK vector: %X %X"%(pch, pcl))
++            print(("IRQ/BRK vector: %X %X"%(pch, pcl)))
+ 
+     def loadProgram(self, programFilePath):
+ 
+@@ -239,7 +239,7 @@ class Sim2600Console:
+                    'from current dir %s'%(os.getcwd())
+             raise RuntimeError(estr)
+ 
+-        print('Setting 6502 program to ROM image %s'%(programFilePath))
++        print(('Setting 6502 program to ROM image %s'%(programFilePath)))
+         self.programFilePath = programFilePath
+ 
+         # load ROM from file
+@@ -251,7 +251,7 @@ class Sim2600Console:
+         progHex = ''
+         count = 0
+         for byte in byteStr:
+-            intVal = struct.unpack ('1B', byte)[0]
++            intVal = byte
+             progHex += '%2.2X '%intVal
+             count += 1
+             if count == 8:
+@@ -263,10 +263,10 @@ class Sim2600Console:
+ 
+         baseAddr = 0xF000
+         if len(byteStr) == 8192:
+-            print('Loading 8kb ROM starting from 0x%X'%baseAddr)
++            print(('Loading 8kb ROM starting from 0x%X'%baseAddr))
+         elif len(byteStr) == 2048:
+             baseAddr = 0xF800
+-            print('Loading 2kb ROM starting from 0x%X'%baseAddr)
++            print(('Loading 2kb ROM starting from 0x%X'%baseAddr))
+ 
+         self.loadProgramBytes(program, baseAddr, False)
+ 
+diff --git a/sim2600/sim6502.py b/sim2600/sim6502.py
+index 59887b9..e9b4a9c 100644
+--- a/sim2600/sim6502.py
++++ b/sim2600/sim6502.py
+@@ -18,17 +18,17 @@
+ # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ # THE SOFTWARE.
+ 
+-import params
++from . import params
+ 
+ # Choose between two flavors of simulation.  One uses sets
+ # to track the groups of wires switched together by transistors.
+ # The other uses lists.
+ 
+-from circuitSimulatorUsingLists import CircuitSimulator as CircuitSimulatorLists
+-from circuitSimulatorUsingSets import CircuitSimulator as CircuitSimulatorSets
+-import pyximport; pyximport.install()
++from .circuitSimulatorUsingLists import CircuitSimulator as CircuitSimulatorLists
++from .circuitSimulatorUsingSets import CircuitSimulator as CircuitSimulatorSets
+ 
+-from mycircuitsimulator import CircuitSimulator as MyCircuitSimulator
++
++from .mycircuitsimulator import CircuitSimulator as MyCircuitSimulator
+ 
+ class Sim6502(CircuitSimulatorLists):
+     def __init__(self):
+@@ -103,7 +103,7 @@ class Sim6502(CircuitSimulatorLists):
+         self.setHighWN('NMI')  # no interrupt
+         self.setHighWN('RDY')  # let the chip run.  Will connect to TIA with pullup
+         self.recalcWireNameList(['IRQ','NMI','RES','RDY'])
+-        for i in xrange(4):
++        for i in range(4):
+             if i % 2:
+                 self.setLowWN('CLK0')
+             else:
+@@ -190,7 +190,7 @@ class Sim6502Sets(CircuitSimulatorSets):
+         self.setHighWN('NMI')  # no interrupt
+         self.setHighWN('RDY')  # let the chip run.  Will connect to TIA with pullup
+         self.recalcWireNameList(['IRQ','NMI','RES','RDY'])
+-        for i in xrange(4):
++        for i in range(4):
+             if i % 2:
+                 self.setLowWN('CLK0')
+             else:
+@@ -208,7 +208,7 @@ class Sim6502Sets(CircuitSimulatorSets):
+ class MySim6502(MyCircuitSimulator):
+     def __init__(self, chipfile = params.chip6502File):
+         MyCircuitSimulator.__init__(self)
+-        print "MySim6502 Loading", chipfile
++        print("MySim6502 Loading", chipfile)
+         self.loadCircuit(chipfile)
+ 
+         # No need to update the names based on params.mos6502WireInit.
+@@ -278,7 +278,7 @@ class MySim6502(MyCircuitSimulator):
+         self.setHighWN('NMI')  # no interrupt
+         self.setHighWN('RDY')  # let the chip run.  Will connect to TIA with pullup
+         self.recalcWireNameList(['IRQ','NMI','RES','RDY'])
+-        for i in xrange(4):
++        for i in range(4):
+             if i % 2:
+                 self.setLowWN('CLK0')
+             else:
+diff --git a/sim2600/simTIA.py b/sim2600/simTIA.py
+index d5d23d6..df5e351 100644
+--- a/sim2600/simTIA.py
++++ b/sim2600/simTIA.py
+@@ -19,18 +19,18 @@
+ # THE SOFTWARE.
+ 
+ from array import array
+-import params
++from . import params
+ 
+ # Choose between two flavors of simulation.  One uses sets
+ # to track the groups of wires switched together by transistors.
+ # The other uses lists.
+ 
+-from circuitSimulatorUsingLists import CircuitSimulator as CircuitSimulatorLists
+-from circuitSimulatorUsingSets import CircuitSimulator as CircuitSimulatorSets
++from .circuitSimulatorUsingLists import CircuitSimulator as CircuitSimulatorLists
++from .circuitSimulatorUsingSets import CircuitSimulator as CircuitSimulatorSets
+ 
+-import pyximport; pyximport.install()
+ 
+-from mycircuitsimulator import CircuitSimulator as MyCircuitSimulator
++
++from .mycircuitsimulator import CircuitSimulator as MyCircuitSimulator
+ 
+ class SimTIA(CircuitSimulatorLists):
+     def __init__(self):
+@@ -146,7 +146,7 @@ class SimTIA(CircuitSimulatorLists):
+         # least significant
+ 
+         self.colLumToRGB8LUT = [0]*128
+-        for intKey in xrange(len(col)):
++        for intKey in range(len(col)):
+             colPair = col[intKey]
+             start = colPair[0]
+             end   = colPair[1]
+@@ -155,7 +155,7 @@ class SimTIA(CircuitSimulatorLists):
+                 # result is tuple of same dim as 'start' and 'end'      
+                 dif += (end[i] - startv,)
+             # lumInt from 0 to 7
+-            for lumInt in xrange(8):
++            for lumInt in range(8):
+                 lumFrac = lumInt / 7.0
+                 ctup = ()
+                 for i, startv in enumerate(start):
+@@ -321,7 +321,7 @@ class SimTIASets(CircuitSimulatorSets):
+         # least significant
+ 
+         self.colLumToRGB8LUT = [0]*128
+-        for intKey in xrange(len(col)):
++        for intKey in range(len(col)):
+             colPair = col[intKey]
+             start = colPair[0]
+             end   = colPair[1]
+@@ -330,7 +330,7 @@ class SimTIASets(CircuitSimulatorSets):
+                 # result is tuple of same dim as 'start' and 'end'      
+                 dif += (end[i] - startv,)
+             # lumInt from 0 to 7
+-            for lumInt in xrange(8):
++            for lumInt in range(8):
+                 lumFrac = lumInt / 7.0
+                 ctup = ()
+                 for i, startv in enumerate(start):
+@@ -497,7 +497,7 @@ class MySimTIA(MyCircuitSimulator):
+         # least significant
+ 
+         self.colLumToRGB8LUT = [0]*128
+-        for intKey in xrange(len(col)):
++        for intKey in range(len(col)):
+             colPair = col[intKey]
+             start = colPair[0]
+             end   = colPair[1]
+@@ -506,7 +506,7 @@ class MySimTIA(MyCircuitSimulator):
+                 # result is tuple of same dim as 'start' and 'end'      
+                 dif += (end[i] - startv,)
+             # lumInt from 0 to 7
+-            for lumInt in xrange(8):
++            for lumInt in range(8):
+                 lumFrac = lumInt / 7.0
+                 ctup = ()
+                 for i, startv in enumerate(start):
