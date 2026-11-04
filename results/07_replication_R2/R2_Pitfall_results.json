@@ -1,0 +1,322 @@
+{
+ "game": "Pitfall",
+ "hashes": {
+  "PREDICTIONS_R2.md": "062360e8dc9b576cc81257e824ac1ea21ff725ca91ef3537bb0b64647d495a5b",
+  "run_replication.py": "99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912",
+  "common.py": "df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a"
+ },
+ "raw_rows": 639997,
+ "kept_offset": 0,
+ "samples": 213333,
+ "clock_aligned_start": 1720,
+ "clock_events_off_offset": 1720,
+ "groups": 537,
+ "clock_group": 6,
+ "clock_group_rate": 0.9919468624169725,
+ "wired_group_pairs": 1523,
+ "K_counts": [
+  0,
+  17,
+  13,
+  10,
+  81,
+  21,
+  30,
+  17,
+  61,
+  34,
+  53,
+  10,
+  190
+ ],
+ "clock_aligned": {
+  "R2.1_group_auc_lag1": {
+   "auc": 0.39658529857429403,
+   "lo": 0.3710648753401556,
+   "hi": 0.42054911758503943,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "group_auc_lag0": {
+   "auc": 0.5723602816142008,
+   "lo": 0.5482247343369112,
+   "hi": 0.5939297444706139,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "group_auc_distance": {
+   "auc": 0.928725421888574,
+   "lo": 0.9180065348335503,
+   "hi": 0.9398326029909733,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "R2.1b_physical_auc_lag1": {
+   "auc": 0.4376770004649117,
+   "lo": 0.35061740685598247,
+   "hi": 0.5298456522411474
+  },
+  "R2.2_lag0_minus_lag1": {
+   "diff": 0.1757749830399068,
+   "lo": 0.15256648459646047,
+   "hi": 0.19796381750343794,
+   "verdict": "supported"
+  },
+  "R2.7_distance_minus_lag0": {
+   "diff": 0.35636514027437316,
+   "lo": 0.3289261244697344,
+   "hi": 0.3862886340484243,
+   "verdict": "supported"
+  },
+  "R2.3": {
+   "groups": 537,
+   "locked_95": 461,
+   "strict": 418,
+   "share_locked": 0.8584729981378026
+  },
+  "R2.4_scope": {
+   "pairs": 99112,
+   "wired": 744,
+   "identity_max_abs": 2.260578470291222e-16
+  },
+  "R2.4": {
+   "A9.1_followership_within_target": {
+    "auc": 0.7046985054971368,
+    "lo": 0.6439850932176698,
+    "hi": 0.7669007199846374,
+    "n_pos": 744,
+    "n_neg": 52712,
+    "strata": 200,
+    "verdict": "supported, material",
+    "prediction": "above 0.5",
+    "prediction_met": true
+   },
+   "desc_TE_within_target": {
+    "auc": 0.5637982121834906,
+    "lo": 0.5070768807934021,
+    "hi": 0.60678224974513,
+    "n_pos": 744,
+    "n_neg": 52712,
+    "strata": 200,
+    "verdict": "supported"
+   },
+   "desc_activity_within_target": {
+    "auc": 0.6051364806353133,
+    "lo": 0.5605901129281275,
+    "hi": 0.6375320371188425,
+    "n_pos": 744,
+    "n_neg": 52712,
+    "strata": 200,
+    "verdict": "supported, material"
+   },
+   "A9.2_TE_minus_activity_within_target": {
+    "diff": -0.04133826845182276,
+    "lo": -0.06231187407048559,
+    "hi": -0.025439048912199252,
+    "verdict": "contradicted",
+    "prediction": "below 0",
+    "prediction_met": true
+   },
+   "A9.3_target_c_within_B_deciles": {
+    "auc": 0.36882090412166796,
+    "lo": 0.3390820802611435,
+    "hi": 0.4002444758532133,
+    "n_pos": 744,
+    "n_neg": 98368,
+    "strata": 10,
+    "verdict": "contradicted",
+    "prediction": "below 0.5",
+    "prediction_met": true
+   },
+   "desc_TE_within_B_deciles": {
+    "auc": 0.37438263267671623,
+    "lo": 0.3452745883538806,
+    "hi": 0.4037237592894617,
+    "n_pos": 744,
+    "n_neg": 98368,
+    "strata": 10,
+    "verdict": "contradicted"
+   },
+   "A9.4_TE_within_B_decile_x_c_quintile": {
+    "auc": 0.4908008592263561,
+    "lo": 0.4624364764985072,
+    "hi": 0.5231813253905465,
+    "n_pos": 744,
+    "n_neg": 92245,
+    "strata": 45,
+    "verdict": "not supported"
+   },
+   "A9.4_primary_difference": {
+    "diff": 0.11641822654963985,
+    "lo": 0.08056405402912661,
+    "hi": 0.15147542226299004,
+    "verdict": "supported",
+    "prediction": "above 0",
+    "prediction_met": true
+   },
+   "A9.4_reading": "accounted for",
+   "A9.4_stratified_interval_includes_0.5": true,
+   "desc_TE_within_phase": {
+    "auc": 0.4847107088961294,
+    "lo": 0.4478627921784675,
+    "hi": 0.5210625562421084,
+    "n_pos": 744,
+    "n_neg": 98368,
+    "strata": 2,
+    "verdict": "not supported"
+   },
+   "desc_not_followed_within_target": {
+    "auc": 0.2953014945028633,
+    "lo": 0.23309928001536256,
+    "hi": 0.35601490678233016,
+    "n_pos": 744,
+    "n_neg": 52712,
+    "strata": 200,
+    "verdict": "contradicted"
+   },
+   "desc_target_q0_within_B_deciles": {
+    "auc": 0.641157595175571,
+    "lo": 0.6074837690871183,
+    "hi": 0.6719875669386853,
+    "n_pos": 744,
+    "n_neg": 98368,
+    "strata": 10,
+    "verdict": "supported, material"
+   },
+   "desc_target_pi_within_B_deciles": {
+    "auc": 0.45799629194996666,
+    "lo": 0.4263790361628691,
+    "hi": 0.48678446345342113,
+    "n_pos": 744,
+    "n_neg": 98368,
+    "strata": 10,
+    "verdict": "contradicted"
+   },
+   "n_pairs": 99112,
+   "n_wired": 744
+  },
+  "R2.5": {
+   "mixed": {
+    "auc": 0.6207830041707127,
+    "lo": 0.5434080530698926,
+    "hi": 0.6766720341021654,
+    "n_pos": 271,
+    "n_neg": 39622,
+    "strata": 75,
+    "targets_with_wired": 75
+   },
+   "locked": {
+    "auc": 0.5144248718731969,
+    "lo": 0.419391936125506,
+    "hi": 0.6304271230249946,
+    "n_pos": 111,
+    "n_neg": 21778,
+    "strata": 41,
+    "targets_with_wired": 41
+   },
+   "strict": {
+    "auc": 0.4735314044489998,
+    "lo": 0.429231703652842,
+    "hi": 0.5127639177290004,
+    "n_pos": 871,
+    "n_neg": 146617,
+    "strata": 277,
+    "targets_with_wired": 277
+   },
+   "mixed_minus_strict": {
+    "diff": 0.14725159972171292,
+    "lo": 0.06288513424366468,
+    "hi": 0.21753394770405052,
+    "verdict": "supported"
+   },
+   "targets_per_class": {
+    "mixed": 76,
+    "locked": 41,
+    "strict": 420
+   }
+  },
+  "latch_pairs": 42,
+  "R2.6_latch_lag1": {
+   "auc": 0.9618981227202952,
+   "lo": 0.8887419595407448,
+   "hi": 0.9941752561212268,
+   "n_pos": 42,
+   "n_neg": 14609,
+   "strata": 10
+  },
+  "R2.6b_latch_lag0": {
+   "auc": 0.3714000028166237,
+   "lo": 0.26589925224682054,
+   "hi": 0.47576552874443223,
+   "n_pos": 42,
+   "n_neg": 14609,
+   "strata": 10
+  },
+  "latch_distance": {
+   "auc": 0.9287957525314405,
+   "lo": 0.8963835923461988,
+   "hi": 0.9593752003521954,
+   "n_pos": 42,
+   "n_neg": 14609,
+   "strata": 10
+  },
+  "share_wired_strict_same_phase": 0.4885095206828628
+ },
+ "whole_recording": {
+  "R2.1_group_auc_lag1": {
+   "auc": 0.45852465709172646,
+   "lo": 0.43457531543685646,
+   "hi": 0.481209172224545,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "group_auc_lag0": {
+   "auc": 0.631359182395003,
+   "lo": 0.6107343792041716,
+   "hi": 0.6506052646320755,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "group_auc_distance": {
+   "auc": 0.928725421888574,
+   "lo": 0.9180065348335503,
+   "hi": 0.9398326029909733,
+   "n_pos": 1523,
+   "n_neg": 286309,
+   "strata": 1
+  },
+  "R2.1b_physical_auc_lag1": {
+   "auc": 0.4828062382660194,
+   "lo": 0.3863364921962888,
+   "hi": 0.5902964807241198
+  },
+  "R2.2_lag0_minus_lag1": {
+   "diff": 0.17283452530327653,
+   "lo": 0.14949682170888592,
+   "hi": 0.1951209545371372,
+   "verdict": "supported"
+  },
+  "R2.7_distance_minus_lag0": {
+   "diff": 0.297366239493571,
+   "lo": 0.2707791695668794,
+   "hi": 0.32410604364178736,
+   "verdict": "supported"
+  }
+ },
+ "predictions_met": {
+  "R2.1": true,
+  "R2.1b": true,
+  "R2.2": true,
+  "R2.3": true,
+  "R2.4": true,
+  "R2.5": true,
+  "R2.6": true,
+  "R2.6b": true,
+  "R2.7": true
+ }
+}

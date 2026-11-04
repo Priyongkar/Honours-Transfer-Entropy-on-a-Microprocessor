@@ -1,0 +1,6 @@
+[14:15:20] R2-Pitfall: PREDICTIONS_R2.md sha256 062360e8dc9b576cc81257e824ac1ea21ff725ca91ef3537bb0b64647d495a5b
+[14:15:20] R2-Pitfall: run_replication.py sha256 99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912
+[14:15:20] R2-Pitfall: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[14:16:58] Pitfall: {'game': 'Pitfall', 'hashes': {'PREDICTIONS_R2.md': '062360e8dc9b576cc81257e824ac1ea21ff725ca91ef3537bb0b64647d495a5b', 'run_replication.py': '99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912', 'common.py': 'df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a'}, 'raw_rows': 639997, 'kept_offset': 0, 'samples': 213333, 'clock_aligned_start': 1720, 'clock_events_off_offset': 1720, 'groups': 537, 'clock_group': 6, 'clock_group_rate': 0.9919468624169725, 'wired_group_pairs': 1523, 'K_counts': [0, 17, 13, 10, 81, 21, 30, 17, 61, 34, 53, 10, 190]}
+[14:20:43] Pitfall: clock-aligned done
+[14:23:01] Pitfall: done {'R2.1': True, 'R2.1b': True, 'R2.2': True, 'R2.3': True, 'R2.4': True, 'R2.5': True, 'R2.6': True, 'R2.6b': True, 'R2.7': True}

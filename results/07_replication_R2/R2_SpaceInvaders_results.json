@@ -1,0 +1,322 @@
+{
+ "game": "SpaceInvaders",
+ "hashes": {
+  "PREDICTIONS_R2.md": "062360e8dc9b576cc81257e824ac1ea21ff725ca91ef3537bb0b64647d495a5b",
+  "run_replication.py": "99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912",
+  "common.py": "df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a"
+ },
+ "raw_rows": 639997,
+ "kept_offset": 0,
+ "samples": 213333,
+ "clock_aligned_start": 1408,
+ "clock_events_off_offset": 1408,
+ "groups": 540,
+ "clock_group": 6,
+ "clock_group_rate": 0.9934093647021324,
+ "wired_group_pairs": 1531,
+ "K_counts": [
+  0,
+  10,
+  21,
+  4,
+  85,
+  3,
+  20,
+  7,
+  81,
+  39,
+  64,
+  14,
+  192
+ ],
+ "clock_aligned": {
+  "R2.1_group_auc_lag1": {
+   "auc": 0.3988934208984511,
+   "lo": 0.3758309306248139,
+   "hi": 0.42185140924509157,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "group_auc_lag0": {
+   "auc": 0.5866697688167831,
+   "lo": 0.5633249210970284,
+   "hi": 0.6078001607534069,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "group_auc_distance": {
+   "auc": 0.9292952053015567,
+   "lo": 0.9184356552604445,
+   "hi": 0.9396962410232912,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "R2.1b_physical_auc_lag1": {
+   "auc": 0.4351852671769561,
+   "lo": 0.3529583790477605,
+   "hi": 0.5354678240603464
+  },
+  "R2.2_lag0_minus_lag1": {
+   "diff": 0.18777634791833203,
+   "lo": 0.16412700017667392,
+   "hi": 0.21083328562010653,
+   "verdict": "supported"
+  },
+  "R2.7_distance_minus_lag0": {
+   "diff": 0.3426254364847736,
+   "lo": 0.31578977220767296,
+   "hi": 0.370425660181557,
+   "verdict": "supported"
+  },
+  "R2.3": {
+   "groups": 540,
+   "locked_95": 463,
+   "strict": 409,
+   "share_locked": 0.8574074074074074
+  },
+  "R2.4_scope": {
+   "pairs": 94036,
+   "wired": 728,
+   "identity_max_abs": 2.2910208344155414e-16
+  },
+  "R2.4": {
+   "A9.1_followership_within_target": {
+    "auc": 0.7086408048247347,
+    "lo": 0.6472218929275443,
+    "hi": 0.7644919163130587,
+    "n_pos": 728,
+    "n_neg": 48097,
+    "strata": 189,
+    "verdict": "supported, material",
+    "prediction": "above 0.5",
+    "prediction_met": true
+   },
+   "desc_TE_within_target": {
+    "auc": 0.5809591530378446,
+    "lo": 0.520071583534533,
+    "hi": 0.6282000439236509,
+    "n_pos": 728,
+    "n_neg": 48097,
+    "strata": 189,
+    "verdict": "supported"
+   },
+   "desc_activity_within_target": {
+    "auc": 0.6240947038529404,
+    "lo": 0.5808431130687378,
+    "hi": 0.6590874780843541,
+    "n_pos": 728,
+    "n_neg": 48097,
+    "strata": 189,
+    "verdict": "supported, material"
+   },
+   "A9.2_TE_minus_activity_within_target": {
+    "diff": -0.04313555081509579,
+    "lo": -0.0702605787988549,
+    "hi": -0.024746654980681838,
+    "verdict": "contradicted",
+    "prediction": "below 0",
+    "prediction_met": true
+   },
+   "A9.3_target_c_within_B_deciles": {
+    "auc": 0.36732793513786555,
+    "lo": 0.33420804205865573,
+    "hi": 0.40017773016074587,
+    "n_pos": 728,
+    "n_neg": 93308,
+    "strata": 10,
+    "verdict": "contradicted",
+    "prediction": "below 0.5",
+    "prediction_met": true
+   },
+   "desc_TE_within_B_deciles": {
+    "auc": 0.3679299429577579,
+    "lo": 0.3393605115778859,
+    "hi": 0.3962927834682782,
+    "n_pos": 728,
+    "n_neg": 93308,
+    "strata": 10,
+    "verdict": "contradicted"
+   },
+   "A9.4_TE_within_B_decile_x_c_quintile": {
+    "auc": 0.4927665333321913,
+    "lo": 0.4607894686144746,
+    "hi": 0.5253066958022303,
+    "n_pos": 728,
+    "n_neg": 89574,
+    "strata": 48,
+    "verdict": "not supported"
+   },
+   "A9.4_primary_difference": {
+    "diff": 0.1248365903744334,
+    "lo": 0.0845796651000798,
+    "hi": 0.16295698513616172,
+    "verdict": "supported",
+    "prediction": "above 0",
+    "prediction_met": true
+   },
+   "A9.4_reading": "accounted for",
+   "A9.4_stratified_interval_includes_0.5": true,
+   "desc_TE_within_phase": {
+    "auc": 0.5126329266309503,
+    "lo": 0.4742284405340743,
+    "hi": 0.5488341708406806,
+    "n_pos": 728,
+    "n_neg": 93308,
+    "strata": 2,
+    "verdict": "not supported"
+   },
+   "desc_not_followed_within_target": {
+    "auc": 0.2913591951752653,
+    "lo": 0.23550808368694126,
+    "hi": 0.35277810707245566,
+    "n_pos": 728,
+    "n_neg": 48097,
+    "strata": 189,
+    "verdict": "contradicted"
+   },
+   "desc_target_q0_within_B_deciles": {
+    "auc": 0.6392565207164903,
+    "lo": 0.6070342353598799,
+    "hi": 0.6708620638602335,
+    "n_pos": 728,
+    "n_neg": 93308,
+    "strata": 10,
+    "verdict": "supported, material"
+   },
+   "desc_target_pi_within_B_deciles": {
+    "auc": 0.43971625210145393,
+    "lo": 0.4097661916766779,
+    "hi": 0.4699641705649648,
+    "n_pos": 728,
+    "n_neg": 93308,
+    "strata": 10,
+    "verdict": "contradicted"
+   },
+   "n_pairs": 94036,
+   "n_wired": 728
+  },
+  "R2.5": {
+   "mixed": {
+    "auc": 0.6280700318512608,
+    "lo": 0.5514520031038935,
+    "hi": 0.6804322268256339,
+    "n_pos": 276,
+    "n_neg": 40380,
+    "strata": 76,
+    "targets_with_wired": 76
+   },
+   "locked": {
+    "auc": 0.49643885759686734,
+    "lo": 0.40714589898921055,
+    "hi": 0.5968209626774004,
+    "n_pos": 132,
+    "n_neg": 27779,
+    "strata": 52,
+    "targets_with_wired": 52
+   },
+   "strict": {
+    "auc": 0.4732973913350642,
+    "lo": 0.42649305258501996,
+    "hi": 0.5122305993311671,
+    "n_pos": 852,
+    "n_neg": 142099,
+    "strata": 267,
+    "targets_with_wired": 267
+   },
+   "mixed_minus_strict": {
+    "diff": 0.15477264051619655,
+    "lo": 0.07435339858018201,
+    "hi": 0.22582831816054869,
+    "verdict": "supported"
+   },
+   "targets_per_class": {
+    "mixed": 77,
+    "locked": 52,
+    "strict": 411
+   }
+  },
+  "latch_pairs": 42,
+  "R2.6_latch_lag1": {
+   "auc": 0.9668533701328571,
+   "lo": 0.898299303164363,
+   "hi": 0.9968332598518581,
+   "n_pos": 42,
+   "n_neg": 14796,
+   "strata": 10
+  },
+  "R2.6b_latch_lag0": {
+   "auc": 0.32861162973185054,
+   "lo": 0.238430425227185,
+   "hi": 0.39685650213513796,
+   "n_pos": 42,
+   "n_neg": 14796,
+   "strata": 10
+  },
+  "latch_distance": {
+   "auc": 0.9270774142922856,
+   "lo": 0.896613717292033,
+   "hi": 0.957792958184028,
+   "n_pos": 42,
+   "n_neg": 14796,
+   "strata": 10
+  },
+  "share_wired_strict_same_phase": 0.47550620509470937
+ },
+ "whole_recording": {
+  "R2.1_group_auc_lag1": {
+   "auc": 0.45194738104105064,
+   "lo": 0.4301655894266387,
+   "hi": 0.4733706950497457,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "group_auc_lag0": {
+   "auc": 0.637042253893838,
+   "lo": 0.6157623752161187,
+   "hi": 0.6560054298437452,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "group_auc_distance": {
+   "auc": 0.9292952053015567,
+   "lo": 0.9184356552604445,
+   "hi": 0.9396962410232912,
+   "n_pos": 1531,
+   "n_neg": 289529,
+   "strata": 1
+  },
+  "R2.1b_physical_auc_lag1": {
+   "auc": 0.47269890241780615,
+   "lo": 0.3810601375339501,
+   "hi": 0.589938059755913
+  },
+  "R2.2_lag0_minus_lag1": {
+   "diff": 0.1850948728527873,
+   "lo": 0.16163322911750536,
+   "hi": 0.20773847939688891,
+   "verdict": "supported"
+  },
+  "R2.7_distance_minus_lag0": {
+   "diff": 0.2922529514077188,
+   "lo": 0.26708508521822294,
+   "hi": 0.31844645638491736,
+   "verdict": "supported"
+  }
+ },
+ "predictions_met": {
+  "R2.1": true,
+  "R2.1b": true,
+  "R2.2": true,
+  "R2.3": true,
+  "R2.4": true,
+  "R2.5": true,
+  "R2.6": true,
+  "R2.6b": true,
+  "R2.7": true
+ }
+}
