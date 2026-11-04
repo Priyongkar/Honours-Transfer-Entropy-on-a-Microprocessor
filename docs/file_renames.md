@@ -33,6 +33,11 @@ Original path (working project) | New path (this repository)
 `analyses/replication/PREDICTIONS_R2.md` | `analyses/07_replication_on_pitfall_and_space_invaders_R2/design/predictions_R2.md`
 `analyses/replication/PREDICTIONS_A20.md` | `analyses/08_timed_clamps_on_the_recorded_program_A20/design/predictions_A20.md`
 `analyses/replication/PREDICTIONS_A20_ADDENDUM.md` | `analyses/08_timed_clamps_on_the_recorded_program_A20/design/predictions_A20_addendum_nonconvergent_clamps.md`
+`analyses/replication/PREDICTIONS_R3.md` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/design/predictions_R3.md`
+`analyses/replication/RESULTS_R3.md` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/RESULTS_R3.md`
+`analyses/replication/run_remedy_heldout.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/remedy_on_held_out_programs_R3.py`
+`analyses/supplementary_recompute/posthoc_r3_phase_class.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/posthoc_remedy_against_phase_class_and_ap_lift.py`
+`analyses/supplementary_recompute/posthoc_align_offset.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/posthoc_clock_aligned_start_1407_against_1408.py`
 `analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
 `notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
 `notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`

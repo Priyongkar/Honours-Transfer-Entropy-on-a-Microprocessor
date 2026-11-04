@@ -1,0 +1,7 @@
+[02:44:21] R3-SpaceInvaders: PREDICTIONS_R3.md sha256 282eeba2395a0706a65bac07cf1ba4e449b53e4140fa40ef5ab710bbbd8226f3
+[02:44:21] R3-SpaceInvaders: run_remedy_heldout.py sha256 08f3b1aaf96167212fb9d61215470ab3826f840ae548e8655081f4f8ab3ee561
+[02:44:21] R3-SpaceInvaders: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[02:44:21] R3-SpaceInvaders: run_replication.py sha256 99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912
+[04:20:27] SpaceInvaders: {'game': 'SpaceInvaders', 'hashes': {'PREDICTIONS_R3.md': '282eeba2395a0706a65bac07cf1ba4e449b53e4140fa40ef5ab710bbbd8226f3', 'run_remedy_heldout.py': '08f3b1aaf96167212fb9d61215470ab3826f840ae548e8655081f4f8ab3ee561', 'common.py': 'df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a', 'run_replication.py': '99934e9a9e6a0881e0304ce3795c2ac3f24a90b17090e0ba6049f65771669912'}, 'samples': 213333, 'clock_aligned_start': 1408, 'groups': 540, 'wired_group_pairs': 1531}
+[04:24:06] SpaceInvaders: clock-aligned done
+[04:27:41] SpaceInvaders: done {'R3.1': True, 'R3.2': True, 'R3.3': True, 'R3.4': False, 'R3.5': True}
