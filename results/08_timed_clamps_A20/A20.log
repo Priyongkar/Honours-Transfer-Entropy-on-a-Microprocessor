@@ -1,0 +1,48 @@
+[14:42:32] A20: PREDICTIONS_A20.md sha256 d4b14ae01ad3e221f66ee57c79971638378009cd0607710b3b2268e0b79329e9
+[14:42:32] A20: PREDICTIONS_A20_ADDENDUM.md sha256 23f117bd9cbb36847c7efe877cf7617c292f132416f75d9e484e3465aace0d70
+[14:42:32] A20: a20_timed_clamps_dk.py sha256 548940fed1589e599957c9ffde2ea521b184dd34644852cbd2f5231f4ab9a6c4
+[14:42:32] A20: mycircuitsimulator.pyx sha256 b5c9a6e85b5e68ae2d28cfa91804e45519667d92e8a76aabccb359b4d54916a6
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+[14:42:32] 51 latch transistors; moments [5871, 9327, 14718, 35940, 40629] ... [387702, 388473, 397995]
+[14:43:21] 10/80 moments, 49 s
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+[14:43:54] 20/80 moments, 82 s
+[14:44:20] 30/80 moments, 108 s
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+[14:44:48] 40/80 moments, 137 s
+[14:45:33] 50/80 moments, 181 s
+[14:45:59] 60/80 moments, 207 s
+[14:46:34] 70/80 moments, 242 s
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_6502.pkl
+Loading /Users/priyongkarkundu/Documents/Honours 2/vendor/Sim2600/sim2600/chips/net_TIA.pkl
+OMG WE NEEDED A NEW ARRAY
+[14:47:10] 80/80 moments, 278 s
+[14:47:10] non-convergent clamps: 10
+[14:47:10] done: pairs 41; delayed-only closed 41; immediate open 41; confirmed 41; {'A20.1': True, 'A20.2': True, 'A20.3': True}
