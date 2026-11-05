@@ -39,7 +39,7 @@ Tab.~S45, S46 & \texttt{RUN/\allowbreak tables/\allowbreak rq2\_\allowbreak targ
 Tab.~\ref{tab:rq2-phase}; A4, R1 & \texttt{NT/\allowbreak idtxl\_\allowbreak results.json} & logged \\
 Tab.~\ref{tab:rq2h6strat}, S41 & \texttt{SR/\allowbreak h6\_\allowbreak run\_\allowbreak of\_\allowbreak record\_\allowbreak R1.json}, \texttt{SR/\allowbreak h6\_\allowbreak run\_\allowbreak of\_\allowbreak record\_\allowbreak R1\_\allowbreak details.json} (from \texttt{NT/\allowbreak R1\_\allowbreak targets/\allowbreak }); A17 \texttt{NT/\allowbreak A17\_\allowbreak results.json} & recomputed; logged \\
 Validation tables and figures (Chapter~\ref{chap:methods}) & \texttt{RUN/\allowbreak tables/\allowbreak null\_\allowbreak calibration\_\allowbreak by\_\allowbreak target.csv}, \texttt{synthetic\_\allowbreak summary.csv}, \texttt{sim\_\allowbreak representation\_\allowbreak scores.csv}, \texttt{sim\_\allowbreak idtxl.csv}, \texttt{nmos\_\allowbreak summary.csv}; calibration re-weighting and placebo rows, chip-simulation intervals, corrected pairwise-BH rows & run; not retained \\
-Tab.~\ref{tab:intro-findings}, \ref{tab:r1-scoreboard}, \ref{tab:d-contributions}, \ref{tab:d-failed} & As for the tables their rows cite & -- \\
+Tab.~\ref{tab:r1-scoreboard}, \ref{tab:d-contributions}, \ref{tab:d-failed} & As for the tables their rows cite & -- \\
 \bottomrule
 \end{longtable}
 
@@ -233,10 +233,10 @@ This section holds the tables and side analyses that Chapter~\ref{chap:rq1} cite
   \end{tabular}}
 \end{table}
 
-\subsection{What Proposition 1 does and does not imply}
+\subsection{What Proposition S1 does and does not imply}
 \label{sec:r1-prop1}
 
-Proposition~1 motivated H2, and the aliasing argument does not depend on it. The proposition concerns node states and does not carry over to change indicators (Section~\ref{sec:bg-propositions}), so on this recording it is a heuristic and the operative mechanism is the aliasing. Where states exist, on the simulated chip, lag-0 CMI ranks wiring at a node-level AUC of 0.749 and lag-1 transfer entropy at 0.431 (Section~\ref{sec:v-sim-repr}). At matched source properties (Table~\ref{tab:r1-strata}, lower block), a lag-1 AUC clearly above 0.5 would have contradicted the heuristic reading, and none occurs, while lag-0 CMI lies above 0.5 at the group level under every matching.
+Proposition~S1 motivated H2, and the aliasing argument does not depend on it. The proposition concerns node states and does not carry over to change indicators (Section~\ref{app:ch2-moved}), so on this recording it is a heuristic and the operative mechanism is the aliasing. Where states exist, on the simulated chip, lag-0 CMI ranks wiring at a node-level AUC of 0.749 and lag-1 transfer entropy at 0.431 (Section~\ref{sec:v-sim-repr}). At matched source properties (Table~\ref{tab:r1-strata}, lower block), a lag-1 AUC clearly above 0.5 would have contradicted the heuristic reading, and none occurs, while lag-0 CMI lies above 0.5 at the group level under every matching.
 
 
 \subsection{A negative control at the simulator's resolution}
@@ -752,7 +752,7 @@ Claim & Status & Section \\
     Replications on the simulated chip and NMOS circuits, including the clamp test of pass transistors & Main run; change coding, intervals, activity baseline and the clamp test supplementary & \ref{sec:v-simchip} \\
     \addlinespace
     \multicolumn{3}{@{}l}{\emph{New tests fixed in writing before they were run (Section~\ref{sec:m-newtests})}} \\
-    The bound of Proposition~2 holds pair by pair; wired same-phase pairs rank below unwired ones at matched bound (A3) & Hash-logged; prediction of 0.5 not met & \ref{sec:r1-bound} \\
+    The bound of Proposition~1 holds pair by pair; wired same-phase pairs rank below unwired ones at matched bound (A3) & Hash-logged; prediction of 0.5 not met & \ref{sec:r1-bound} \\
     Within a target, lag-1 TE ranks strictly locked same-phase sources exactly by their change rate when the target is unchanged, and followership lowers wired sources (A9; recording and both chip programs) & Hash-logged & \ref{sec:r1-bound} \\
     The target's change propensity accounts for the inversion at matched bound (A9, primary) & Hash-logged; not met & \ref{sec:r1-bound} \\
     Lag-1 TE identifies and orients latch pairs on the simulated chip, at lag~1 only (A1b, A5, A6) & Hash-logged & \ref{sec:v-latch} \\
@@ -783,10 +783,10 @@ Claim & Status & Section \\
     \bottomrule
 \end{longtable}}
 
-\section{Proposition 1 and approximate locking}
+\section{Proposition S1 and approximate locking}
 \label{app:ch2-moved}
 
-\paragraph{Proposition 1 (combinational wiring and lag-1 transfer entropy).}
+\paragraph{Proposition S1 (combinational wiring and lag-1 transfer entropy).}
 \emph{Let units be recorded as node states, and let each sample be long enough for combinational logic to settle within it. Let $Y$ be the output of a logic gate whose inputs are $X$ and $W$ ($W$ may collect several nodes), connected by combinational logic with no latch in between, so that $Y_t = g(X_t, W_t)$ for a Boolean function $g$. Then, for any target history $Y^- = Y_t^{(k)}$,}
 \begin{equation}
   T_{X \to Y}(k, 1, 1) = I\big(X_{t-1};\,Y_t \mid Y^-\big) \le I\big(X_{t-1};\,X_t, W_t \mid Y^-\big).
@@ -816,16 +816,16 @@ so the inequality orders nothing by itself. Second, combinational ancestors of $
   I\big(X_{t-1};\,X_t, W_t \mid Y^-\big) = I\big(X_{t-1};\,X_t \mid Y^-\big) + I\big(X_{t-1};\,W_t \mid X_t, Y^-\big)
   \label{eq:prop1-wired}
 \end{equation}
-holds for any source; its first term is the source's memory, and its second can be positive for an ancestor through a collider, since $Y^-$ contains $Y_{t-1} = g(X_{t-1}, W_{t-1})$, a common effect of the source's previous sample and the other inputs. For the running NOR gate, $A_{t-1} = 0$ with $Q_{t-1} = 0$ reveals $B_{t-1} = 1$. Third, the proposition concerns node states and lag~1 only; for change indicators, $\Delta Y_t$ has $X_{t-1}$ as an argument, so on the change-coded recording the relevant result is Proposition~2.
+holds for any source; its first term is the source's memory, and its second can be positive for an ancestor through a collider, since $Y^-$ contains $Y_{t-1} = g(X_{t-1}, W_{t-1})$, a common effect of the source's previous sample and the other inputs. For the running NOR gate, $A_{t-1} = 0$ with $Q_{t-1} = 0$ reveals $B_{t-1} = 1$. Third, the proposition concerns node states and lag~1 only; for change indicators, $\Delta Y_t$ has $X_{t-1}$ as an argument, so on the change-coded recording the relevant result is Proposition~1.
 
-\paragraph{Heuristic consequence.} For combinational wiring recorded as states, lag-1 transfer entropy can register the connection only through the two terms of Equation~\eqref{eq:prop1-wired}, whereas lag-0 CMI is not subject to the bound, because $X_t$ is an argument of $g$. If within-phase dependence is dominated by direct coupling rather than co-drive, an assumption the proposition does not supply, lag-0 dependence should identify combinational wiring better than lag-1 transfer entropy. That is the prediction of H2; the proposition motivated it before the run and decides nothing by itself. Where a clocked pass transistor separates source and target, the proposition does not apply: recorded as states the latch is visible at lag~0 and lag~1 alike, and recorded as changes it is the opposite-phase case that Proposition~2 leaves unconstrained.
+\paragraph{Heuristic consequence.} For combinational wiring recorded as states, lag-1 transfer entropy can register the connection only through the two terms of Equation~\eqref{eq:prop1-wired}, whereas lag-0 CMI is not subject to the bound, because $X_t$ is an argument of $g$. If within-phase dependence is dominated by direct coupling rather than co-drive, an assumption the proposition does not supply, lag-0 dependence should identify combinational wiring better than lag-1 transfer entropy. That is the prediction of H2; the proposition motivated it before the run and decides nothing by itself. Where a clocked pass transistor separates source and target, the proposition does not apply: recorded as states the latch is visible at lag~0 and lag~1 alike, and recorded as changes it is the opposite-phase case that Proposition~1 leaves unconstrained.
 
 \paragraph{Remark (approximate locking).}
 Let $E_t = 1$ when $\Delta X_{t-u} = 1$ in a sample of parity other than $p_X$ or $\Delta Y_t = 1$ in a sample of parity other than $p_Y$, and let $\varepsilon = \Pr(E_t = 1)$. By the chain rule,
 \[
   I(\Delta X_{t-u}; \Delta Y_t \mid P_t, Z_t) \le I(\Delta X_{t-u}; E_t \mid P_t, Z_t) + I(\Delta X_{t-u}; \Delta Y_t \mid E_t, P_t, Z_t).
 \]
-The first term is at most $h(\varepsilon)$; in the second, the case argument of the proof of Proposition~2 applies whenever $E_t = 0$, so only samples with $E_t = 1$ contribute, at most $\varepsilon$ times one bit. Hence
+The first term is at most $h(\varepsilon)$; in the second, the case argument of the proof of Proposition~1 applies whenever $E_t = 0$, so only samples with $E_t = 1$ contribute, at most $\varepsilon$ times one bit. Hence
 \begin{equation*}
   I\big(\Delta X_{t-u};\, \Delta Y_t \,\big|\, Z_t\big)
   \le I\big(\Delta X_{t-u};\, P_t \,\big|\, Z_t\big) + h(\varepsilon) + \varepsilon.
