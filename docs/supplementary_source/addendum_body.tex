@@ -1,0 +1,844 @@
+\section{Data sources of the tables and figures}
+
+\begin{longtable}{@{}L{0.25\textwidth}L{0.50\textwidth}L{0.19\textwidth}@{}}
+\caption[Data sources of the tables and figures]{Data sources of the main-text tables and figures, and the state of each source. Paths are relative to the project's data directory; the code and outputs are also in the code repository (Section~\ref{sec:m-fixed}), whose \texttt{docs/\allowbreak file\_\allowbreak renames.md} maps these paths to its own. \texttt{RUN}: \texttt{results/\allowbreak v5\_\allowbreak bitcorrect\_\allowbreak every\_\allowbreak third\_\allowbreak mi\_\allowbreak ais\_\allowbreak te\_\allowbreak k1\_\allowbreak 12\_\allowbreak L1\_\allowbreak d1\_\allowbreak ais\_\allowbreak x1/\allowbreak thesis\_v5/}. \texttt{NT}: \texttt{analyses/\allowbreak new\_\allowbreak tests/\allowbreak output/\allowbreak }. \texttt{RP}: \texttt{analyses/\allowbreak replication/\allowbreak output/\allowbreak }. \texttt{SR}: \texttt{analyses/\allowbreak supplementary\_\allowbreak recompute/\allowbreak output/\allowbreak }. State: \emph{run}, written by the main run; \emph{logged}, written by a hash-logged test; \emph{recomputed}, recomputed from the run's saved outputs after the original file was lost (Appendix~\ref{app:recompute}); \emph{not retained}, the value first reported by a supplementary script whose output file was not kept.}
+\label{tab:app-sources}\\
+\toprule
+Item & Source & State \\
+\midrule
+\endfirsthead
+\toprule
+Item & Source & State \\
+\midrule
+\endhead
+Schematic figures (\ref{fig:concept}, \ref{fig:nmos-logic}, \ref{fig:ais-te}) & No data & -- \\
+Tab.~\ref{tab:hypotheses}, \ref{tab:m-newtests} & Run notebook \texttt{notebooks/\allowbreak Honours\_\allowbreak v5\_\allowbreak executed.ipynb}; design files \texttt{analyses/\allowbreak new\_\allowbreak tests/\allowbreak PREDICTIONS*.md}, \texttt{analyses/\allowbreak replication/\allowbreak PREDICTIONS\_\allowbreak *.md} & run; logged \\
+Regeneration, change coding, truncation (Sec.~\ref{sec:m-regeneration}) & \texttt{analyses/\allowbreak pitfall/\allowbreak CONVERSION\_\allowbreak NOTE.md}; \texttt{data/\allowbreak regen/\allowbreak *.regen.ts.spikes.npy} and \texttt{.json} & logged \\
+Tab.~\ref{tab:discrimination}: lag-1 TE, lag-0 CMI, MI & \texttt{RUN/\allowbreak tables/\allowbreak rq1\_\allowbreak discrimination.csv}; within-target and parity rows \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary.json} (\texttt{P\_\allowbreak discrimination\_\allowbreak supplementary}) & run; recomputed \\
+H1 robustness (Sec.~\ref{sec:r1-h1}) & \texttt{SR/\allowbreak h1\_\allowbreak robustness\_\allowbreak checks.json} & recomputed \\
+Fig.~\ref{fig:r1-parity}, Tab.~\ref{tab:r1-strata} & \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary.json} (\texttt{P\_\allowbreak strata}) & recomputed \\
+Tab.~\ref{tab:r1-bound}, S38, Sec.~\ref{sec:r1-dose} & \texttt{NT/\allowbreak recording\_\allowbreak results.json} (A3), \texttt{NT/\allowbreak A9\_\allowbreak results.json}, \texttt{NT/\allowbreak A12\_\allowbreak results.json} (A12, A14, A18), \texttt{NT/\allowbreak A13\_\allowbreak A16\_\allowbreak chip\_\allowbreak results.json} & logged \\
+Tab.~\ref{tab:r1-replication}, Fig.~\ref{fig:r1-replication-three} & \texttt{RP/\allowbreak R2\_\allowbreak Pitfall\_\allowbreak results.json}, \texttt{RP/\allowbreak R2\_\allowbreak SpaceInvaders\_\allowbreak results.json}; script \texttt{analyses/\allowbreak figures\_\allowbreak v11/\allowbreak fig\_\allowbreak replication\_\allowbreak three\_\allowbreak programs.py} & logged \\
+Tab.~\ref{tab:r1-remedy} (R3), Fig.~\ref{fig:r1-scores} & partial-correlation row \texttt{RP/\allowbreak R6\_\allowbreak partial\_\allowbreak correlation\_\allowbreak results.json}; \texttt{RP/\allowbreak R3\_\allowbreak Pitfall\_\allowbreak results.json}, \texttt{RP/\allowbreak R3\_\allowbreak SpaceInvaders\_\allowbreak results.json}; Donkey Kong clock-aligned rows \texttt{SR/\allowbreak posthoc\_\allowbreak align\_\allowbreak offset.json}; AP lifts \texttt{SR/\allowbreak posthoc\_\allowbreak r3\_\allowbreak phase\_\allowbreak class.json}; script \texttt{analyses/\allowbreak figures\_\allowbreak v11/\allowbreak fig\_\allowbreak scores\_\allowbreak and\_\allowbreak delay\_\allowbreak phase.py} & logged; recomputed \\
+Tab.~\ref{tab:r1-delay-phase} (R4), Fig.~\ref{fig:r1-delay-phase} & \texttt{RP/\allowbreak R4\_\allowbreak delay\_\allowbreak vs\_\allowbreak phase\_\allowbreak results.json}; same script & logged \\
+Fig.~\ref{fig:d-published}, Sec.~\ref{sec:d-published} & \texttt{RUN/\allowbreak thesis\_v5/\allowbreak idtxl/\allowbreak network\_\allowbreak multivariate.npz}; summary \texttt{RP/\allowbreak published\_\allowbreak network\_\allowbreak summary.json}; script \texttt{analyses/\allowbreak figures\_v11/\allowbreak fig\_\allowbreak published\_\allowbreak network.py} & run; recomputed \\
+Tab.~\ref{tab:rq2h6strat}, R5 and pooled rows, Fig.~\ref{fig:r2-h6} (Sec.~\ref{sec:r2-h6}) & \texttt{NT/\allowbreak R5\_\allowbreak targets/}, \texttt{RP/\allowbreak R5\_\allowbreak targets.json}; \texttt{SR/\allowbreak h6\_\allowbreak second\_\allowbreak draw\_\allowbreak R5.json} & logged; recomputed \\
+Sec.~\ref{sec:r1-remedy} (R6), partial-correlation rows of Tab.~\ref{tab:discrimination} & \texttt{RP/\allowbreak R6\_\allowbreak partial\_\allowbreak correlation\_\allowbreak results.json} & logged \\
+Sec.~\ref{sec:r1-dose}, \ref{sec:r1-bound} (R7) & \texttt{RP/\allowbreak R7\_\allowbreak locking\_\allowbreak within\_\allowbreak class\_\allowbreak results.json} & logged \\
+Fig.~\ref{fig:r1-followership} & \texttt{NT/\allowbreak A9\_\allowbreak results.json}, \texttt{NT/\allowbreak A11\_\allowbreak results.json}, \texttt{NT/\allowbreak A12\_\allowbreak results.json}, \texttt{RP/\allowbreak R2\_\allowbreak *\_\allowbreak results.json}; script \texttt{analyses/\allowbreak figures\_\allowbreak v11/\allowbreak fig\_\allowbreak followership\_\allowbreak and\_\allowbreak locking.py} & logged \\
+Tab.~\ref{tab:r1-general} & \texttt{NT/\allowbreak A11\_\allowbreak results.json}, \texttt{NT/\allowbreak A15\_\allowbreak results.json} & logged \\
+Tab.~\ref{tab:v-latch}, S37, Fig.~\ref{fig:v-latch-profile} & \texttt{NT/\allowbreak chip\_\allowbreak results.json}, \texttt{NT/\allowbreak A7\_\allowbreak results.json}, \texttt{NT/\allowbreak supp\_\allowbreak harder.json}, \texttt{NT/\allowbreak A13\_\allowbreak A16\_\allowbreak chip\_\allowbreak results.json}; open/closed shares \texttt{NT/\allowbreak supp\_\allowbreak a16\_\allowbreak open\_\allowbreak closed.log} & logged \\
+Tab.~\ref{tab:r1-latch}, S35, A20 (Sec.~\ref{sec:r1-latch-recording}) & \texttt{NT/\allowbreak recording\_\allowbreak results.json}, \texttt{NT/\allowbreak supp\_\allowbreak latch\_\allowbreak vs\_\allowbreak passnb.json}, \texttt{NT/\allowbreak A12\_\allowbreak results.json} (A13, A19); \texttt{RP/\allowbreak A20\_\allowbreak results.json} & logged \\
+Tab.~S29 & \texttt{NT/\allowbreak nmos\_\allowbreak results.json}, \texttt{NT/\allowbreak A10\_\allowbreak results.json} & logged \\
+Tab.~\ref{tab:r1-baselines}, S34; Donkey Kong whole-recording remedy values (Sec.~\ref{sec:r1-remedy}) & \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary.json} (\texttt{B\_\allowbreak baselines\_\allowbreak *}, \texttt{B\_\allowbreak within\_\allowbreak *}, \texttt{P\_\allowbreak *}); phase class only and the physical-fitted covariate model from \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary\_\allowbreak extras.json}, which supersedes the first pass's definitions & recomputed \\
+Tab.~\ref{tab:direction}, \ref{tab:r1-h4}, S22, S23; Tab.~\ref{tab:m-schemes}, rows H1--H4 & \texttt{RUN/\allowbreak tables/\allowbreak rq1\_\allowbreak direction.csv}, \texttt{rq1\_\allowbreak signed\_\allowbreak effect.csv}, \texttt{rq1\_\allowbreak paired\_\allowbreak contrasts.csv}; \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary\_\allowbreak pass3.json} & run; recomputed \\
+Tab.~\ref{tab:relation} & \texttt{RUN/\allowbreak tables/\allowbreak rq1\_\allowbreak te\_\allowbreak by\_\allowbreak relation.csv} & run \\
+Tab.~\ref{tab:rq2comparison} & \texttt{RUN/\allowbreak tables/\allowbreak rq2\_\allowbreak network\_\allowbreak comparison.csv}, \texttt{rq2\_\allowbreak paired\_\allowbreak differences.csv} & run \\
+Fig.~\ref{fig:rq2decomp}, Tab.~\ref{tab:rq2increments}, \ref{tab:rq2enrich} & \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary.json} (\texttt{D\_\allowbreak *}, \texttt{E\_\allowbreak *}), \texttt{SR/\allowbreak recomputed\_\allowbreak supplementary\_\allowbreak extras.json} (\texttt{holm\_\allowbreak joint}) & recomputed \\
+Tab.~S45, S46 & \texttt{RUN/\allowbreak tables/\allowbreak rq2\_\allowbreak target\_\allowbreak summaries.csv} (run); pass-neighbour traces (not retained) & run; not retained \\
+Tab.~\ref{tab:rq2-phase}; A4, R1 & \texttt{NT/\allowbreak idtxl\_\allowbreak results.json} & logged \\
+Tab.~\ref{tab:rq2h6strat}, S41 & \texttt{SR/\allowbreak h6\_\allowbreak run\_\allowbreak of\_\allowbreak record\_\allowbreak R1.json}, \texttt{SR/\allowbreak h6\_\allowbreak run\_\allowbreak of\_\allowbreak record\_\allowbreak R1\_\allowbreak details.json} (from \texttt{NT/\allowbreak R1\_\allowbreak targets/\allowbreak }); A17 \texttt{NT/\allowbreak A17\_\allowbreak results.json} & recomputed; logged \\
+Validation tables and figures (Chapter~\ref{chap:methods}) & \texttt{RUN/\allowbreak tables/\allowbreak null\_\allowbreak calibration\_\allowbreak by\_\allowbreak target.csv}, \texttt{synthetic\_\allowbreak summary.csv}, \texttt{sim\_\allowbreak representation\_\allowbreak scores.csv}, \texttt{sim\_\allowbreak idtxl.csv}, \texttt{nmos\_\allowbreak summary.csv}; calibration re-weighting and placebo rows, chip-simulation intervals, corrected pairwise-BH rows & run; not retained \\
+Tab.~\ref{tab:intro-findings}, \ref{tab:r1-scoreboard}, \ref{tab:d-contributions}, \ref{tab:d-failed} & As for the tables their rows cite & -- \\
+\bottomrule
+\end{longtable}
+
+\section{Literature search: the nearest neighbours}
+
+\begin{table}[tbp]
+\centering
+\footnotesize
+\caption[Nearest neighbours found by the literature search]{The two retained studies and the nearest neighbours found by the search or by the review, with the respect in which each differs from this thesis. Found by: C, the citation screen; W, the web searches; R, the review of Chapter~\ref{chap:litreview}. Source: the search of Table~\ref{tab:app-c3-search} and the publications cited.}
+\label{tab:app-c3-neighbours}
+\begin{tabular}{@{}L{0.2\textwidth}L{0.24\textwidth}L{0.055\textwidth}L{0.435\textwidth}@{}}
+\toprule
+Study & System, method and reference & Found & How it differs from this thesis \\
+\midrule
+Jonas and Kording~\cite{jonas2017microprocessor} & MOS 6507 in a simulated Atari 2600; conditional Granger causality on five Gaussian-weighted ($\sigma = 500\,\mu$m), low-pass-filtered LFP-like signals at sites in functional subcircuits & -- & The precedent itself: directed analysis at the resolution of a local field potential, by design, and not scored against any reference \\
+Wang and Kording~\cite{wang2023learning} & MOS 6502 transistors at simulator update steps; correlation, MI, linear Granger causality, VAR-LiNGAM and a learned method; perturbation reference in windows of 128 half-clocks & C, W & Retained. No transfer entropy and no multivariate information-theoretic inference; the netlist set aside as lacking direction; short windows; its aim is supervised learning of discovery procedures \\
+Tehrani-Saleh and Adami~\cite{tehranisaleh2020transfer} & Evolved circuits of 4--17 deterministic two-input gates; pairwise TE against a ground truth from connections and logic tables & W & Borderline. Circuits evolved rather than designed, small, and updated with a one-step delay, so lag~1 is the correct delay by construction \\
+Tian et al.~\cite{tian2019digital} & Hodgkin--Huxley, Lorenz and logistic-map networks with binarised output; pairwise TE against the generating adjacency & W & ``Digital'' refers to binarised signals; no logic circuit \\
+Goodman and Porfiri~\cite{goodman2020topological} & Boolean network model of policy diffusion and tent-map networks; analytic TE against link weights & W & Model networks (a Boolean model of policy diffusion and chaotic maps); an analytic study of the error of TE inference \\
+Venkatesh et al.~\cite{venkatesh2020flow} & Graphs of clocked computational nodes; a definition of information flow by conditional mutual information & C & Theoretical definition that presupposes the graph; no inference from recorded activity \\
+Lindsay and Bau~\cite{lindsay2023testing} & Artificial neural networks as test beds for neuroscience methods & C & Argues for testing methods on systems with known mechanism, using neural networks rather than digital circuits \\
+Liang et al.~\cite{liang1998reveal} & Random synchronous Boolean networks; mutual information over input sets (REVEAL) against wiring & R & Random wiring, one-step updates, transitions sampled across the state space \\
+Lizier et al.~\cite{lizier2011smallworld} & Random Boolean networks; information storage and transfer & R & Describes computation; infers no network and scores none \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Further material for Chapter~\ref{chap:methods}}
+
+\subsection{Structural relation classes}
+
+Table~\ref{tab:m-classes} gives the counts behind the relation classes of Section~\ref{sec:m-classes}.
+
+
+\begin{table}[hbp]
+  \centering
+  \footnotesize
+  \caption[Structural relation classes under two definitions]{Structural relation classes of the 268,842 ordered group pairs. Each pair takes the first class that applies, in the order listed. $\dagger$Supplementary.}
+  \label{tab:m-classes}
+  \begin{tabular}{@{}lL{0.3\textwidth}rL{0.24\textwidth}r@{}}
+    \toprule
+    & \multicolumn{2}{c}{Transistor-path definition (pre-specified)} & \multicolumn{2}{c}{Group-graph definition$^{\dagger}$} \\
+    \cmidrule(lr){2-3}\cmidrule(l){4-5}
+    Class & Condition on some transistor pair & Group pairs & Condition on the group graph & Group pairs \\
+    \midrule
+    Wired & Edge from a transistor of $A$ to one of $B$ & 1,437 & Edge $A \to B$ & 1,437 \\
+    Reverse only & Edge from $B$ to $A$ only & 1,437 & Edge $B \to A$ only & 1,437 \\
+    Two-step & Path of two edges from $A$ to $B$ & 690 & $A \to C \to B$ for a group $C$ & 1,364 \\
+    Shared parent & A transistor with edges to both & 227 & A group $C$ with $C \to A$ and $C \to B$ & 76,546 \\
+    Shared child & A transistor with edges from both & 1,155 & A group $C$ with $A \to C$ and $B \to C$ & 439 \\
+    Unrelated & None of the above & 263,896 & None of the above & 187,619 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{The statistics of H3 and H4}
+\label{sec:m-quantities}
+
+\emph{Orientation accuracy} (H3) is the fraction of the untied wired group pairs for which the orientation with the larger score is the wired one. The pre-specified nuisance predictors were the event rate and the conditional entropy of each member given its own past, each predicting that the member with the larger value is the target; the rate predictor was specified with the wrong sign, and the comparator for H3, chosen after the run as the most accurate of the three once reversed, is the rule that the member with the lower event rate is the target. The \emph{signed influence} (H4) of source $X$ on target $Y$ is
+\begin{equation}
+  \delta = \sum_{s \in \mathcal{S}} w_s \big[ p(y_t = 1 \mid s, x_{t-1} = 1) - p(y_t = 1 \mid s, x_{t-1} = 0) \big],
+  \label{eq:m-delta}
+\end{equation}
+where $\mathcal{S}$ is the set of the target's history states in which both source values occur and $w_s$ the share of those observations in state $s$. Under change coding and phase-locked units the wired interaction acts within the phase, so $\delta$ measures the sign of the lag-1 association and not that of the wired interaction.
+
+
+\subsection{Alignment of the reduction with the clock}
+\label{sec:m-alignment-detail}
+
+The supplementary check behind Section~\ref{sec:m-alignment} found that reduced samples 1 to 1,407 miss almost every clock change, carrying 0.03 events per sample against 51.8 when reduced in step with the clock, and that the misalignment accounts for their whole difference from the rest of the recording: re-reducing only those samples in step with the clock moves lag-0 CMI's mean within-target AUC from 0.632 to 0.509, close to the 0.511 obtained from samples 1,408 onwards, and dropping further samples changes no AUC by more than 0.005. That about 1~per~cent of the samples, nearly free of events, can move a within-target AUC by 0.12 shows how sensitive plug-in scores on sparse binary data are to a block of atypical samples.
+
+
+\subsection{The calibration of the analytic null in detail}
+
+Figure~\ref{fig:calibration} shows the calibration of Section~\ref{sec:v-calibration} target by target. The 40 targets of the main run were drawn with seed 2026 from the 442 targets whose event rate lies between 0.1 and 99.9~per~cent, and a supplementary calibration repeated the design for all 54 targets with $k \le 3$. The empirical null mean is about 21 times the analytic one at $k = 1$ to 3 and a twelfth to a third of it at $k \ge 11$, the only targets below the nominal level. Because 159 targets sit at the cap of $k = 12$, the long-history regime governs nearly a third of the network. At $k = 12$ every calibrated target rejects at most 1.0~per~cent of surrogates, yet Bonferroni correction declares 23.9~per~cent of real pairs into these targets, dependence that requires the actual alignment; at $k = 1$ about four-fifths of the declarations are matched by phase dependence alone. In both regimes the declared pairs are dependent but mostly not wired.
+
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=\textwidth]{images/new/fig_c5_calibration_r6.pdf}
+  \caption[Calibration of the analytic null on the recording]{The analytic transfer-entropy test rejects 20.5~per~cent of circular-shift surrogates on the recording at a nominal 5~per~cent, most at short histories, and adding sample parity to the conditioning set lowers the rate at $k = 1$ from 58.6 to 8.6~per~cent. (a)~Each calibrated target's empirical null mean (100 shifts $\times$ 518 sources) against the analytic null mean, on logarithmic axes; points above the dashed line have an empirical mean larger than the analytic one. (b)~Each target's surrogate rejection rate at $\alpha = 0.05$ against its selected history, with the target's past only (blue) and with sample parity added to the conditioning set (orange); circles are the 40-target sample of the main run, squares the supplementary$^{\dagger}$ calibration of all 54 targets with $k \le 3$. A calibrated test would place points on the dashed 5~per~cent line. Point estimates only; no intervals are drawn.}
+  \label{fig:calibration}
+\end{figure}
+
+\subsection{The three supplementary tests of the calibration}
+\label{sec:v-calib-tests}
+
+On one reading the excess rejections are errors of the chi-squared approximation, from sparse cells at short histories and unvisited states at long ones. On the other, most rejections are correct because the surrogate leaves dependence in place: a circular shift carries a period-two component to the same phase by an even offset and to the opposite phase by an odd one, so a phase-locked target whose short history does not reveal its own phase is predictable from any phase-locked source after any shift. The saved draws cannot separate the readings, because both predict a high rate at short histories and a low one at long ones. Three supplementary analyses do so on all 4,000 surrogate draws (supplementary Table~S16). Sample parity was added to the target's conditioning set, which should remove phase dependence and leave approximation errors; because doubling the degrees of freedom can itself make the test more conservative, the test was repeated with a placebo in place of parity, a fixed series of independent fair bits that doubles the degrees of freedom identically but carries no phase; and the rejections were split by the parity classes of source and target.
+
+At matched degrees of freedom, conditioning on parity instead of the placebo lowers the sample's mean rejection rate from 13.3 to 0.91~per~cent, sixfold or more in every band where the placebo leaves any rejections. For the targets with $k = 1$, where the placebo changes little, parity lowers the rate from 58.6 to 8.6~per~cent, and over all 54 targets with $k \le 3$ from 37.0 to 3.85~per~cent. The source-side split agrees: for phase-locked targets, phase-locked sources are rejected more often than mixed-parity sources (23.3 against 11.8~per~cent), and with parity conditioned the ordering reverses. One caveat applies at longer histories: where a target's history already reveals its phase, parity adds conditioning cells that stay empty and makes the test more conservative, so the evidence that the phase drives the excess is clearest at $k \le 3$. At $k = 7$ to~10 the placebo alone removes much of the rejection rate (at $k = 10$, from 21.4 to 5.5~per~cent), which is what unvisited states produce: a threshold that rises steeply with the degrees of freedom while the statistic barely moves. A long-history target carries its phase, and the unvisited states make the test conservative.
+
+Before the calibration, the thesis predicted that shared periodic drive would make the analytic test reject too often, from the effective-sample-size approximation
+\begin{equation}
+  N_{\mathrm{eff}} \approx \frac{N}{1 + 2\sum_{j \ge 1} \rho_j},
+  \label{eq:neff}
+\end{equation}
+under which $G$ would be inflated by about $N/N_{\mathrm{eff}}$, most for the most periodic units. The heuristic was mis-specified: it comes from the variance of a single series' mean, not from dependence between two series; a strictly phase-locked change indicator has an autocorrelation that alternates in sign and does not decay, so the sum does not converge; and the two-series correction of Cliff et al.~\cite{cliff2021assessing} is computed from residuals that, for transfer entropy, already include the target's past. Every test also uses nominal degrees of freedom, whereas on deterministic data those attained over the occupied cells are far smaller~\cite{panzeri1996bias,panzeri2007correcting}; the placebo result is its measured symptom.
+
+
+\subsection{Random Boolean circuits: design and further results}
+\label{sec:v-boolean-detail}
+
+Each circuit has 40 nodes: five persistent external inputs, a clock node alternating every step, and 34 gates of eight types (46~per~cent inverting), each reading up to three earlier nodes, with feedback. Every gate updates from its parents' previous values, and every node is flipped with probability 0.02 at every step, so every joint state is reachable. Series of 1,000 to 30,000 steps in 20 replicates are recorded as states and as rising edges. Table~\ref{tab:synthetic} gives the recovery at 10,000 steps that Section~\ref{sec:v-boolean-results} summarises. XOR edges are recovered at 0.94 to 0.98 on states, so synergy did not defeat IDTxl's greedy selection here. On rising edges, recall is lost on inverting gates, whose input edges are detected at 0.63 against 0.98 for non-inverting gates, and false positives grow with length, because the parents' rising-edge series need not screen a node off from its other ancestors. Thresholded by the test, pairwise scores give dense networks that worsen with data, not through test errors, since on the pairs that are independent by construction the test rejects in 5.7 to 6.3~per~cent of tests, but through dependent two-step and shared-parent pairs. The signed effect $\delta$ is negative for all 427 inverting edges under both representations.
+
+
+
+\section{Further analyses for Chapter~\ref{chap:rq1}}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption[Lag-0 CMI under the controls for H2]{$^{\dagger}$(Section~\ref{sec:r1-h2}) Lag-0 CMI under the controls called for by the rivals to H2. The primary test and the common-history row are from the main run; all other rows are supplementary. $^{\ddagger}$Physical AUC from the main run; group and within-target values recomputed (Appendix~\ref{app:recompute}). Panel~A: discrimination. Panel~B: the paired AUC contrast with lag-1 transfer entropy under the same control. ``$\mid$ parity'': conditioned on sample parity (in panel~B, lag~1 is conditioned in the same way). Global state: quartile of total activity in the previous sample. Clock group excluded: as source and target. Rate strata: AUC within cells of source-rate decile by target-rate decile. Rates-only model: cross-validated logistic model of the two log rates, folds by target. Node level: each connection between active gate nodes counted once; its node-level AUC, AP lift and within-target-node AUC are placed in the group columns.}
+  \label{tab:r1-h2}
+  \resizebox{\textwidth}{!}{\begin{tabular}{@{}lcccc@{}}
+    \multicolumn{5}{@{}l}{\emph{A. Discrimination}} \\
+    \toprule
+    Control & Physical AUC & Group AUC & Group AP lift & Within-target AUC \\
+    \midrule
+    None (primary test) & 0.593 [0.504, 0.683] & 0.632 [0.611, 0.651] & 4.72 [3.76, 6.08] & 0.632 [0.613, 0.651] \\
+    Clock-aligned & 0.527 [0.441, 0.614] & 0.561 [0.538, 0.582] & 4.62 [3.67, 6.00] & 0.511 [0.479, 0.541] \\
+    Common history $k = 1$ & 0.585 [0.500, 0.672] & 0.609 [0.591, 0.627] & 4.01 [3.09, 5.26] & 0.620 [0.601, 0.639] \\
+    $\mid$ parity & 0.633 [0.561, 0.704] & 0.694 [0.678, 0.708] & 4.76 [3.78, 6.08] & 0.711 [0.694, 0.727] \\
+    $\mid$ parity and global state & 0.624 [0.555, 0.692] & 0.664 [0.649, 0.678] & 5.04 [4.03, 6.56] & 0.660 [0.640, 0.680] \\
+    Clock group excluded & 0.641 [0.598, 0.679] & 0.682 [0.656, 0.708] & 6.65 [5.17, 8.70] & 0.761 [0.739, 0.781] \\
+    Within rate strata & 0.583 [0.469, 0.687] & 0.626 [0.600, 0.651] & -- & -- \\
+    Node level & -- & 0.615 [0.594, 0.635] & 3.84 [2.96, 5.64] & 0.586 [0.567, 0.605] \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{Comparators}} \\
+    Rates-only model$^{\ddagger}$ & 0.625 [0.585, 0.662] & 0.625 & 8.75 & 0.721 \\
+    Source event rate alone & 0.626 [0.586, 0.665] & 0.633 [0.614, 0.652] & 20.26 [16.29, 24.65] & 0.721 [0.699, 0.742] \\
+    Rates model refitted without the clock group & 0.581 [0.540, 0.618] & 0.576 [0.553, 0.599] & 1.24 [1.11, 1.43] & 0.609 [0.587, 0.630] \\
+        \bottomrule
+  \end{tabular}}
+
+  \medskip
+  \begin{tabular}{@{}lcc@{}}
+    \multicolumn{3}{@{}l}{\emph{B. $\Delta$ AUC, lag~0 minus lag~1}} \\
+    \toprule
+    Control & Physical & Group \\
+    \midrule
+    None (primary test) & $+0.094$ [$+0.065$, $+0.128$] & $+0.163$ [$+0.142$, $+0.184$] \\
+    Clock-aligned & $+0.087$ [$+0.064$, $+0.117$] & $+0.165$ [$+0.144$, $+0.187$] \\
+    Common history $k = 1$ & $+0.082$ [$+0.057$, $+0.113$] & $+0.122$ [$+0.103$, $+0.140$] \\
+    $\mid$ parity & $+0.086$ [$+0.039$, $+0.132$] & $+0.205$ [$+0.180$, $+0.229$] \\
+    Clock group excluded & $+0.169$ [$+0.133$, $+0.206$] & $+0.204$ [$+0.179$, $+0.231$] \\
+    Node level & \multicolumn{2}{c}{$+0.145$ [$+0.127$, $+0.165$]} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Orientation and conditional entropy (Section~\ref{sec:r1-h3}).} For lag-0 CMI, writing $Y^-$ for $Y_t^{(k)}$ and $X^-$ for $X_t^{(k)}$,
+\begin{equation}
+  \begin{split}
+  I(X_t; Y_t \mid Y^-) - I(Y_t; X_t \mid X^-) = {} & \big[H(Y_t \mid Y^-) - H(X_t \mid X^-)\big] \\
+  & - \big[H(Y_t \mid X_t, Y^-) - H(X_t \mid Y_t, X^-)\big],
+  \end{split}
+  \label{eq:r1-lag0-asym}
+\end{equation}
+since $I(X_t; Y_t \mid Y^-) = H(Y_t \mid Y^-) - H(Y_t \mid X_t, Y^-)$ and likewise in reverse. The first bracket is the conditional-entropy predictor of H3, and lag-1 transfer entropy, $H(Y_t \mid Y^-) - H(Y_t \mid Y^-, X_{t-1})$, contains the same first term, so both asymmetries favour the end of an edge that is less predictable from its own past.
+
+
+
+
+
+
+\clearpage
+
+This section holds the tables and side analyses that Chapter~\ref{chap:rq1} cites but does not need in full: discrimination within parity strata, scores by structural relation class, the NMOS latch tests, the H3 and H4 tables, the rival explanations for lag~0, what the thresholded lag-1 network declares, and the full list of the account's written predictions with their outcomes.
+
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Scores and inclusion rates by structural relation class]{Scores by structural relation class (transistor-path definition, Section~\ref{sec:m-classes}), whole recording. Mean scores (millibits) and the fraction declared by Benjamini--Hochberg are weighted by transistor pairs (physical). The last two columns$^{\dagger}$ give the percentage of each class's group pairs within the 1,443 highest-ranked group pairs of each score, a budget equal to the size of the multivariate network of Chapter~\ref{chap:rq2}. The 1,443 highest-ranked lag-1 pairs include 27 of the 227 shared-parent pairs, an enrichment over unrelated pairs of 22.8 against 2.7 for wired pairs, and 3 of the 690 two-step paths.}
+  \label{tab:relation}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{@{}lrrrrrrrr@{}}
+    \toprule
+    & \multicolumn{2}{c}{Pairs} & \multicolumn{3}{c}{Mean score (millibits, physical)} & BH declared & \multicolumn{2}{c}{Top-1,443 inclusion (\%)} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-6}\cmidrule(lr){7-7}\cmidrule(l){8-9}
+    Relation & Physical & Group & Lag-1 TE & Lag-0 CMI & MI & (\%, physical) & Lag-1 TE & Lag-0 CMI \\
+    \midrule
+    Wired (direct) & 3,543 & 1,437 & 8.4 & 28.1 & 49.8 & 19.8 & 1.39 & 7.93 \\
+    Reverse only & 3,543 & 1,437 & 7.3 & 26.4 & 49.8 & 19.1 & 0.49 & 7.45 \\
+    Two-step path & 13,117 & 690 & 10.3 & 18.0 & 33.4 & 17.1 & 0.43 & 4.78 \\
+    Shared parent & 1,082 & 227 & 40.8 & 23.0 & 26.0 & 58.7 & 11.89 & 7.05 \\
+    Shared child & 7,382 & 1,155 & 4.3 & 27.5 & 46.4 & 23.8 & 0.61 & 7.62 \\
+    Unrelated & 9,969,243 & 263,896 & 6.4 & 10.4 & 16.7 & 26.7 & 0.52 & 0.41 \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\subsection{What Proposition 1 does and does not imply}
+\label{sec:r1-prop1}
+
+Proposition~1 motivated H2, and the aliasing argument does not depend on it. The proposition concerns node states and does not carry over to change indicators (Section~\ref{sec:bg-propositions}), so on this recording it is a heuristic and the operative mechanism is the aliasing. Where states exist, on the simulated chip, lag-0 CMI ranks wiring at a node-level AUC of 0.749 and lag-1 transfer entropy at 0.431 (Section~\ref{sec:v-sim-repr}). At matched source properties (Table~\ref{tab:r1-strata}, lower block), a lag-1 AUC clearly above 0.5 would have contradicted the heuristic reading, and none occurs, while lag-0 CMI lies above 0.5 at the group level under every matching.
+
+
+\subsection{A negative control at the simulator's resolution}
+\label{sec:r1-stride1}
+
+The main run also computed lagged transfer entropy on the unreduced recording, three simulator rows per phase, where the order of switching within a phase would be visible. Read without further conditioning, it appears to recover the wiring: with the first 15,000 rows excluded, a delay of six rows gives a group AUC of 0.645 (supplementary Table~S26). The gain is an artefact of row alignment. After the opening rows almost every event falls in the first row of its three-row block, so a source event at a given delay tells the estimator which row of the block the target sample occupies, and so whether the target can change at all. This is the aliasing of Section~\ref{sec:r1-parity} at the level of rows. Conditioned on the row offset within the block (supplementary), the six-row delay falls to a group AUC of 0.471. The analysis is a negative control: a lagged estimator picks up an alignment variable unless it is conditioned on. It cannot test mechanism~1, because outside the opening rows the recording holds no timing below one phase.
+
+
+\subsection{IDTxl's selections on the chip are not enriched for delayed influence (A1c)}
+
+On the 30 chip targets of Section~\ref{sec:v-sim-idtxl}, recorded as states, the 90 group-pair edges that IDTxl selects at lag~1 have a precision of 0.127 against delayed-only influence, 0.364 against immediate influence and 0 against the wiring. Pairwise lag-1 transfer entropy given the same number of sources per target reaches 0.158, 0.353 and 0 (A1c, descriptive). With lags 0 and~1 admitted, IDTxl's 40 edges reach 0.108, 0.434 and 0.193, against 0.175, 0.350 and 0 for the pairwise comparator. The prediction that conditioning would enrich the search for delayed influence was not met in either run. The comparator here allocates sources per target, so its wiring precision differs from the 0.005 of the globally cut pairwise network in supplementary Table~S17.
+
+
+
+\subsection{Rival explanations for lag 0}
+\label{sec:r1-rivals}
+
+
+\paragraph{Conditioning on the target's past.} Lag-0 CMI has a higher group AUC than zero-lag MI (0.632 against 0.597). Compared within strata of source-group size, the paired difference is positive at the group level and its interval excludes zero, whereas the physical interval includes zero (supplementary). Once both are conditioned on parity the ordering reverses: MI given parity reaches a group AUC of 0.737 and a within-target AUC of 0.767, against 0.694 and 0.711 for lag-0 CMI given parity (Table~\ref{tab:discrimination}). The best pairwise score computed is therefore phase-conditioned co-activity, without the target's past. No paired interval for that difference was computed, because the score matrices it needs are not among the saved outputs.
+
+
+\paragraph{Phase alignment.} This rival holds that wired units change in the same samples because they share a phase, without either influencing the other. It accounts for most of lag~0's AUC but not for the rest: conditioning on parity raises lag~0's group AUC by 0.062 with its AP lift unchanged, and lag~0 discriminates among same-parity pairs at the group level (Table~\ref{tab:r1-strata}). Physically the rival is not excluded. Conditioning on the collective state, which also improved reconstruction in the calcium-imaging precedent~\cite{stetter2012modelfree}, matters more here than any other refinement tried. Slower rhythms, such as the instruction cycle, are controlled only through a coarse global-state variable.
+
+
+\paragraph{Event rates.} With all groups included, rates match or beat lag~0 at the group level: the rates-only model reaches an AP lift of 8.75 and a within-target AUC of 0.721 (Table~\ref{tab:r1-h2}). The group-level strength of rates comes from one hub, since 36.2~per~cent of the rates model's 1,443 highest-ranked group pairs involve the clock group. Refitted without the clock group, the rates model falls to a group AUC of 0.576 while lag~0 rises to 0.682, and within cells of source-rate by target-rate decile lag~0 keeps a group AUC of 0.626.
+
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Orientation of wired pairs against the event-rate rule]{Orientation of wired group pairs by lag-1 transfer-entropy asymmetry at matched histories, at the group level (each group pair once) and the physical level (weighted by physical edges), among untied pairs. Rate rule: the member with the lower event rate is the target, the reverse of the pre-specified nuisance predictor, chosen after the run. Target: target-cluster interval, paired for the difference. Two-way and vertex intervals for the group differences are in Table~\ref{tab:m-schemes}; the block without the clock group's pairs is in supplementary Table~S22. Against the predictors as pre-specified, computed at the physical level, the asymmetry would have read as supported: the pre-specified rate predictor orients only 0.268 of the physical weight, and the asymmetry exceeds the two conditional-entropy predictors (0.627 and 0.636) at every history. With the AIS-selected histories the asymmetry orients pass edges at 0.872 and pull-down edges at 0.654 (physical), a gap that reflects which end of an edge is more predictable from its own past (Equation~\eqref{eq:r1-lag0-asym}).}
+  \label{tab:direction}
+  \begin{tabular}{@{}llccc@{}}
+    \toprule
+    History & Level & Accuracy & Rate rule & TE $-$ rate rule \\
+    \midrule
+$k = 1$ & group & 0.623 [0.589, 0.656] & 0.701 & $-0.078$ [$-0.120$, $-0.031$] \\
+ & physical & 0.695 [0.642, 0.744] & 0.732 & $-0.037$ [$-0.080$, $+0.007$] \\
+\addlinespace
+$k = 2$ & group & 0.560 [0.524, 0.600] & 0.701 & $-0.141$ [$-0.198$, $-0.076$] \\
+ & physical & 0.665 [0.612, 0.714] & 0.732 & $-0.067$ [$-0.125$, $-0.005$] \\
+\addlinespace
+$k = 4$ & group & 0.618 [0.582, 0.655] & 0.701 & $-0.083$ [$-0.138$, $-0.026$] \\
+ & physical & 0.707 [0.658, 0.751] & 0.732 & $-0.025$ [$-0.079$, $+0.032$] \\
+\addlinespace
+$k = 8$ & group & 0.698 [0.665, 0.735] & 0.701 & $-0.003$ [$-0.050$, $+0.047$] \\
+ & physical & 0.744 [0.696, 0.786] & 0.732 & $+0.013$ [$-0.035$, $+0.062$] \\
+\addlinespace
+AIS-selected $k$ & group & 0.727 [0.695, 0.759] & 0.701 & $+0.026$ [$-0.015$, $+0.070$] \\
+ & physical & 0.755 [0.710, 0.797] & 0.732 & $+0.023$ [$-0.019$, $+0.069$] \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Negative signed influence within parity strata]{Percentage of group pairs with negative signed influence $\delta$ by edge class, within each parity stratum and overall (number of pairs in parentheses), and the pull-down-only minus unwired difference in percentage points with its target-cluster interval$^{\dagger}$. Composition-adjusted: stratum differences weighted by the pull-down-only pairs in each stratum. Group level; the physical-level overall difference is $+3.3$ [$-9.1$, $+15.1$]. Two-way interval of the composition-adjusted difference: [$-14.6$, $+0.9$]. The counts follow a recount of the edge classes, which leaves 790 pull-down-only pairs with a defined $\delta$. Where gates act with a one-step delay and events are states or rising edges, on the synthetic circuits, $\delta$ is negative for all 427 inverting edges (Section~\ref{sec:v-boolean-results}); neither condition holds on the recording.}
+  \label{tab:r1-h4}
+  \begin{tabular}{@{}lrrrc@{}}
+    \toprule
+    Stratum & Pull-down only & Pass only & Unwired & Pull-down $-$ unwired \\
+    \midrule
+    Same parity & 86.3 (678) & 82.8 (87) & 91.8 (112,609) & $-5.5$ [$-9.7$, $-1.4$] \\
+    Opposite parity & 33.3 (6) & 58.3 (24) & 45.8 (83,682) & $-12.5$ [$-46.4$, $+34.2$] \\
+    Involves a mixed group & 50.9 (106) & 31.7 (524) & 57.1 (70,539) & $-6.2$ [$-18.8$, $+6.8$] \\
+    Composition-adjusted & & & & $-5.6$ [$-9.8$, $-1.7$] \\
+    \addlinespace
+    All strata (unstratified) & 81.1 (790) & 39.7 (635) & 68.2 (266,830) & $+12.9$ [$+8.3$, $+17.2$] \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{The neighbours of pass transistors}
+\label{sec:r1-relation}
+
+The pairs that lag~1 ranks most distinctively on the recording are the neighbours of pass transistors, the groups on the two sides of a pass transistor, a relation the reference omits (Table~\ref{tab:relation}, Appendix~\ref{app:ch6-moved}). Shared-parent pairs, which under the transistor-path definition are all pass neighbours (Section~\ref{sec:m-classes}), have by far the largest mean lag-1 transfer entropy of any class (40.8 millibits against 8.4 for wired pairs), and the 82 clock-gated pass-neighbour pairs the largest of all, 62.0 millibits, with almost no contemporaneous dependence (3.5 millibits of lag-0 CMI; supplementary). Two-step paths, the indirect relations that pairwise measures are expected to confuse with wiring, are not enriched. The omitted relation explains the distinctive top of the lag-1 ranking but not its failure: counting all 228 pass-neighbour pairs as positives raises lag~1's group AUC only from 0.469 to 0.497 (supplementary Table~S25).
+
+
+
+\subsection{Latch transfer in the NMOS circuits}
+\label{sec:v-nmos-latch}
+
+In the random NMOS circuits of Section~\ref{sec:v-sim-setup}, whose latches are known by construction, lag-1 transfer entropy registers transfer from a latch's input to its storage node (0.858 on ten circuits, A8; 0.779 [0.615, 0.873] on 50 new circuits, A10), but the prediction that lag~1 would beat lag~0 on that relation is not met in either test (A10: $-0.071$ [$-0.201$, $+0.047$]), and from the storage node to the logic gate it feeds, a combinational relation, lag~0 exceeds lag~1 by 0.449 [0.343, 0.551] (supplementary Table~S29). On these circuits, then, lag-1 transfer entropy registers latch transfer but is not specific to it, unlike on the chip; why the random circuits differ from the 6502 in this respect was not tested.
+
+
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[The penalty on synthetic phase-locked networks]{Hash-logged tests A11 (300 networks, 20 per condition) and A15 (80 networks with hidden co-drivers and spurious events, coupling 0.6): within-target AUC of lag-1 transfer entropy for within-sample drivers against non-drivers of the same phase, with 95\% target-cluster intervals (2,000 targets and 1,000 draws per condition). Locking $\lambda$: the share of a unit's spontaneous events in its preferred phase. A15 also scores each network as states and reports the remedy, lag-0 CMI given the phase.}
+  \label{tab:r1-general}
+  \resizebox{\textwidth}{!}{\begin{tabular}{@{}lllllll@{}}
+    \toprule
+    & \multicolumn{3}{c}{A11: idealised, events} & \multicolumn{3}{c}{A15: hidden co-drivers and noise, $\rho = 0.6$} \\
+    \cmidrule(lr){2-4}\cmidrule(l){5-7}
+    Locking $\lambda$ & $\rho = 0.3$ & $\rho = 0.6$ & $\rho = 0.9$ & Events & States & Remedy, events \\
+    \midrule
+    0.5 (none) & 0.518 [0.499, 0.539] & 0.504 [0.484, 0.524] & 0.467 [0.447, 0.486] & 0.501 [0.480, 0.522] & 0.496 [0.477, 0.516] & 0.997 \\
+    0.7 & 0.410 [0.392, 0.430] & 0.251 [0.238, 0.265] & 0.106 [0.099, 0.116] & 0.255 [0.242, 0.268] & 0.501 [0.481, 0.522] & 0.997 \\
+    0.85 & 0.236 [0.222, 0.252] & 0.114 [0.106, 0.122] & 0.026 [0.023, 0.029] & 0.119 [0.111, 0.128] & 0.500 [0.480, 0.520] & 0.998 \\
+    0.95 & 0.208 [0.195, 0.221] & 0.099 [0.091, 0.108] & 0.021 [0.018, 0.025] & -- & -- & -- \\
+    1.0 (strict) & 0.184 [0.172, 0.197] & 0.088 [0.081, 0.096] & 0.018 [0.015, 0.021] & 0.118 [0.109, 0.129] & 0.508 [0.488, 0.528] & 0.999 \\
+    Strict minus none & $-0.334$ [$-0.358$, $-0.311$] & $-0.416$ [$-0.436$, $-0.395$] & $-0.450$ [$-0.470$, $-0.428$] & $-0.383$ [$-0.405$, $-0.360$] & & \\
+    \addlinespace
+    \multicolumn{7}{@{}l}{A11, all fifteen conditions: remedy 0.991 to 1.000; positive control (lag-1 TE, delayed drivers) 0.997 to 1.000. A15, strict: states minus events $+0.390$ [$+0.368$, $+0.411$].} \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\subsection{H3: direction in full}
+\label{sec:r1-h3-full}
+
+H3 is not supported, and the verdict is robust. Its primary statistic compares the orientation accuracy of the lag-1 asymmetry with that of the rule ``the member with the lower event rate is the target''. At the group level the asymmetry is worse than the rule at $k = 1$, 2 and 4 (0.623, 0.560 and 0.618 against 0.701) and indistinguishable from it at $k = 8$ and at the AIS-selected history (0.727 against 0.701, difference $+0.026$ [$-0.015$, $+0.070$]; Table~\ref{tab:direction}). Orientation above chance, which H3 as worded does not claim, holds only through one hub: the clock group is the source of 265 of the 1,437 wired group pairs and the target of none, its event series is nearly constant, so transfer entropy into it is close to zero and the asymmetry orients its pairs correctly by construction; without them the group accuracies at $k = 1$, 2 and 4 fall to 0.538, 0.461 and 0.531 (supplementary Table~S22). Against the predictors as pre-specified, the asymmetry would have read as supported, because the pre-specified rate predictor had the sign the wrong way round; reversing it after the run removed that apparent support. A logistic model fitted with the pre-specified weighting by physical edges finds that the asymmetry adds nothing to the nuisance predictors at any history; with group pairs weighted equally it adds a small increment that excludes zero at every history (supplementary Table~S23), so the asymmetry carries a little orientation information that the rate rule does not, too little to beat it.
+
+
+
+\subsection{H4: signed influence in full}
+\label{sec:r1-h4-full}
+
+H4 is not supported, and as framed it is not testable on a change-coded recording. Its primary statistic, the difference in the percentage of negative signed influence $\delta$ between pull-down-only and unwired group pairs, is $+12.9$ points [$+8.3$, $+17.2$] at the deciding group level, but $+3.3$ [$-9.1$, $+15.1$] physically, so the levels disagree (Table~\ref{tab:r1-h4}). Within parity strata the group-level effect reverses: in every stratum pull-down-only pairs are \emph{less} often negative than unwired pairs, and the composition-adjusted difference is $-5.6$ points [$-9.8$, $-1.7$]. The unstratified $+12.9$ is a composition effect, and the aliasing of Section~\ref{sec:r1-parity} explains it: for a same-parity pair a source change at $t-1$ places $t$ in the phase in which the target cannot change, so $\delta$ is negative whether or not the pair is wired, as it is for 91.8~per~cent of unwired same-parity pairs, and pull-down-only pairs are 86~per~cent same-parity against 42~per~cent of all pairs. Nor does $\delta$ measure what H4 was framed to detect: under change coding an inverter's input and output change in the same sample, so a negative $\delta$ means only that a source change makes a target change in the next sample less likely.
+
+
+
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[Latch transfer and delayed influence on the simulated chip]{Hash-logged tests on the simulated chip, change coding unless stated: stratified node-pair AUCs with 95\% target-cluster intervals (1,000 draws) and orientation accuracies. Program~2 is the held-out program. Negatives for the latch rows are pairs with no measured influence in either direction. Latch pairs scored: 142 (program~1) and 170 (program~2). Longer lags (A13), delayed influence in general (A1, A16.2--3) and the wiring on program~2 (A7) are in Table~\ref{tab:app-v-latch-more}.}
+  \label{tab:v-latch}
+  \resizebox{\textwidth}{!}{\begin{tabular}{@{}llll@{}}
+    \toprule
+    Test & Program 1 & Program 2 & Prediction \\
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Latch pairs under intervention (A1, A16)}} \\
+    Latch pairs delayed-only, clamped with the latch closed (A16.1) & 182 of 182 & 213 of 213 & More than half: met \\
+    Latch pairs immediate, clamped with the latch open (supplementary) & 182 of 182 & 213 of 213 & -- \\
+    Latch pairs in A1's delayed-only class, random moments & 0 of 182 & 0 of 213 & -- \\
+    \addlinespace
+    \multicolumn{4}{@{}l}{\emph{Latch pairs by transfer entropy (A1b, A5, A6)}} \\
+    Lag-1 TE, driven to storage & 0.978 [0.969, 0.987] & 0.984 [0.974, 0.991] & Above 0.5: met, material \\
+    Lag-0 CMI, same pairs & 0.586 [0.521, 0.640] & 0.492 [0.437, 0.549] & Below lag~1: met \\
+    Lag-1 TE, storage to driven & 0.220 [0.154, 0.293] & 0.137 [0.095, 0.186] & Below 0.5: met \\
+    Node states: lag-1 TE; lag-0 CMI & 0.985; 0.986 & 0.991; 0.991 & -- \\
+    Lag at which the AUC peaks & 1 (0.978) & 1 (0.984) & Lag 1: met \\
+    Orientation: TE; rate rule; entropy rule (\%) & 98.6; 52.1; 37.7 & 98.8; 55.0; 47.1 & Above both rules: met \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+\centering
+\footnotesize
+\caption[Lag-0 and lag-1 transfer entropy at common histories]{$^{\dagger}$Lag-0 and lag-1 transfer entropy at the AIS-selected histories and at common histories $k = 1, 2, 4, 8$ for every target, on the reduced recording. Intervals: 1,000 target-cluster bootstrap draws.}
+\label{tab:app-common-history}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllll}
+\toprule
+Score & Physical AUC & Physical AP lift & Group AUC & Group AP lift & Within-target AUC \\
+\midrule
+lag 1, selected k & 0.500 [0.411, 0.596] & 1.27 [0.99, 1.84] & 0.469 [0.445, 0.493] & 1.22 [1.04, 1.60] & 0.434 [0.418, 0.450] \\
+lag 0, selected k & 0.593 [0.504, 0.683] & 4.35 [2.74, 7.76] & 0.632 [0.611, 0.651] & 4.72 [3.76, 6.08] & 0.632 [0.613, 0.651] \\
+lag 1, k = 1 & 0.503 [0.415, 0.603] & 1.76 [1.03, 3.17] & 0.487 [0.467, 0.508] & 1.40 [1.05, 2.04] & 0.467 [0.451, 0.484] \\
+lag 0, k = 1 & 0.585 [0.500, 0.672] & 4.99 [2.43, 9.75] & 0.609 [0.591, 0.627] & 4.01 [3.09, 5.26] & 0.620 [0.601, 0.639] \\
+lag 1, k = 2 & 0.500 [0.409, 0.600] & 1.16 [0.90, 2.17] & 0.473 [0.450, 0.496] & 1.15 [0.96, 1.69] & 0.442 [0.426, 0.457] \\
+lag 0, k = 2 & 0.589 [0.502, 0.678] & 2.82 [1.88, 5.38] & 0.618 [0.599, 0.636] & 3.49 [2.79, 4.63] & 0.618 [0.598, 0.638] \\
+lag 1, k = 4 & 0.500 [0.410, 0.599] & 1.33 [0.98, 2.12] & 0.477 [0.453, 0.500] & 1.21 [1.03, 1.64] & 0.448 [0.432, 0.463] \\
+lag 0, k = 4 & 0.592 [0.506, 0.681] & 2.96 [2.02, 5.15] & 0.617 [0.597, 0.638] & 3.95 [3.10, 5.15] & 0.618 [0.597, 0.638] \\
+lag 1, k = 8 & 0.497 [0.410, 0.595] & 1.26 [0.98, 1.92] & 0.470 [0.446, 0.495] & 1.21 [1.04, 1.56] & 0.435 [0.419, 0.451] \\
+lag 0, k = 8 & 0.592 [0.504, 0.682] & 3.79 [2.41, 6.54] & 0.625 [0.605, 0.646] & 4.27 [3.39, 5.45] & 0.625 [0.605, 0.645] \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[Longer lags, delayed influence and wiring on the simulated chip]{On the simulated chip, latch pairs fall below chance at longer lags where the target's history covers the copy, delayed influence in general is registered only weakly, and lag-1 transfer entropy ranks the wiring below chance (moved from Table~\ref{tab:v-latch}). Hash-logged tests, change coding: stratified node-pair AUCs with 95\% target-cluster intervals (1,000 draws) and paired differences. Program~2 is the held-out program. A13: latch pairs at source lags 2 to~7, pooled over pair--lag combinations and stratified by lag; a target's history \emph{covers} the copy at lag $u$ if $k \ge u - 1$. $^{\ddagger}$`Contradicted' for a paired difference extends the written rule, a choice made after the runs.}
+  \label{tab:app-v-latch-more}
+  \resizebox{\textwidth}{!}{\begin{tabular}{@{}llll@{}}
+    \toprule
+    Test & Program 1 & Program 2 & Prediction \\
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Lags 2 to 7, by history coverage (A13)}} \\
+    Covered, latch pairs against no influence (A13.1) & 0.228 [0.154, 0.310] & 0.103 [0.067, 0.145] & Below 0.5: met \\
+    Uncovered (A13.3) & 0.428 [0.301, 0.564] & 0.474 [0.381, 0.571] & Upper limit $\ge 0.5$: met \\
+    Uncovered minus covered (A13.2) & $+0.200$ [$+0.045$, $+0.361$] & $+0.371$ [$+0.267$, $+0.472$] & Above 0: met \\
+    Pair--lag combinations: covered; uncovered & 797; 55 & 905; 115 & \\
+    \addlinespace
+    \multicolumn{4}{@{}l}{\emph{Delayed influence against none}} \\
+    A1: lag-1 TE, random moments (primary) & 0.571 [0.557, 0.585] & 0.535 [0.523, 0.546] & Above 0.5: met, not material \\
+    A1: lag~1 minus lag~0 & $-0.016$ [$-0.024$, $-0.009$] & $-0.043$ [$-0.051$, $-0.034$] & Above 0: contradicted$^{\ddagger}$ \\
+    A16.2: lag-1 TE, timed moments & 0.589 [0.571, 0.606] & 0.537 [0.526, 0.547] & Above 0.5: met \\
+    A16.3: lag~1 minus lag~0 & $-0.021$ [$-0.027$, $-0.014$] & $-0.040$ [$-0.048$, $-0.032$] & Above 0: contradicted$^{\ddagger}$ \\
+    \addlinespace
+    \multicolumn{4}{@{}l}{\emph{Wiring, wired against unwired node pairs (A7)}} \\
+    Lag-1 TE & -- & 0.300 [0.276, 0.324] & At or below 0.5: met \\
+    Lag-0 CMI & -- & 0.575 [0.549, 0.603] & -- \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[A source block of two samples on the recording]{A source block of two samples escapes the bound but recovers no wiring (moved from Table~\ref{tab:r1-bound}). Hash-logged test A18 on the recording, whole recording: AUCs of wired against unwired pairs with 95\% target-cluster intervals (1,000 draws), for the block $(\Delta X_{t-1}, \Delta X_{t-2})$ and for lag-1 TE on the same samples, within strictly locked same-phase targets and over all group pairs. ``Met'' refers to the written decision rule; no paired test of block against lag~1 was fixed.}
+  \label{tab:app-r1-a18}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Statistic & Recording & Prediction \\
+    \midrule
+    Block of two, within targets & 0.460 [0.390, 0.533] & Lower limit $\le 0.5$: met \\
+    Lag-1 TE, same samples & 0.400 [0.323, 0.480] & -- \\
+    Block of two, all group pairs & 0.472 [0.452, 0.492] & Lower limit $\le 0.5$: met \\
+    Lag-1 TE, same samples & 0.469 [0.445, 0.491] & -- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Further tables for Chapter~\ref{chap:rq2}}
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[Paired increments in group precision]{Paired increments in group precision (percentage points)$^{\dagger}$ along the path of Figure~\ref{fig:rq2decomp}a, with 95\% target-cluster and two-way intervals and the share of draws in which the increment is positive. Values recomputed from the run's saved networks (Appendix~\ref{app:recompute}). The main run's own draws, which decide H5, give [$+1.71$, $+3.39$] for the total (Table~\ref{tab:rq2comparison}); its vertex interval is in Table~\ref{tab:m-schemes}. The draws first reported gave [$-0.06$, $+4.48$] (97.3\% positive) for conditioning: its lower limit lies at zero within resampling noise.}
+  \label{tab:rq2increments}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{@{}lrrrrr@{}}
+    \toprule
+    Contrast & Increment & Target bootstrap & Positive & Two-way bootstrap & Positive \\
+    \midrule
+    IDTxl minus lag-1 global cut (total) & $+2.49$ & [$+1.62$, $+3.36$] & 100\% & [$+0.50$, $+5.05$] & 99.4\% \\
+    Allocation: lag-1 allocation-matched minus global cut & $+0.62$ & [$+0.03$, $+1.21$] & 98\% & [$-0.35$, $+1.81$] & 90\% \\
+    Embedding: at IDTxl's target lags minus at AIS histories & 0.00 & [0.00, 0.00] & -- & [$-0.06$, $+0.06$] & -- \\
+    Conditioning: IDTxl minus embedding-matched & $+1.87$ & [$+1.06$, $+2.66$] & 100\% & [$+0.09$, $+4.41$] & 98.2\% \\
+    \addlinespace
+    Lag-0 CMI, allocation-matched, minus IDTxl & $+10.05$ & [$+8.17$, $+11.92$] & 100\% & [$+6.47$, $+13.58$] & 100\% \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Enrichment of relation classes: multivariate against allocation-matched lag~1]{Relation classes declared by the multivariate network (IDTxl) and the allocation-matched lag-1 network (1,443 edges each)$^{\dagger}$, under both definitions of relation. Discordant: pairs declared by one network only. Ratio: multivariate enrichment over lag-1 enrichment, each relative to the network's rate for unrelated pairs, with target-cluster and two-way intervals. Exact: two-sided binomial test on the discordant pairs; Holm: corrected across the eight non-unrelated classes (reverse-only, two-step, shared-parent and shared-child under each definition; four have no discordant pair and an exact $p$ of 1, which makes the correction conservative). Classes with no discordant pair are omitted. Of the multivariate network's 1,387 false positives, 1,320 are unrelated pairs and 63 shared-parent pairs; it has 27 fewer false positives than the lag-1 network (1,414), and under both definitions unrelated false positives fall by 37 net, but their discordant counts do not differ beyond chance.}
+  \label{tab:rq2enrich}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{@{}lrrrrrrrr@{}}
+    \toprule
+    Relation & Class size & Declared (IDTxl / lag 1) & Discordant & Ratio & Target interval & Two-way interval & Exact $p$ & Holm $p$ \\
+    \midrule
+    \multicolumn{9}{@{}l}{\emph{Transistor paths}} \\
+    Two-step & 690 & 2 / 8 & 0 / 6 & 0.26 & [0.00, 0.68] & [0.00, 1.11] & 0.031 & 0.19 \\
+    Shared parent & 227 & 63 / 47 & 17 / 1 & 1.38 & [1.18, 1.66] & [1.08, 2.00] & 0.0001 & 0.001 \\
+    Unrelated & 263,896 & 1,320 / 1,357 & 783 / 820 & -- & -- & -- & 0.37 & -- \\
+    \addlinespace
+    \multicolumn{9}{@{}l}{\emph{Group graph}} \\
+    Two-step & 1,364 & 58 / 70 & 4 / 16 & 0.86 & [0.73, 0.99] & [0.45, 1.22] & 0.012 & 0.083 \\
+    Shared parent & 76,546 & 386 / 364 & 235 / 213 & 1.10 & [1.02, 1.20] & [0.81, 1.48] & 0.32 & 1.00 \\
+    Unrelated & 187,619 & 942 / 979 & 561 / 598 & -- & -- & -- & 0.29 & -- \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+\centering
+\footnotesize
+\caption[Relation classes of the H6 selections]{$^{\dagger}$Transistor-path relation classes of the group pairs selected by the H6 search (R1, the run of record: lags 0 and~1, 100 stratified targets; recomputed from its saved outputs), split by the lag at which each source was selected, and of pairwise lag-0 CMI allocated in the same way.}
+\label{tab:app-h6-classes}
+\resizebox{\textwidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Network & Wired & Reverse only & Two-step & Shared parent & Shared child & Unrelated \\
+\midrule
+IDTxl lags \{0, 1\}: lag-0 selections (178) & 39 & 16 & 2 & 2 & 14 & 105 \\
+IDTxl lags \{0, 1\}: lag-1 selections (60) & 2 & 0 & 0 & 10 & 0 & 48 \\
+IDTxl lags \{0, 1\}: all selections (238) & 41 & 16 & 2 & 12 & 14 & 153 \\
+lag-0 CMI, allocation matched to all selections (238) & 41 & 15 & 7 & 1 & 15 & 159 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \caption[Pass-transistor neighbours on the recording]{The shared-parent relation and the multivariate network's 63 shared-parent false positives (group level)$^{\dagger}$, and group precision against the netlist with the 228 pass-neighbour pairs added, a reference defined after the errors were examined (95\% target-cluster intervals). The 228 neighbour pairs include one that the transistor-path classes assign to the two-step class. The clamp test on the simulated chip (supplementary Section~S.3.1.11) largely follows from the switch-level rule and never perturbed the recording's pairs, so it cannot show that each recorded pair is a transfer and not a proxy for a driver upstream of both sides.}
+  \label{tab:rq2passfp}
+  \begin{tabular}{@{}L{0.66\textwidth}rr@{}}
+    \toprule
+    \emph{Recording} & Pairs & Of which clock-gated \\
+    \midrule
+    Shared-parent group pairs & 227 & 81 \\
+    Multivariate shared-parent false positives & 63 & 37 \\
+    \quad with lag-1 TE above lag-0 CMI & 58 & \\
+    \quad whose parent's group is among the target's selected sources & 8 & \\
+    Pass-neighbour pairs, not wired & 228 & 82 \\
+    \quad declared by the multivariate / allocation-matched lag-1 network & 63 / 47 & \\
+    \quad declared by the lag-1 global cut / allocation-matched lag-0 network & 27 / 4 & \\
+    \midrule
+    \emph{Netlist plus pass-through (post hoc)} & \multicolumn{2}{r}{Group precision (\%)} \\
+    \midrule
+    Multivariate network & \multicolumn{2}{r}{8.25 [6.77, 9.55]} \\
+    Allocation-matched lag-1 network & \multicolumn{2}{r}{5.27 [4.14, 6.38]} \\
+    Allocation-matched lag-0 CMI network & \multicolumn{2}{r}{14.21 [12.57, 15.74]} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Secondary aims}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Secondary aims: lesions, modules and synergy]{Secondary aims (H7, H8) and the descriptive test of mechanism~4, not decided. Panel~A (H7): 80 whole-run lesions of randomly chosen simulated nodes, each node held low for 4,000 half-steps; a lesion is critical if the program's output differs from the reference (68 of 80). AUC of each node property in predicting criticality, without intervals; under no association an AUC from 68 critical and 12 intact lesions has a standard deviation of about 0.09. Panel~B (H8): ratio of mean within-module to mean between-module score, the 97.5th percentile of a size-preserving label-permutation null (1,000 permutations; it preserves module sizes but not spatial clustering), and the agreement of Louvain communities~\cite{blondel2008louvain} with the module labels by normalised mutual information (NMI) and adjusted Rand index (ARI); recording at the group level, simulated chip on state-representation groups. Panel~C: partial information decomposition of two-input NOR gates, medians across gates of the joint mutual information and of the fractions of it that are redundant and synergistic ($I_{\min}$); the recording's events are labelled rising edges in the run's outputs and are changes of state, as regeneration from source confirms (Section~\ref{sec:m-regeneration}).}
+  \label{tab:d-secondary}
+  \begin{tabular}{@{}llrrrrr@{}}
+    \toprule
+    \multicolumn{7}{@{}l}{\emph{A. Lesions on the simulated chip: AUC predicting criticality}} \\
+    \multicolumn{2}{@{}l}{Node property} & AUC & & & & \\
+    \midrule
+    \multicolumn{2}{@{}l}{Mean outgoing lag-1 TE} & 0.55 & & & & \\
+    \multicolumn{2}{@{}l}{Mean outgoing lag-0 CMI} & 0.55 & & & & \\
+    \multicolumn{2}{@{}l}{Fraction of time high} & 0.48 & & & & \\
+    \multicolumn{2}{@{}l}{Wired out-degree} & 0.51 & & & & \\
+    \multicolumn{2}{@{}l}{Causal out-degree (same half-step)} & 0.77 & & & & \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{B. Functional modules}} \\
+    Data & Network & Ratio & Null 97.5\% & Communities & NMI & ARI \\
+    \midrule
+    Recording & Lag-1 TE & 1.09 & 1.08 & 5 & 0.14 & 0.08 \\
+     & Zero-lag MI & 2.14 & 1.09 & 6 & 0.26 & 0.18 \\
+     & IDTxl multivariate & 2.75 & 1.24 & 25 & 0.28 & 0.09 \\
+     & Structural & 13.02 & 1.22 & 11 & 0.54 & 0.40 \\
+    \addlinespace
+    Simulated chip & Lag-1 TE & 1.08 & 1.05 & 7 & 0.11 & 0.04 \\
+     & Lag-0 CMI & 1.45 & 1.05 & 7 & 0.17 & 0.08 \\
+     & Zero-lag MI & 2.01 & 1.05 & 10 & 0.17 & 0.07 \\
+     & Structural & 8.45 & 1.21 & 13 & 0.48 & 0.25 \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{C. Two-input NOR gates}} \\
+    Data & Representation & Lag & Gates & Joint MI (bits) & Redundant & Synergistic \\
+    \midrule
+    Simulated chip & State & 0 & 72 & 0.476 & 0.17 & 0.40 \\
+     & State & 1 & 72 & 0.137 & 0.14 & 0.38 \\
+     & Rising edge & 0 & 70 & 0.025 & 0.31 & 0.28 \\
+     & Rising edge & 1 & 70 & 0.025 & 0.31 & 0.29 \\
+    Recording & As recorded & 1 & 84 & 0.073 & 0.28 & 0.15 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Verdicts and the findings by system}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \caption[Decision register]{Decision register: one verdict per hypothesis, by the rule of Section~\ref{sec:m-hypotheses}. $^{\ddagger}$Fixed after the final run. Robustness: two-way bootstrap and, where relevant, clock group excluded (Table~\ref{tab:m-schemes}). Values are group-level unless marked; intervals are 95\% target-cluster. Clock-aligned: samples 1,408 onwards (Section~\ref{sec:m-alignment}).}
+  \label{tab:m-register}
+  \begin{tabular}{@{}lL{0.24\textwidth}L{0.17\textwidth}L{0.47\textwidth}@{}}
+    \toprule
+    & Primary statistic (null); deciding level & Verdict & Detail \\
+    \midrule
+    H1 & Lag-1 TE AUC (0.5) and AP lift (1); physical & Not supported (robust) & Physical AUC 0.50 [0.41, 0.60], AP lift 1.27 [0.99, 1.84]; clock-aligned AUC 0.44 [0.35, 0.53]. Group AUC 0.469 [0.445, 0.493], below chance under the target bootstrap only. \\
+    \addlinespace
+    H2 & Lag-0 CMI minus lag-1 TE in AUC (0); group$^{\ddagger}$ & Partially supported (robust) & Comparative clause supported, and holds under the two-way bootstrap: $+0.163$ [$+0.142$, $+0.184$]; physical $+0.094$ [$+0.065$, $+0.128$]; unchanged on clock-aligned samples. Causal clause (settling within a step) not decidable from the recording (judgement). \\
+    \addlinespace
+    H3 & Orientation accuracy, lag-1 TE asymmetry minus the reversed event-rate rule$^{\ddagger}$, at $k = 1, 2, 4, 8$ (0); group & Not supported (robust) & Worse than the rate rule at $k = 1$, 2 and 4 under the target bootstrap; indistinguishable at $k = 8$. Not contradicted, because the condition does not hold at every history. \\
+    \addlinespace
+    H4 & Percentage of negative $\delta$, pull-down-only minus unwired group pairs$^{\ddagger}$ (0); group & Not supported (robust) & Group $+12.9$ [$+8.3$, $+17.2$]; physical $+3.3$ [$-9.1$, $+15.1$], so the levels disagree. The effect reverses within every parity stratum. Not testable as framed on a change-coded recording. \\
+    \addlinespace
+    H5 & Group precision, IDTxl minus pairwise lag-1 TE cut at 1,443 group pairs (0); group$^{\ddagger}$ & Not supported as worded (robust) & Precision gain present, and holds under the two-way bootstrap: $+2.49$ points [$+1.71$, $+3.39$] (main run; [$+1.62$, $+3.36$] in the recomputed draws, Table~\ref{tab:app-recompute}); physical agrees. Named mechanism absent (judgement). The pre-specified comparator is ill-posed: the lag-1 ranking does not order the wiring above chance. \\
+    \addlinespace
+    H6 & Group precision, IDTxl with source lags 0 and 1 minus lag 1, 100 stratified targets$^{\ddagger}$ (0); group & Supported (fragile: the physical interval includes zero under the two-way bootstrap) & $+13.13$ points [$+7.16$, $+19.23$] (4.1 to 17.2~per~cent, R1, the run of record); physical $+0.47$ [$+0.10$, $+1.60$]. Same group precision as pairwise lag-0 CMI at the same allocation; below the source-size baseline there. Design fixed after the main run, and run after supplementary lag-0 analyses had been seen; an earlier draw, whose targets were not kept, gave $+13.28$. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[tbp]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \caption[The findings across the systems tested]{The evidence for each finding across the systems tested. AUCs at group level on the recordings (physical where marked) and node-pair level on the chip, within-target or stratified where the chapter cited says so; Donkey Kong on the whole recording unless marked, held-out programs on the clock-aligned samples. Status: P pre-specified (before the main run); H hash-logged (a written prediction, made after the main results and before the test; every held-out result is of this kind); S supplementary (computed after the results, with no written prediction). A dash: not tested on that system.}
+  \label{tab:d-contributions}
+  \resizebox{\textwidth}{!}{\begin{tabular}{@{}L{3.0cm}L{3.3cm}L{2.6cm}L{2.5cm}L{2.5cm}l@{}}
+    \toprule
+    Claim & Donkey Kong & Pitfall, Space Invaders & Chip, programs 1 and 2 & Synthetic networks & Status \\
+    \midrule
+    \multicolumn{6}{@{}l}{\emph{F1. Lagged inference misranks wiring that acts within a sample}} \\
+    Lag-1 TE does not rank the wiring above chance & 0.500 physical, 0.469 group; 0.396 clock-aligned & 0.397, 0.399 & 0.374, 0.300 & -- & P; H \\
+    Followed wired sources are penalised & Followership 0.725; $-0.093$ below activity & 0.705, 0.709; $-0.041$, $-0.043$ & 0.686, 0.719; $-0.082$, $-0.062$ & Drivers below non-drivers under locking & H \\
+    Across targets the account is incomplete & Matching on $c$: $+0.028$ & Matching on $c$ accounts for the remainder: $+0.116$, $+0.125$ & $+0.025$, $+0.066$ & -- & H \\
+    \addlinespace
+    \multicolumn{6}{@{}l}{\emph{F2. The same measure is accurate where delay matches lag}} \\
+    Latch pairs carry delayed influence & 41 of 41 (A20) & -- & 182/182, 213/213 (A16) & -- & H \\
+    Lag-1 TE finds them; lag~0 ranks them far lower & 0.985 vs 0.413 & 0.962, 0.967 vs 0.371, 0.329 & 0.978, 0.984 vs 0.586, 0.492 & Lag-1 TE 0.997 or more (lag~0 not scored) & H \\
+    Lag~1 follows the phase relation, not the physical delay & -- & -- & Opposite-phase immediate 0.605, 0.540; same-phase one-step 0.542, 0.513 (R4) & -- & H \\
+    \addlinespace
+    \multicolumn{6}{@{}l}{\emph{F3. The wiring's information is at lag~0, and the multivariate search's conditioning did not substitute for that lag}} \\
+    Phase-conditioned co-activity ranks wired pairs above lag-1 TE and at the top of the ranking, not above the phase relation in AUC & 0.641 clock-aligned (0.737 whole) & 0.648, 0.661; above phase alone not met & -- & 0.991 or more & H; S \\
+    Conditioning on lagged sources does not repair it; admitting lag~0 reaches the pairwise lag-0 level & 3.88 vs 1.39\%, no error class removed robustly; phase supplied $-0.7$ points; lag~0 admitted 4.1 to 17.2\%, second sample 3.3 to 17.5\%; partial correlation 0.790 & -- & -- & -- & P; H \\
+    \addlinespace
+    \multicolumn{6}{@{}l}{\emph{F4. Size and position rank the wiring best}} \\
+    Activity-free baselines beat every activity-based score & Distance 0.928, size 0.864; best activity-based score 0.790 & Distance above lag~0 by $+0.356$, $+0.343$ & -- & -- & H; S \\
+    \addlinespace
+    \multicolumn{6}{@{}l}{\emph{F5. Locking predicts where lagged inference fails}} \\
+    Mixed targets above strictly locked ones; synthetic penalty grows with locking & Mixed 0.604, strict 0.449 & $+0.147$, $+0.155$ (mixed minus strict) & -- & 0.504 unlocked to 0.088 strict; 0.118 with co-drivers & H \\
+    Locking tracks the damage & Strict below mixed targets & As Donkey Kong & -- & Spearman $-0.68$ across conditions & H \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\section{Recomputed values that differ from those first reported}
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption[Recomputed values that differ from those first reported]{$^{\dagger}$Supplementary values whose recomputation differs from the value first reported. All other recomputed values agree at the precision printed.}
+  \label{tab:app-recompute}
+  \begin{tabular}{@{}L{5.2cm}L{3.2cm}L{3.2cm}L{3.0cm}@{}}
+    \toprule
+    Quantity & First reported & Recomputed & Bearing \\
+    \midrule
+    Covariate model, group-fitted: AUC; increment from lag-0 CMI & 0.974; $+0.0043$ [$+0.0028$, $+0.0059$] & 0.969; $+0.0041$ [$+0.0025$, $+0.0060$] & None: small positive increment \\
+    Covariate model, physical-fitted: AUC; increment & 0.894; $-0.0007$ [$-0.0049$, $+0.0033$] & 0.890; $+0.005$ [$-0.002$, $+0.012$] & None: interval includes zero \\
+    Rates model: group AUC; AP lift; within-target AUC & 0.623; 10.39; 0.715 & 0.625; 8.75; 0.721 & None: not used by a verdict \\
+    Conditioning increment, two-way interval (share positive) & [$-0.06$, $+4.48$] (97.3\%) & [$+0.09$, $+4.41$] (98.2\%) & Lower limit at zero within resampling noise: reported as marginal \\
+    Total increment, target-cluster and two-way intervals & [$+1.62$, $+3.28$]; [$+0.57$, $+5.20$] (99.8\%) & [$+1.62$, $+3.36$]; [$+0.50$, $+5.05$] (99.4\%) & None \\
+    Allocation increment, two-way interval & not reported & [$-0.35$, $+1.81$] (90\%) & Allocation's share not established under resampling of sources \\
+    Zero-lag MI and MI given the phase, clock-aligned: group AUC & 0.524; 0.661 [0.645, 0.675] (from sample 1,407) & 0.516; 0.641 [0.625, 0.658] (from sample 1,408, the alignment rule) & The remedy's AUC does not exceed the phase relation's (Section~\ref{sec:r1-remedy}) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Record of the final run}
+
+\paragraph{Timeline of the new tests (Section~\ref{sec:m-newtests})} The first wave's designs, statistics, decision rules and predictions were written in one file, saved at 22:11 on 2 November 2026. The runs began at 22:32 and ended at 02:01 the next morning. A second file, saved at 01:17 on 3 November, fixed the replication on a second program (A7), which ran from 02:02 to 02:17. Each script prints its file's SHA-256 hash at the start of its log, and both hashes match the files as they now stand. The A7 run's log prints the second file's hash; its output file records the first file's, because the chip script it calls begins by hashing the shared file. The files were not committed to version control or lodged with a registry, and the scripts were not hashed, so the hashes show that each file matches its run, not when the file was written.
+
+Two further facts are disclosed. After the first file was saved and before the full runs, each script was checked on a small slice of the data, and every check wrote its statistics to a file: A1 on a tenth of the chip's data; A2, A3, A5 and A6 on the recording, including a latch-pair AUC of 0.99 on four positives; A8 on three short circuits; and R1 and A4 on two targets. No design, rule or prediction changed after those checks. A third file, saved at 14:33 on 3 November, fixed A9 and A10 after the other tests had run, and both ran from 14:39 to 14:54. For these two the scripts were hashed as well: each log records the hashes of the design file, of the script and of the shared module. The only checks before the runs used synthetic data and a load check that printed array shapes, so no statistic of either test existed before its run. The file was not committed to version control either. A fourth file, saved at 15:21 on 3 November after A9's results, fixed A11, a test on synthetic networks, which ran from 15:22 to 15:37 under the same safeguards. A fifth file, \texttt{PREDICTIONS\_A12.md}, saved on the night of 3 November, fixed A12 to A19; it states that several predictions were partly informed by descriptive results already reported, and which. The runs started at 23:59 on 3 November and finished at 01:56 on 4 November, A17 taking the two hours; every log records the hashes of the design file, the script and the shared module, and the checks before the runs used synthetic data or printed only shapes and timings. The supplementary open-latch check for A16 was run after its results had been seen; it was rerun on 4 November to report the share of delayed-only pairs in each clamp set. A sixth file, \texttt{PREDICTIONS\_R2.md}, saved at 13:53 on 4 November after the recordings had been regenerated and before any statistic was computed on them, fixed the replication; both runs started at 14:15 and finished by 14:24, and each log records the hashes of the design file and the script. A seventh, \texttt{PREDICTIONS\_A20.md}, saved at 14:40, fixed the timed clamps on the recorded run. The first attempt stopped when the simulator failed to settle under one clamp; an addendum saved at 14:42, before any statistic had been computed, fixed how such clamps are recorded (as non-convergent, with the simulator rebuilt and restored), and the run went from 14:42 to 14:47 with both hashes logged. Two files followed on 5 November, after the first blind re-marks of the thesis: \texttt{PREDICTIONS\_R3.md}, saved at 02:43, fixed the remedy's test on the held-out programs, which ran from 02:44 to 04:27; \texttt{PREDICTIONS\_R4.md}, saved at 11:14, fixed the delay-against-phase test, whose first start at 11:15 stopped before any statistic (an assembler the program list imports was not installed; the log is kept) and whose run went from 11:15 to 11:21. Both logs record the hashes of the design file and the scripts. Three more followed on 5 November, each with its design file saved and hashed before its run: \texttt{PREDICTIONS\_R5.md} (12:17; a second independent sample for the H6 design, searched from 12:19 to 14:04 and scored afterwards from its saved per-target outputs), \texttt{PREDICTIONS\_R6.md} (12:18; partial correlation, run 12:19 to 12:24, with a descriptive rerun at 12:26 that left every designed statistic unchanged) and \texttt{PREDICTIONS\_R7.md} (12:21; the locking gradient within one wiring class, run at 12:21, with a descriptive block added at 12:22). The roles of the author and of the software tools in drafting these files are stated in the Acknowledgements.
+
+The health report, the interruptions and resumptions of the run, the reused files, the provenance of the code executed, the departures from the research proposal and the computing environment are recorded in Section~S.13 of the supplementary appendix.
+
+
+\begin{table}[tbp]
+\centering
+\footnotesize
+\caption[Dated record of the analysis before and during the final run]{Dated record of the analysis before and during the final run (Section~\ref{sec:m-fixed}). The project has no version-control commits, so every date is a file time on the project machine. ``801 units'' is the earlier grouping of the unreduced recording; ``reduced'' is the recording of Section~\ref{sec:m-reduction}.}
+\label{tab:app-c4-timeline}
+\begin{tabular}{@{}lL{0.74\textwidth}@{}}
+\toprule
+Date & Evidence \\
+\midrule
+30 Jul 2016 & File date of the recording \\
+2--3 May 2026 & Research-proposal slide decks (contents not inspected for hypothesis wording) \\
+6 Aug 2026 & Request to the recording's authors for documentation (no reply found) \\
+21 Sep 2026 & Netlist file \texttt{transdefs.js} added \\
+24 Sep 2026 & Version control initialised (no commit ever made); first mutual-information, transfer-entropy and ROC pilots scored against the wiring; a pilot of thresholds \\
+25 Sep -- 7 Oct & Histories up to $k = 20$; fixed $k = 15$ and 18; pooled storage; full pairwise transfer entropy with Benjamini--Hochberg control \\
+8 -- 14 Oct & Surrogate pilots (up to 999 surrogates); runs on the 801 units, including IDTxl multivariate inference \\
+14 -- 26 Oct & Pairwise runs on the reduced recording, method versions 2 to 4, three with history allowances labelled 1.25, 1.10 and 1.05; earlier notebook created 15 Oct \\
+26 Oct & Evidence packages of the earlier work; earlier notebook last edited (no pre-specified hypotheses in either) \\
+29 Oct, 15:27 & Final notebook created: first dated appearance of H1--H8 \\
+29 Oct, 15:30 -- 16:16 & Run manifest; three smoke runs in quick mode; \texttt{segdefs.js} downloaded; core matrices written \\
+29 Oct, 16:16 -- 21:34 & Final run starts; synthetic benchmarks and the IDTxl multivariate, bivariate and sensitivity runs complete \\
+30 Oct, 01:17 -- 01:20 & Lag-sensitivity stage stalls on memory; workers reduced to two; relaunch \\
+30 Oct, 02:49 & Run stops at the simulator's shift-register check \\
+30 Oct, 08:01 & Check changed to replay writes with wraparound; relaunch \\
+30 Oct, 09:35 & Run complete; health report passes 12 of 12 checks \\
+31 Oct -- 1 Nov & Supplementary analyses from saved outputs; stratified H6 run (targets drawn 1 Nov, 00:30; complete 1 Nov, 04:06) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+{\scriptsize \singlespacing 
+\begin{longtable}{@{}L{0.55\textwidth}L{0.28\textwidth}l@{}}
+\caption[Register of headline claims by status]{Register of the thesis's headline claims by status. The three statuses of Section~\ref{sec:m-hypotheses}: pre-specified, hypothesis and primary test fixed before the final run; hash-logged, a new test whose design, statistic, decision rule and prediction were written in a file before its run, with the run's log recording the file's SHA-256 hash (Section~\ref{sec:m-newtests}); supplementary, computed afterwards from the run's saved outputs, with its results in view. Main run: computed by the final run, testing no hypothesis. Verdicts are in Table~\ref{tab:m-register}.}
+\label{tab:m-claims}\\
+\toprule
+Claim & Status & Section \\
+\midrule
+\endfirsthead
+\toprule
+Claim & Status & Section \\
+\midrule
+\endhead
+\multicolumn{3}{@{}l}{\emph{RQ1: pairwise inference}} \\
+    Lag-1 TE does not rank wiring above chance at the physical level (H1) & Pre-specified & \ref{sec:r1-h1} \\
+    Lag-1 TE ranks wiring below chance at the group level and within targets under the target-cluster bootstrap & Main run; within-target, two-way and vertex intervals supplementary & \ref{sec:r1-h1} \\
+    Ranking by significance does no better than ranking by TE & Main run; exact log tails supplementary & \ref{sec:r1-h1} \\
+    The lag-1 failure does not come from the selected histories & Supplementary & \ref{sec:r1-history} \\
+    Aliasing by clock phase accounts for the failure in same-parity pairs & Supplementary & \ref{sec:r1-parity} \\
+    Lag 1 ranks pass-transistor neighbours, which the reference omits & Supplementary & \ref{sec:r1-relation} \\
+    The unreduced sweep's apparent recovery of wiring is an artefact of the row offset, and the recording carries no usable timing below one phase & Main run sweep; row-offset control supplementary & \ref{sec:r1-stride1} \\
+    Lag-0 CMI identifies wiring better than lag-1 TE (H2, comparative clause) & Pre-specified; prediction possibly informed by zero-lag MI computed since 24 September; metric and level chosen after & \ref{sec:r1-h2} \\
+    Most of lag 0's AUC is phase membership; its own contribution lies at the top of the ranking & Supplementary & \ref{sec:r1-h2} \\
+    The H2 contrast survives controls for parity, rates, the clock group, common histories and source resampling & Supplementary & \ref{sec:r1-rivals} \\
+    The first 1,407 reduced samples are out of step with the clock, which inflated the contemporaneous scores; on clock-aligned samples lag~0 orders only each target's top few sources & Supplementary & \ref{sec:m-alignment} \\
+    Source-group size and layout distance rank the wiring better than every activity-based score, including zero-lag partial correlation (R6); lag~0 adds a small increment to them & Supplementary & \ref{sec:r1-where} \\
+    TE asymmetry does not orient wired pairs beyond the event-rate rule (H3) & Pre-specified; comparator and null chosen after & \ref{sec:r1-h3} \\
+    TE asymmetry orients wired pairs above chance, through the clock group's pairs & Descriptive & \ref{sec:r1-h3} \\
+    Pull-down edges are not shown to be suppressive; the group-level effect is a composition effect of parity (H4) & Pre-specified; parity strata supplementary & \ref{sec:r1-h4} \\
+    \addlinespace
+    \multicolumn{3}{@{}l}{\emph{RQ2: multivariate inference}} \\
+    IDTxl is more precise than the lag-1 ranking cut at its size (the precision gain of H5) & Pre-specified statistic & \ref{sec:r2-comparison} \\
+    Allocation and conditioning, not embedding, account for the gain & Supplementary & \ref{sec:r2-decomposition} \\
+    Conditioning does not robustly remove indirect-path errors, and shared-parent errors rise (the mechanism of H5) & Pre-specified clause without statistic; evidence supplementary & \ref{sec:r2-anatomy} \\
+    Lag-0 CMI at IDTxl's allocation is several times as precise as IDTxl & Supplementary & \ref{sec:r2-comparison} \\
+    Network-level false-discovery control is vacuous at 200 surrogates & Main run & \ref{sec:r2-embedding} \\
+    Admitting lag-0 sources improves multivariate recovery (H6) & Pre-specified hypothesis; stratified design chosen after the main run & \ref{sec:r2-h6} \\
+    With lag 0 admitted, IDTxl is no more precise than pairwise lag-0 CMI given the same allocation & Supplementary & \ref{sec:r2-h6} \\
+    \addlinespace
+    \multicolumn{3}{@{}l}{\emph{Data, estimators and replication}} \\
+    One sample is one clock phase, and an event marks a change of state & Supplementary; confirmed at source by regeneration (Section~\ref{sec:m-regeneration}) & \ref{sec:m-reduction} \\
+    The surrogate rejection rate of the analytic test is high at short histories, mostly from phase dependence, and the test is conservative at long histories & Main run; parity and placebo re-analysis supplementary & \ref{sec:v-calibration} \\
+    Replications on the simulated chip and NMOS circuits, including the clamp test of pass transistors & Main run; change coding, intervals, activity baseline and the clamp test supplementary & \ref{sec:v-simchip} \\
+    \addlinespace
+    \multicolumn{3}{@{}l}{\emph{New tests fixed in writing before they were run (Section~\ref{sec:m-newtests})}} \\
+    The bound of Proposition~2 holds pair by pair; wired same-phase pairs rank below unwired ones at matched bound (A3) & Hash-logged; prediction of 0.5 not met & \ref{sec:r1-bound} \\
+    Within a target, lag-1 TE ranks strictly locked same-phase sources exactly by their change rate when the target is unchanged, and followership lowers wired sources (A9; recording and both chip programs) & Hash-logged & \ref{sec:r1-bound} \\
+    The target's change propensity accounts for the inversion at matched bound (A9, primary) & Hash-logged; not met & \ref{sec:r1-bound} \\
+    Lag-1 TE identifies and orients latch pairs on the simulated chip, at lag~1 only (A1b, A5, A6) & Hash-logged & \ref{sec:v-latch} \\
+    Latch pairs rank above immediate-influence and wired pairs too & Supplementary & \ref{sec:v-latch} \\
+    Lag-1 TE detects delayed-only influence materially (A1, primary) & Hash-logged; failed its design aim & \ref{sec:v-latch} \\
+    IDTxl's chip selections are enriched for delayed influence (A1c) & Hash-logged, descriptive; not met & \ref{app:ch6-moved} \\
+    The latch criteria replicate on a second program, where lag-1 TE ranks the wiring below chance (A7) & Hash-logged, held out & \ref{sec:v-program2} \\
+    Lag-1 TE registers latch transfer in NMOS circuits but not specifically at lag~1; the reader relation appears at lag~0 (A8, A10) & Hash-logged, held out; lag-1 specificity not met & \ref{sec:v-nmos-latch} \\
+    Lag-1 TE identifies and orients the recording's latch pairs above every baseline (A2, A5, A6) & Hash-logged & \ref{sec:r1-latch-recording} \\
+    Supplying the phase to IDTxl changes neither its sources nor its precision (A4) & Hash-logged; the written predictions not met & \ref{sec:r2-phase} \\
+    The stratified H6 gain reproduces on a re-drawn sample of targets (R1) & Hash-logged & \ref{sec:r2-h6} \\
+    On synthetic phase-locked networks lag-1 TE ranks within-sample drivers below non-drivers, more so the stronger the locking; lag-0 CMI given the phase recovers them (A11) & Hash-logged, synthetic; blindness without locking not met at the strongest coupling & \ref{sec:r1-general} \\
+    The penalty is graded by the target's locking on the recording: mixed targets above chance, strictly locked targets below (A12) & Hash-logged, partly anticipated; met & \ref{sec:r1-dose} \\
+    The latch pairs' deficit at lags 2--7 appears where the target's history covers the copy (A13) & Hash-logged, partly anticipated; met on both programs; uncovered pairs still below chance on the recording & \ref{sec:v-latch}, \ref{sec:r1-latch-recording} \\
+    The target's quiet-cell terms account for the between-target remainder at matched bound (A14) & Hash-logged, partly anticipated; not met on the recording or program~1 & \ref{sec:r1-bound} \\
+    The penalty survives hidden co-drivers and spurious events; state coding removes it without detecting the drivers (A15) & Hash-logged, synthetic; met & \ref{sec:r1-general} \\
+    Every latch pair is delayed-only when clamped with the latch closed, on both programs (A16) & Hash-logged; met; the open-latch check supplementary; lag~1 above lag~0 on the delayed class not met & \ref{sec:v-latch} \\
+    The H6 gain reproduces on the clock-aligned samples and equals R1's (A17) & Hash-logged; met & \ref{sec:r2-h6} \\
+    A source block of two samples escapes the bound without recovering the wiring (A18) & Hash-logged; met & \ref{sec:r1-bound} \\
+    The in-phase share of transfer ranks latch sources above a target's other sources (A19) & Hash-logged; not met; the descriptive split (0.95 vs 0.50) as predicted & \ref{sec:r1-latch-recording} \\
+    The account's predictions hold on two held-out programs (R2) & Hash-logged, held out; met & \ref{sec:r1-replication} \\
+    Timed clamps confirm delayed influence on every latch pair of the recorded run (A20) & Hash-logged; met & \ref{sec:r1-latch-recording} \\
+    The phase-aware remedy beats lag-1 TE on held-out programs, but not the phase relation alone (R3) & Hash-logged, held out; met except R3.4 & \ref{sec:r1-remedy} \\
+    Lag~1 follows the phase relation, not the physical delay (R4) & Hash-logged; met; R4.1--2 partly anticipated & \ref{sec:r1-delay-phase} \\
+    The H6 gain replicates on a second, independent sample (R5) & Hash-logged; met & \ref{sec:r2-h6} \\
+    Zero-lag partial correlation is the best activity-based score and below layout distance (R6) & Hash-logged; met except R6.2 & \ref{sec:r1-remedy} \\
+    The locking gradient holds within wiring class; the inversion survives matching on history (R7) & Hash-logged; met except R7.1 & \ref{sec:r1-dose} \\
+    \bottomrule
+\end{longtable}}
+
+\section{Proposition 1 and approximate locking}
+\label{app:ch2-moved}
+
+\paragraph{Proposition 1 (combinational wiring and lag-1 transfer entropy).}
+\emph{Let units be recorded as node states, and let each sample be long enough for combinational logic to settle within it. Let $Y$ be the output of a logic gate whose inputs are $X$ and $W$ ($W$ may collect several nodes), connected by combinational logic with no latch in between, so that $Y_t = g(X_t, W_t)$ for a Boolean function $g$. Then, for any target history $Y^- = Y_t^{(k)}$,}
+\begin{equation}
+  T_{X \to Y}(k, 1, 1) = I\big(X_{t-1};\,Y_t \mid Y^-\big) \le I\big(X_{t-1};\,X_t, W_t \mid Y^-\big).
+  \label{eq:prop1}
+\end{equation}
+
+\begin{proof}
+Because $Y_t$ is a function of $(X_t, W_t)$,
+\[
+  I(X_{t-1}; Y_t \mid X_t, W_t, Y^-) = 0.
+\]
+Expanding $I(X_{t-1}; X_t, W_t, Y_t \mid Y^-)$ by the chain rule in the two orders, and using this zero, gives
+\begin{equation}
+  I\big(X_{t-1};\,Y_t \mid Y^-\big) = I\big(X_{t-1};\,X_t, W_t \mid Y^-\big) - I\big(X_{t-1};\,X_t, W_t \mid Y_t, Y^-\big),
+  \label{eq:prop1-slack}
+\end{equation}
+and the last term is non-negative.
+\end{proof}
+
+A source's previous sample can inform a logic gate's output only through what it says about the gate's current inputs; Equation~\eqref{eq:prop1-slack} gives the slack. Three points fix the scope. First, the bound is not specific to wiring: an unwired source, with $Y_t = h(W_t)$, obeys the same inequality, since
+\begin{equation}
+  I\big(X_{t-1};\,X_t, W_t \mid Y^-\big) = I\big(X_{t-1};\,W_t \mid Y^-\big) + I\big(X_{t-1};\,X_t \mid W_t, Y^-\big),
+  \label{eq:prop1-unwired}
+\end{equation}
+so the inequality orders nothing by itself. Second, combinational ancestors of $Y$ within the phase have one route to lag-1 dependence that other sources lack. The decomposition
+\begin{equation}
+  I\big(X_{t-1};\,X_t, W_t \mid Y^-\big) = I\big(X_{t-1};\,X_t \mid Y^-\big) + I\big(X_{t-1};\,W_t \mid X_t, Y^-\big)
+  \label{eq:prop1-wired}
+\end{equation}
+holds for any source; its first term is the source's memory, and its second can be positive for an ancestor through a collider, since $Y^-$ contains $Y_{t-1} = g(X_{t-1}, W_{t-1})$, a common effect of the source's previous sample and the other inputs. For the running NOR gate, $A_{t-1} = 0$ with $Q_{t-1} = 0$ reveals $B_{t-1} = 1$. Third, the proposition concerns node states and lag~1 only; for change indicators, $\Delta Y_t$ has $X_{t-1}$ as an argument, so on the change-coded recording the relevant result is Proposition~2.
+
+\paragraph{Heuristic consequence.} For combinational wiring recorded as states, lag-1 transfer entropy can register the connection only through the two terms of Equation~\eqref{eq:prop1-wired}, whereas lag-0 CMI is not subject to the bound, because $X_t$ is an argument of $g$. If within-phase dependence is dominated by direct coupling rather than co-drive, an assumption the proposition does not supply, lag-0 dependence should identify combinational wiring better than lag-1 transfer entropy. That is the prediction of H2; the proposition motivated it before the run and decides nothing by itself. Where a clocked pass transistor separates source and target, the proposition does not apply: recorded as states the latch is visible at lag~0 and lag~1 alike, and recorded as changes it is the opposite-phase case that Proposition~2 leaves unconstrained.
+
+\paragraph{Remark (approximate locking).}
+Let $E_t = 1$ when $\Delta X_{t-u} = 1$ in a sample of parity other than $p_X$ or $\Delta Y_t = 1$ in a sample of parity other than $p_Y$, and let $\varepsilon = \Pr(E_t = 1)$. By the chain rule,
+\[
+  I(\Delta X_{t-u}; \Delta Y_t \mid P_t, Z_t) \le I(\Delta X_{t-u}; E_t \mid P_t, Z_t) + I(\Delta X_{t-u}; \Delta Y_t \mid E_t, P_t, Z_t).
+\]
+The first term is at most $h(\varepsilon)$; in the second, the case argument of the proof of Proposition~2 applies whenever $E_t = 0$, so only samples with $E_t = 1$ contribute, at most $\varepsilon$ times one bit. Hence
+\begin{equation*}
+  I\big(\Delta X_{t-u};\, \Delta Y_t \,\big|\, Z_t\big)
+  \le I\big(\Delta X_{t-u};\, P_t \,\big|\, Z_t\big) + h(\varepsilon) + \varepsilon.
+\end{equation*}
+For a pair whose source and target each have 5~per~cent of their events off phase, $\varepsilon$ is at most $0.05(r_X + r_Y)$, with $r$ the event rate per sample. At $\varepsilon = 0.001$, $h(\varepsilon) + \varepsilon$ is about 12 millibits, an order of magnitude above the mean lag-1 transfer entropy of same-phase group pairs, so the bound is uninformative for approximately locked pairs, and Section~\ref{sec:r1-parity} measures how often they exceed $B_{X\to Y}$ instead.
+
+\paragraph{The periodic-drive prediction.}
+Before the calibration of Section~\ref{chap:validation}, the thesis predicted from an effective-sample-size argument that shared periodic drive would make the analytic test reject too often, most for the most periodic units. Section~\ref{sec:v-calibration} tests that prediction, and Section~\ref{sec:v-calib-account} sets out why the argument was mis-specified: the autocorrelation of a strictly phase-locked change indicator does not decay, so the effective-sample-size sum does not converge, and the excess rejections the calibration observes trace to dependence on the phase that the target's history does not absorb.
+
+
+
+
+\clearpage
+
+\clearpage
+
