@@ -1,0 +1,29 @@
+[12:18:59] R5: PREDICTIONS_R5.md sha256 8b79f8c8114e35812830ea479a13b4c0088bf48f8d8a98a14a5912b11bad37ac
+[12:18:59] R5: run_h6_second_draw.py sha256 2cb98925dbabfba5dfc85d9f9c85f745b5e5e2769d60b6c8f75a074628354694
+[12:18:59] R5: idtxl_runs.py sha256 d195ba3a8af7faf729d634ef32295a3fadb70bd25e6672a0df6aba07ea8e9fb3
+[12:18:59] R5: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[12:18:59] R5 targets 100 (none in R1); allocation {'1-1': 9, '2-4': 16, '5-8': 21, '9-11': 23, '12-12': 31}
+[12:18:59] 0 cached, 100 to run on 3 workers
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/h5py/__init__.py:36: UserWarning: h5py is running against HDF5 2.2.0 when it was built against 2.1.0, this may cause problems
+  _warn(("h5py is running against HDF5 {0} when it was built against {1}, "
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/Users/priyongkarkundu/opt/anaconda3/envs/honours6502/lib/python3.10/site-packages/idtxl/estimators_jidt.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[12:29:46]   10/100 done
+[12:39:23]   20/100 done
+[12:51:14]   30/100 done
+[12:57:59]   40/100 done
+[13:10:28]   50/100 done
+[13:22:57]   60/100 done
+[13:35:13]   70/100 done
+[13:46:20]   80/100 done
+[13:54:47]   90/100 done
+[14:04:37]   100/100 done
+[14:04:38] R5 search done

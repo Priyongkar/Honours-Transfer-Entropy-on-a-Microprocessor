@@ -1,0 +1,25 @@
+{
+ "R5_meta": {
+  "targets": 100,
+  "targets_kept": 98,
+  "by_lag": {
+   "lag0": {
+    "sources": 132,
+    "wired": 33
+   },
+   "lag1": {
+    "sources": 72,
+    "wired": 2
+   }
+  }
+ },
+ "predictions_met": {
+  "R5.1": true,
+  "R5.2": true,
+  "R5.3": true,
+  "R5.4_descriptive_includes_0": true
+ }
+}
+R5 {'search_lags_0_1': np.float64(17.5), 'main_run_lag1_same_targets': np.float64(3.29), 'lag0_cmi_same_allocation': np.float64(15.5), 'source_size_same_allocation': np.float64(30.0)}
+R1 {'search_lags_0_1': np.float64(17.23), 'main_run_lag1_same_targets': np.float64(4.1), 'lag0_cmi_same_allocation': np.float64(17.23), 'source_size_same_allocation': np.float64(25.21)}
+pooled {'search_lags_0_1': np.float64(17.35), 'main_run_lag1_same_targets': np.float64(3.73), 'lag0_cmi_same_allocation': np.float64(16.44), 'source_size_same_allocation': np.float64(27.4)}

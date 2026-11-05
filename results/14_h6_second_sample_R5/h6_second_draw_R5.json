@@ -1,0 +1,402 @@
+{
+ "R5_meta": {
+  "targets": 100,
+  "targets_kept": 98,
+  "by_lag": {
+   "lag0": {
+    "sources": 132,
+    "wired": 33
+   },
+   "lag1": {
+    "sources": 72,
+    "wired": 2
+   }
+  }
+ },
+ "R1_meta": {
+  "targets": 100,
+  "targets_kept": 100,
+  "by_lag": {
+   "lag0": {
+    "sources": 178,
+    "wired": 39
+   },
+   "lag1": {
+    "sources": 60,
+    "wired": 2
+   }
+  }
+ },
+ "R5": {
+  "networks": {
+   "search_lags_0_1": {
+    "group_precision": 17.5,
+    "group_recall": 13.20754716981132,
+    "physical_precision": 0.6051698798305525,
+    "edges": 200,
+    "wired": 35,
+    "group_precision_ci": [
+     11.330049261083744,
+     24.21093326098752
+    ]
+   },
+   "main_run_lag1_same_targets": {
+    "group_precision": 3.292181069958848,
+    "group_recall": 3.018867924528302,
+    "physical_precision": 0.23410066328521265,
+    "edges": 243,
+    "wired": 8,
+    "group_precision_ci": [
+     1.2195121951219512,
+     5.5799141630901286
+    ]
+   },
+   "lag0_cmi_same_allocation": {
+    "group_precision": 15.5,
+    "group_recall": 11.69811320754717,
+    "physical_precision": 0.46919624643002855,
+    "edges": 200,
+    "wired": 31,
+    "group_precision_ci": [
+     11.170145264067393,
+     20.858614842832917
+    ]
+   },
+   "source_size_same_allocation": {
+    "group_precision": 30.0,
+    "group_recall": 22.641509433962263,
+    "physical_precision": 0.07661721254793487,
+    "edges": 200,
+    "wired": 60,
+    "group_precision_ci": [
+     24.386923448442406,
+     35.38709677419355
+    ]
+   }
+  },
+  "differences": {
+   "search_minus_lag1": {
+    "group_precision": {
+     "diff": 14.207818930041153,
+     "target_ci": [
+      7.675011738761125,
+      21.434818855563652
+     ],
+     "two_way_ci": [
+      4.316930551151977,
+      26.198703033607067
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.37106921654533986,
+     "target_ci": [
+      -0.0403907657667532,
+      1.943872174836635
+     ],
+     "two_way_ci": [
+      -0.2156737580495687,
+      2.560780936352578
+     ]
+    }
+   },
+   "search_minus_lag0_cmi": {
+    "group_precision": {
+     "diff": 2.0,
+     "target_ci": [
+      -3.108808290155439,
+      7.40839243498818
+     ],
+     "two_way_ci": [
+      -6.965450899299283,
+      11.085874813684276
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.13597363340052393,
+     "target_ci": [
+      -0.1858529241097297,
+      1.130052013618144
+     ],
+     "two_way_ci": [
+      -0.37857247566177343,
+      1.570252487327652
+     ]
+    }
+   },
+   "size_minus_search": {
+    "group_precision": {
+     "diff": 12.5,
+     "target_ci": [
+      3.301499247054655,
+      21.0546663049376
+     ],
+     "two_way_ci": [
+      -21.959670231729056,
+      40.14301254899425
+     ]
+    },
+    "physical_precision": {
+     "diff": -0.5285526672826176,
+     "target_ci": [
+      -2.0586427379152985,
+      -0.18081385413083814
+     ],
+     "two_way_ci": [
+      -2.7399313082968195,
+      -0.06361047474233726
+     ]
+    }
+   }
+  }
+ },
+ "R1": {
+  "networks": {
+   "search_lags_0_1": {
+    "group_precision": 17.22689075630252,
+    "group_recall": 12.462006079027356,
+    "physical_precision": 0.7000313446870755,
+    "edges": 238,
+    "wired": 41,
+    "group_precision_ci": [
+     11.665948275862068,
+     23.14567095977742
+    ]
+   },
+   "main_run_lag1_same_targets": {
+    "group_precision": 4.09556313993174,
+    "group_recall": 3.6474164133738602,
+    "physical_precision": 0.2346368715083799,
+    "edges": 293,
+    "wired": 12,
+    "group_precision_ci": [
+     2.061679141364214,
+     6.186605490729201
+    ]
+   },
+   "lag0_cmi_same_allocation": {
+    "group_precision": 17.22689075630252,
+    "group_recall": 12.462006079027356,
+    "physical_precision": 0.525459777305142,
+    "edges": 238,
+    "wired": 41,
+    "group_precision_ci": [
+     12.669683257918551,
+     21.610731580767897
+    ]
+   },
+   "source_size_same_allocation": {
+    "group_precision": 25.210084033613445,
+    "group_recall": 18.237082066869302,
+    "physical_precision": 0.060234366443982036,
+    "edges": 238,
+    "wired": 60,
+    "group_precision_ci": [
+     19.771264018915552,
+     30.870358275797724
+    ]
+   }
+  },
+  "differences": {
+   "search_minus_lag1": {
+    "group_precision": {
+     "diff": 13.131327616370779,
+     "target_ci": [
+      7.163249066103764,
+      19.228829034733295
+     ],
+     "two_way_ci": [
+      4.1280647426547254,
+      22.0548828503651
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.46539447317869564,
+     "target_ci": [
+      0.09561168087457353,
+      1.5976353310002673
+     ],
+     "two_way_ci": [
+      -0.2329665981502008,
+      2.2480488187725993
+     ]
+    }
+   },
+   "search_minus_lag0_cmi": {
+    "group_precision": {
+     "diff": 0.0,
+     "target_ci": [
+      -5.098540991199629,
+      5.0227123043545605
+     ],
+     "two_way_ci": [
+      -9.081141744424553,
+      8.33411561791258
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.17457156738193347,
+     "target_ci": [
+      -0.35514608950708293,
+      0.7077878322745834
+     ],
+     "two_way_ci": [
+      -0.9739772635220671,
+      1.469574121884838
+     ]
+    }
+   },
+   "size_minus_search": {
+    "group_precision": {
+     "diff": 7.983193277310924,
+     "target_ci": [
+      -0.460556315549477,
+      16.31933387640241
+     ],
+     "two_way_ci": [
+      -17.276948818841138,
+      27.65582482993197
+     ]
+    },
+    "physical_precision": {
+     "diff": -0.6397969782430935,
+     "target_ci": [
+      -1.960638414431766,
+      -0.27650217542627065
+     ],
+     "two_way_ci": [
+      -2.561902148967923,
+      -0.1838238526084501
+     ]
+    }
+   }
+  }
+ },
+ "pooled": {
+  "networks": {
+   "search_lags_0_1": {
+    "group_precision": 17.35159817351598,
+    "group_recall": 12.794612794612794,
+    "physical_precision": 0.648121865834043,
+    "edges": 438,
+    "wired": 76,
+    "group_precision_ci": [
+     13.095170912608836,
+     21.660735819802746
+    ]
+   },
+   "main_run_lag1_same_targets": {
+    "group_precision": 3.7313432835820897,
+    "group_recall": 3.367003367003367,
+    "physical_precision": 0.23444160272804773,
+    "edges": 536,
+    "wired": 20,
+    "group_precision_ci": [
+     2.3664626512727778,
+     5.501325407373165
+    ]
+   },
+   "lag0_cmi_same_allocation": {
+    "group_precision": 16.438356164383563,
+    "group_recall": 12.121212121212121,
+    "physical_precision": 0.4985012381076502,
+    "edges": 438,
+    "wired": 72,
+    "group_precision_ci": [
+     13.573773927623305,
+     19.811583392864645
+    ]
+   },
+   "source_size_same_allocation": {
+    "group_precision": 27.397260273972602,
+    "group_recall": 20.2020202020202,
+    "physical_precision": 0.06812478947547697,
+    "edges": 438,
+    "wired": 120,
+    "group_precision_ci": [
+     23.60454110988249,
+     31.666666666666668
+    ]
+   }
+  },
+  "differences": {
+   "search_minus_lag1": {
+    "group_precision": {
+     "diff": 13.620254889933891,
+     "target_ci": [
+      9.45736103546078,
+      18.156687265712154
+     ],
+     "two_way_ci": [
+      7.131290986523029,
+      20.37709658251187
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.41368026310599526,
+     "target_ci": [
+      0.07765664612296529,
+      1.1807328523494252
+     ],
+     "two_way_ci": [
+      -0.09464399532292561,
+      1.7008114643153796
+     ]
+    }
+   },
+   "search_minus_lag0_cmi": {
+    "group_precision": {
+     "diff": 0.9132420091324178,
+     "target_ci": [
+      -2.837047494201876,
+      4.482482458392162
+     ],
+     "two_way_ci": [
+      -5.130691224133632,
+      6.568618364766201
+     ]
+    },
+    "physical_precision": {
+     "diff": 0.14962062772639279,
+     "target_ci": [
+      -0.10764711742671408,
+      0.5259854312035108
+     ],
+     "two_way_ci": [
+      -0.3413104494606569,
+      1.0013126619086328
+     ]
+    }
+   },
+   "size_minus_search": {
+    "group_precision": {
+     "diff": 10.045662100456621,
+     "target_ci": [
+      3.8740139029914844,
+      16.01072738097225
+     ],
+     "two_way_ci": [
+      -16.358406489883606,
+      30.982455889297523
+     ]
+    },
+    "physical_precision": {
+     "diff": -0.579997076358566,
+     "target_ci": [
+      -1.3661953339130648,
+      -0.2662731640089788
+     ],
+     "two_way_ci": [
+      -2.0100803665355063,
+      -0.18196877039657755
+     ]
+    }
+   }
+  }
+ },
+ "predictions_met": {
+  "R5.1": true,
+  "R5.2": true,
+  "R5.3": true,
+  "R5.4_descriptive_includes_0": true
+ }
+}

@@ -1,0 +1,1 @@
+{"target": 50, "method": "multivariate", "seconds": 53.09350579197053, "n_candidates": 1036, "n_obs": 133914, "selected_sources_logp_analytic": [], "selected_vars_sources": [], "selected_vars_target": [[50, 2]], "selected_sources_te": [], "selected_sources_pval": [], "omnibus_te": null, "omnibus_pval": null, "omnibus_sign": false}

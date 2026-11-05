@@ -1,0 +1,102 @@
+{
+ "edges": 1443,
+ "wired": 56,
+ "latch": 37,
+ "composition_percent": {
+  "inferred": {
+   "same": 0.1386001386001386,
+   "opposite": 73.87387387387388,
+   "mixed": 25.987525987525984
+  },
+  "wiring": {
+   "same": 53.58385525400139,
+   "opposite": 2.0876826722338206,
+   "mixed": 44.32846207376479
+  }
+ },
+ "opposite_0_to_1": 839,
+ "opposite_1_to_0": 227,
+ "median_distance": {
+  "inferred": 2287.6853476822375,
+  "wiring": 312.9221149104039,
+  "all_pairs": 3150.1406714621494
+ },
+ "top_sources": [
+  {
+   "unit": 415,
+   "inferred_out": 46,
+   "wired_out": 0,
+   "phase_class": 0
+  },
+  {
+   "unit": 275,
+   "inferred_out": 35,
+   "wired_out": 14,
+   "phase_class": 0
+  },
+  {
+   "unit": 181,
+   "inferred_out": 32,
+   "wired_out": 3,
+   "phase_class": 0
+  },
+  {
+   "unit": 409,
+   "inferred_out": 29,
+   "wired_out": 3,
+   "phase_class": 0
+  },
+  {
+   "unit": 177,
+   "inferred_out": 29,
+   "wired_out": 8,
+   "phase_class": 0
+  },
+  {
+   "unit": 472,
+   "inferred_out": 29,
+   "wired_out": 3,
+   "phase_class": 0
+  },
+  {
+   "unit": 306,
+   "inferred_out": 29,
+   "wired_out": 0,
+   "phase_class": 0
+  },
+  {
+   "unit": 398,
+   "inferred_out": 27,
+   "wired_out": 1,
+   "phase_class": 2
+  },
+  {
+   "unit": 363,
+   "inferred_out": 27,
+   "wired_out": 0,
+   "phase_class": 0
+  },
+  {
+   "unit": 20,
+   "inferred_out": 26,
+   "wired_out": 3,
+   "phase_class": 0
+  }
+ ],
+ "clock_group": {
+  "unit": 6,
+  "inferred_out": 0,
+  "inferred_in": 0,
+  "wired_out": 265
+ },
+ "locked_pairs_opposite_share_percent": {
+  "inferred": 99.812734082397,
+  "wiring": 3.75
+ },
+ "top50_by_te": {
+  "wired": 8,
+  "latch": 11,
+  "opposite": 32
+ },
+ "recall_percent": 3.897007654836465
+}

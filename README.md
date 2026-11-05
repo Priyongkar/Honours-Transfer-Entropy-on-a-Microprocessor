@@ -37,6 +37,7 @@ analyses/
   11_phase_relation_against_physical_delay_R4/          lag 1 follows the phase relation, not the physical delay
   12_zero_lag_partial_correlation_comparator_R6/        the benchmarks' best contemporaneous method, on the recording
   13_locking_gradient_within_wiring_class_R7/           the locking gradient within one wiring class; bias matched on history
+  14_second_independent_sample_for_H6_R5/             the H6 design replicated on a second, independent sample of targets
 
 results/                         outputs (JSON and logs) of each analysis, numbered as above; figures/
 simulator/                       the patch that ports Sim2600 to Python 3 and adds forced-wire clamps
