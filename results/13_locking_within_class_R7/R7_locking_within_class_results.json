@@ -1,0 +1,133 @@
+{
+ "classes": {
+  "pulldown": {
+   "wired_pairs": 783,
+   "mixed": {
+    "auc": 0.5511423923038834,
+    "lo": 0.3947100400668913,
+    "hi": 0.6971435103905531,
+    "n_pos": 83,
+    "n_neg": 25521,
+    "strata": 50,
+    "targets_with_wired": 50
+   },
+   "locked": {
+    "auc": 0.39528139539824514,
+    "lo": 0.2982699545746031,
+    "hi": 0.4738698240713834,
+    "n_pos": 92,
+    "n_neg": 20975,
+    "strata": 41,
+    "targets_with_wired": 41
+   },
+   "strict": {
+    "auc": 0.44092091454031535,
+    "lo": 0.38912288295805136,
+    "hi": 0.48026416089744456,
+    "n_pos": 608,
+    "n_neg": 84477,
+    "strata": 165,
+    "targets_with_wired": 165
+   },
+   "mixed_minus_strict": {
+    "diff": 0.11022147776356805,
+    "lo": -0.055880371805227695,
+    "hi": 0.26268737116653695,
+    "verdict": "not supported"
+   }
+  },
+  "pass_only": {
+   "wired_pairs": 389,
+   "mixed": {
+    "auc": 0.627859345018649,
+    "lo": 0.5982750481537558,
+    "hi": 0.6674600873315018,
+    "n_pos": 182,
+    "n_neg": 19940,
+    "strata": 39,
+    "targets_with_wired": 39
+   },
+   "locked": {
+    "auc": 0.5931146025878004,
+    "lo": 0.412676673174545,
+    "hi": 0.7474610335592439,
+    "n_pos": 68,
+    "n_neg": 20789,
+    "strata": 41,
+    "targets_with_wired": 41
+   },
+   "strict": {
+    "auc": 0.48541608293639676,
+    "lo": 0.39144546213623316,
+    "hi": 0.5900694086707516,
+    "n_pos": 139,
+    "n_neg": 52401,
+    "strata": 102,
+    "targets_with_wired": 102
+   },
+   "mixed_minus_strict": {
+    "diff": 0.14244326208225228,
+    "lo": 0.02734007246865986,
+    "hi": 0.23967469306911726,
+    "verdict": "supported"
+   }
+  }
+ },
+ "matched_bound": {
+  "pairs": 77006,
+  "wired": 315,
+  "bound_deciles": {
+   "auc": 0.4515446542792049,
+   "lo": 0.4188899822768259,
+   "hi": 0.4866980653380729,
+   "n_pos": 315,
+   "n_neg": 76691,
+   "strata": 10
+  },
+  "bound_deciles_x_k": {
+   "auc": 0.43646566526568736,
+   "lo": 0.4073204890663797,
+   "hi": 0.46904413333632095,
+   "n_pos": 315,
+   "n_neg": 54033,
+   "strata": 56
+  },
+  "k_matched_minus_bound_matched": {
+   "diff": -0.015078989013517563,
+   "lo": -0.05206349141812403,
+   "hi": 0.021340482742736495,
+   "verdict": "not supported"
+  }
+ },
+ "matched_bound_same_phase_scope": {
+  "pairs": 113532,
+  "wired": 770,
+  "bound_deciles": {
+   "auc": 0.3999410431646854,
+   "lo": 0.3746299224653144,
+   "hi": 0.42915065436140865,
+   "n_pos": 770,
+   "n_neg": 112762,
+   "strata": 10
+  },
+  "bound_deciles_x_k": {
+   "auc": 0.46461858472023837,
+   "lo": 0.43765955885596763,
+   "hi": 0.49620697692495325,
+   "n_pos": 770,
+   "n_neg": 96532,
+   "strata": 70
+  },
+  "k_matched_minus_bound_matched": {
+   "diff": 0.064677541555553,
+   "lo": 0.03274291065595389,
+   "hi": 0.09751845215066551,
+   "verdict": "supported"
+  }
+ },
+ "predictions_met": {
+  "R7.1": false,
+  "R7.2": true,
+  "R7.3": true
+ }
+}

@@ -35,6 +35,8 @@ analyses/
   09_recomputing_the_supplementary_results/              lost supplementary outputs recomputed and compared with the thesis
   10_phase_aware_remedy_on_held_out_programs_R3/         the phase-aware remedy tested on the two held-out programs
   11_phase_relation_against_physical_delay_R4/          lag 1 follows the phase relation, not the physical delay
+  12_zero_lag_partial_correlation_comparator_R6/        the benchmarks' best contemporaneous method, on the recording
+  13_locking_gradient_within_wiring_class_R7/           the locking gradient within one wiring class; bias matched on history
 
 results/                         outputs (JSON and logs) of each analysis, numbered as above; figures/
 simulator/                       the patch that ports Sim2600 to Python 3 and adds forced-wire clamps

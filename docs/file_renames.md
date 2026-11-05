@@ -42,6 +42,12 @@ Original path (working project) | New path (this repository)
 `analyses/replication/RESULTS_R4.md` | `analyses/11_phase_relation_against_physical_delay_R4/RESULTS_R4.md`
 `analyses/replication/run_delay_vs_phase.py` | `analyses/11_phase_relation_against_physical_delay_R4/phase_relation_against_physical_delay_R4.py`
 `analyses/figures_v11/fig_scores_and_delay_phase.py` | `results/figures/scripts/fig_scores_three_programs_and_delay_vs_phase.py`
+`analyses/replication/PREDICTIONS_R6.md` | `analyses/12_zero_lag_partial_correlation_comparator_R6/design/predictions_R6.md`
+`analyses/replication/RESULTS_R6.md` | `analyses/12_zero_lag_partial_correlation_comparator_R6/RESULTS_R6.md`
+`analyses/replication/run_partial_correlation.py` | `analyses/12_zero_lag_partial_correlation_comparator_R6/zero_lag_partial_correlation_comparator_R6.py`
+`analyses/replication/PREDICTIONS_R7.md` | `analyses/13_locking_gradient_within_wiring_class_R7/design/predictions_R7.md`
+`analyses/replication/RESULTS_R7.md` | `analyses/13_locking_gradient_within_wiring_class_R7/RESULTS_R7.md`
+`analyses/replication/run_locking_within_class.py` | `analyses/13_locking_gradient_within_wiring_class_R7/locking_gradient_within_wiring_class_R7.py`
 `analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
 `notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
 `notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`

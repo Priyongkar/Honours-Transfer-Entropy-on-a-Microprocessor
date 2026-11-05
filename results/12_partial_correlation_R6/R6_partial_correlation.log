@@ -1,0 +1,19 @@
+[12:26:08] R6: PREDICTIONS_R6.md sha256 237677350bfe48b1aea907d1af62b3c103b8a2954d071eaed5731cca831148c1
+[12:26:08] R6: run_partial_correlation.py sha256 2aaba52ca48e10f93808d29f252c8f98de9e50856e464b534491db576c274e38
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+[12:26:15] partial correlations done; zero-lag MI next
+[12:27:57] partial: group AUC 0.790 [0.7723093262521452, 0.8077882067932898]
+[12:28:46] partial_parity: group AUC 0.721 [0.703555151816079, 0.7390479606137755]
+[12:29:33] correlation: group AUC 0.669 [0.6419316622548432, 0.6955749366794063]
+[12:30:17] mi: group AUC 0.516 [0.4948019174486442, 0.5377444308352046]
+[12:30:55] mi_parity: group AUC 0.641 [0.6254368172892711, 0.6582270980390815]
+[12:31:42] distance: group AUC 0.928 [0.9147783349852293, 0.9402926576349547]
+[12:31:59] partial: precision at allocation 23.15 [21.294284395145564, 24.94714959165269]
+[12:32:19] partial_parity: precision at allocation 9.91 [8.13012612204329, 11.67072485951313]
+[12:32:37] correlation: precision at allocation 11.30 [9.58758921195478, 12.877592099566101]
+[12:32:54] mi: precision at allocation 13.72 [12.111791522079336, 15.275245105806333]
+[12:33:10] mi_parity: precision at allocation 13.86 [12.165450460487225, 15.500247875354107]
+[12:33:10] done {'R6.1': True, 'R6.2': False, 'R6.3': True}

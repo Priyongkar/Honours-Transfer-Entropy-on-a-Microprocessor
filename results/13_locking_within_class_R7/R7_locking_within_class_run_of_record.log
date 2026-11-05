@@ -1,0 +1,6 @@
+[12:21:33] R7: PREDICTIONS_R7.md sha256 be66a622f7390222dcfd6e62c5c52d416a1869918b894ba91881b6075616a7dc
+[12:21:33] R7: run_locking_within_class.py sha256 b78ea7520c140f34868a78c3fd6b92d2bfb70d7cfc3970b8857583117f105502
+[12:21:35] pulldown: mixed 0.551 locked 0.395 strict 0.441; diff +0.110 [-0.056, +0.263]
+[12:21:36] pass_only: mixed 0.628 locked 0.593 strict 0.485; diff +0.142 [+0.027, +0.240]
+[12:21:38] matched bound: deciles 0.452 [0.419, 0.487]; x k 0.436 [0.407, 0.469]; diff -0.015 [-0.052, +0.021]
+[12:21:38] done {'R7.1': False, 'R7.2': True, 'R7.3': True}
