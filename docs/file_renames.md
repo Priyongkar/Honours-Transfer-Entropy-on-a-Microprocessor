@@ -41,6 +41,7 @@ Original path (working project) | New path (this repository)
 `analyses/replication/PREDICTIONS_R4.md` | `analyses/11_phase_relation_against_physical_delay_R4/design/predictions_R4.md`
 `analyses/replication/RESULTS_R4.md` | `analyses/11_phase_relation_against_physical_delay_R4/RESULTS_R4.md`
 `analyses/replication/run_delay_vs_phase.py` | `analyses/11_phase_relation_against_physical_delay_R4/phase_relation_against_physical_delay_R4.py`
+`analyses/figures_v11/fig_scores_and_delay_phase.py` | `results/figures/scripts/fig_scores_three_programs_and_delay_vs_phase.py`
 `analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
 `notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
 `notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`
