@@ -34,6 +34,7 @@ analyses/
   08_timed_clamps_on_the_recorded_program_A20/            the recording's latch pairs confirmed by intervention
   09_recomputing_the_supplementary_results/              lost supplementary outputs recomputed and compared with the thesis
   10_phase_aware_remedy_on_held_out_programs_R3/         the phase-aware remedy tested on the two held-out programs
+  11_phase_relation_against_physical_delay_R4/          lag 1 follows the phase relation, not the physical delay
 
 results/                         outputs (JSON and logs) of each analysis, numbered as above; figures/
 simulator/                       the patch that ports Sim2600 to Python 3 and adds forced-wire clamps

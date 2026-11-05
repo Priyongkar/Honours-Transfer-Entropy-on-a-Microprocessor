@@ -1,0 +1,15 @@
+[11:15:03] R4: PREDICTIONS_R4.md sha256 39a3c0cc8d3ad5159eab21e0a67848b08df9817a501453208c51d20b92d2f955
+[11:15:03] R4: run_delay_vs_phase.py sha256 f9b14ed45964b51ae4b53515582f37e4afbfb3059355fdcf189a0a45b1fe261d
+[11:15:03] R4: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[11:15:03] R4: a13_a16_chip.py sha256 3571fb37b2f561b0300d4748ccdb1b32627ba5786b97290366423a8cfd4216fc
+Traceback (most recent call last):
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/replication/run_delay_vs_phase.py", line 96, in <module>
+    main()
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/replication/run_delay_vs_phase.py", line 80, in main
+    for name, cdir, code, origin in A16.programs():
+                                    ^^^^^^^^^^^^^^
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/a13_a16_chip.py", line 29, in programs
+    import a7_program
+  File "/Users/priyongkarkundu/Documents/Honours 2/analyses/new_tests/a7_program.py", line 7, in <module>
+    from py65.assembler import Assembler
+ModuleNotFoundError: No module named 'py65'

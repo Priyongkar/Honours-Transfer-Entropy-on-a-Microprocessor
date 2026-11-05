@@ -1,0 +1,19 @@
+[11:15:22] R4: PREDICTIONS_R4.md sha256 39a3c0cc8d3ad5159eab21e0a67848b08df9817a501453208c51d20b92d2f955
+[11:15:22] R4: run_delay_vs_phase.py sha256 bd4e3c585001d0da3312d8546433b2fe4ef4f7bf42fad0810c5ab5f292026a6f
+[11:15:22] R4: common.py sha256 df3eb7d8ff85b784751f5e2f6e4f7e0e16cab67afae4534e7f0f34d0e45c857a
+[11:15:22] R4: a13_a16_chip.py sha256 3571fb37b2f561b0300d4748ccdb1b32627ba5786b97290366423a8cfd4216fc
+[11:16:14] program1: same/immediate: 10092 pos, 302946 neg; lag1 0.461
+[11:16:24] program1: same/one_step: 48333 pos, 302946 neg; lag1 0.542
+[11:16:31] program1: opposite/immediate: 20188 pos, 246028 neg; lag1 0.605
+[11:16:39] program1: opposite/one_step: 10241 pos, 246028 neg; lag1 0.573
+[11:16:50] program1: mixed/immediate: 29811 pos, 363634 neg; lag1 0.557
+[11:17:01] program1: mixed/one_step: 32824 pos, 363634 neg; lag1 0.632
+[11:17:01] program1: {'R4.1': True, 'R4.2': True, 'R4.3': True, 'R4.4': True}
+[11:18:10] program2: same/immediate: 13081 pos, 440876 neg; lag1 0.402
+[11:18:26] program2: same/one_step: 79759 pos, 440876 neg; lag1 0.513
+[11:18:37] program2: opposite/immediate: 26161 pos, 357228 neg; lag1 0.540
+[11:20:44] program2: opposite/one_step: 17503 pos, 357228 neg; lag1 0.541
+[11:20:59] program2: mixed/immediate: 31653 pos, 398464 neg; lag1 0.546
+[11:21:10] program2: mixed/one_step: 30071 pos, 398464 neg; lag1 0.632
+[11:21:10] program2: {'R4.1': True, 'R4.2': True, 'R4.3': True, 'R4.4': True}
+[11:21:11] done

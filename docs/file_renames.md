@@ -38,6 +38,9 @@ Original path (working project) | New path (this repository)
 `analyses/replication/run_remedy_heldout.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/remedy_on_held_out_programs_R3.py`
 `analyses/supplementary_recompute/posthoc_r3_phase_class.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/posthoc_remedy_against_phase_class_and_ap_lift.py`
 `analyses/supplementary_recompute/posthoc_align_offset.py` | `analyses/10_phase_aware_remedy_on_held_out_programs_R3/posthoc_clock_aligned_start_1407_against_1408.py`
+`analyses/replication/PREDICTIONS_R4.md` | `analyses/11_phase_relation_against_physical_delay_R4/design/predictions_R4.md`
+`analyses/replication/RESULTS_R4.md` | `analyses/11_phase_relation_against_physical_delay_R4/RESULTS_R4.md`
+`analyses/replication/run_delay_vs_phase.py` | `analyses/11_phase_relation_against_physical_delay_R4/phase_relation_against_physical_delay_R4.py`
 `analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
 `notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
 `notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`
