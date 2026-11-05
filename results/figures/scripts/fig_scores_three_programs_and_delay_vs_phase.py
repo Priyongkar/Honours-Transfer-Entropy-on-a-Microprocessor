@@ -1,6 +1,4 @@
-"""Two thesis figures (Figures 5.1 and 5.7) from saved results in this repository (no new statistics).
-Usage: python fig_scores_three_programs_and_delay_vs_phase.py [output_dir]   (default results/figures/)
-
+"""Two thesis figures from saved results (no new statistics):
 (a) fig_c5_scores_three_programs: clock-aligned group AUC of each score on Donkey Kong, Pitfall and
     Space Invaders (R3 results; Donkey Kong from posthoc_align_offset.json and recomputed baselines).
 (b) fig_c5_delay_vs_phase: R4, AUC at lags 0, 1, 2 for each phase relation and physical delay."""
@@ -25,35 +23,41 @@ def load(p): return json.loads(Path(p).read_text())
 R3 = {g: load(RES / f'10_remedy_held_out_R3/R3_{g}_results.json')['clock_aligned'] for g in ('Pitfall', 'SpaceInvaders')}
 DKa = load(RES / '10_remedy_held_out_R3/posthoc_align_offset.json')['1408']
 DKb = load(RES / '09_recomputed_supplementary/recomputed_supplementary.json')['B_baselines_all']
+R6 = load(RES / '12_partial_correlation_R6/R6_partial_correlation_results.json')
 rows = [('Lag-1 transfer entropy', 'lag1', 'lag1_te', None),
         ('Lag-0 CMI', 'lag0', 'lag0_cmi', None),
         ('Zero-lag MI given the phase', 'mi_parity', 'mi_parity', None),
         ('Phase relation alone', 'phase_class', 'phase_class', None),
+        ('Zero-lag partial correlation\n(Donkey Kong only)', 'R6:partial', None, None),
         ('Source-group size', None, 'source_size', 'source_group_size'),
         ('Layout distance', None, 'distance', 'layout_distance')]
 def dk(r):
     _, a, _, b = r
-    v = DKa[a] if a else DKb[b]
+    if a and a.startswith('R6:'): v = R6[a[3:]]
+    else: v = DKa[a] if a else DKb[b]
     return v['group_auc'], v['group_auc_ci']
 def held(g, r):
+    if r[2] is None: return None
     v = R3[g][f'group_auc_{r[2]}']; return v['auc'], [v['lo'], v['hi']]
 progs = [('Donkey Kong', BLUE, 'o', lambda r: dk(r)), ('Pitfall', ORANGE, 's', lambda r: held('Pitfall', r)),
          ('Space Invaders', AQUA, '^', lambda r: held('SpaceInvaders', r))]
-fig, ax = plt.subplots(figsize=(6.3, 3.0))
-ys = [0, 1, 2, 3, 4.6, 5.6]
+fig, ax = plt.subplots(figsize=(6.3, 3.3))
+ys = [0, 1, 2, 3, 4, 5.6, 6.6]
 for k, (name, col, mk, get) in enumerate(progs):
     for y, r in zip(ys, rows):
-        a, (lo, hi) = get(r); yy = y + (k - 1) * 0.22
+        got = get(r)
+        if got is None: continue
+        a, (lo, hi) = got; yy = y + (k - 1) * 0.22
         ax.plot([lo, hi], [yy, yy], color=col, lw=1.6, solid_capstyle='round', zorder=2)
         ax.plot(a, yy, mk, color=col, ms=5.5, mec='white', mew=0.8, zorder=3, label=name if y == 0 else None)
 ax.axvline(0.5, color=MUTED, lw=0.8, ls=(0, (3, 2)), zorder=1)
-ax.text(0.506, 3.6, 'chance', color=MUTED, fontsize=7.5, va='bottom')
+ax.text(0.506, 4.6, 'chance', color=MUTED, fontsize=7.5, va='bottom')
 ax.set_yticks(ys); ax.set_yticklabels([r[0] for r in rows]); ax.invert_yaxis()
 ax.set_xlim(0.35, 1.0); ax.set_xlabel('Group-level AUC against the wiring (clock-aligned samples)')
 ax.grid(axis='x', color=GRID, lw=0.6); ax.set_axisbelow(True); ax.tick_params(axis='y', length=0)
-ax.axhline(3.8, color=GRID, lw=0.8)
-ax.text(0.995, 3.6, 'Information measures', color=MUTED, fontsize=7.5, ha='right', va='bottom')
-ax.text(0.995, 3.84, 'Using no activity', color=MUTED, fontsize=7.5, ha='right', va='top')
+ax.axhline(4.8, color=GRID, lw=0.8)
+ax.text(0.995, 4.6, 'Activity-based scores', color=MUTED, fontsize=7.5, ha='right', va='bottom')
+ax.text(0.995, 4.84, 'Size and position', color=MUTED, fontsize=7.5, ha='right', va='top')
 ax.legend(loc='lower center', bbox_to_anchor=(0.5, 1.02), ncol=3, frameon=False, fontsize=7.5, handletextpad=0.3)
 fig.tight_layout(); fig.savefig(OUTD / 'fig_c5_scores_three_programs.pdf'); fig.savefig(OUTD / 'fig_c5_scores_three_programs.png', dpi=200)
 

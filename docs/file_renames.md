@@ -53,6 +53,7 @@ Original path (working project) | New path (this repository)
 `analyses/replication/run_h6_second_draw.py` | `analyses/14_second_independent_sample_for_H6_R5/h6_design_second_independent_sample_R5.py`
 `analyses/supplementary_recompute/score_h6_second_draw.py` | `analyses/14_second_independent_sample_for_H6_R5/score_second_sample_against_run_of_record_R5.py`
 `analyses/figures_v11/fig_published_network.py` | `results/figures/scripts/fig_published_network_against_wiring.py`
+`analyses/figures_v11/fig_h6_two_samples.py` | `results/figures/scripts/fig_h6_two_samples.py`
 `analyses/new_tests/common.py` | `src/te6502/test_helpers.py`
 `notebooks/te6502_toolkit.py` | `src/te6502/transfer_entropy_estimators.py`
 `notebooks/sim6502.py` | `src/te6502/switch_level_simulator.py`
